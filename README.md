@@ -112,23 +112,8 @@ clinical_trials/
 
    > **Note:** For GPUs, ensure you have the correct version of PyTorch installed. Refer to the [PyTorch website](https://pytorch.org/) for installation instructions specific to your CUDA version.
 
-4. **Install Graphviz (for Graph Visualization):**
 
-   - **Ubuntu:**
-
-     ```bash
-     sudo apt-get install graphviz libgraphviz-dev pkg-config
-     pip install pygraphviz
-     ```
-
-   - **MacOS:**
-
-     ```bash
-     brew install graphviz
-     pip install pygraphviz
-     ```
-
-5. **Set Up Hugging Face Authentication:**
+4. **Set Up Hugging Face Authentication:**
 
    - Create an account on [Hugging Face](https://huggingface.co/).
    - Generate an API token from your account settings.
