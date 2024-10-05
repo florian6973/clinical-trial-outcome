@@ -1,0 +1,18 @@
+# Ignore all .txt files
+*.txt
+
+# Ignore all .csv files
+*.csv
+
+# Ignore all .parquet files
+*.parquet
+
+# Ignore all .svg and .png files
+*.svg
+*.png
+
+# Ignore the /checkpoints directory
+/checkpoints/
+
+# Ignore the /cache directory
+/cache/
