@@ -1,0 +1,355 @@
+annotations:
+  0:
+    missing: false
+    concepts:
+      - str: Ischemic Stroke
+        concept_id: 422504002
+        complete: Ischemic Stroke
+      - str: MI
+        concept_id: 22298006
+        complete: Non-fatal MI
+      - str: CHD
+        concept_id: 53741008
+        complete: CHD Death
+  1:
+    missing: true
+    comments: LCD = Leukocyte Cell Differential
+    concepts:
+      - str: Febrile Illness
+        concept_id: 416113008
+        complete: Acute Febrile Illness,AFI
+      - str: Dengue Presenting a Sign or a Symptom of Interest (Grade 3)
+        concept_id: 409678004
+        complete: Dengue Presenting a Sign or a Symptom of Interest (Grade 3)
+  2:
+    missing: true
+    concepts:
+      - str: Alanine Aminotransferase (ALT)[...]Level Elevation More Than 1.5 Times Upper Limit of Normal
+        concept_id: 409673008
+        complete: Alanine Aminotransferase (ALT)[...]Level Elevation More Than 1.5 Times Upper Limit of Normal
+        variant: true
+      - str: Aspartate Aminotransferase (AST) Level Elevation More Than 1.5 Times Upper Limit of Normal
+        concept_id: 160931000119108
+        complete: Aspartate Aminotransferase (AST) Level Elevation More Than 1.5 Times Upper Limit of Normal
+        variant: true
+  3:
+    missing: true
+    concepts:
+      - str: CD4/CD8 Cell Counts
+        concept_id: 413785007
+        complete: CD4/CD8 Cell Counts
+        variant: true
+  4:
+    missing: true
+    concepts:
+      - str: Dasatinib Toxicity
+        concept_id: 399213007
+        complete: Dasatinib Toxicity
+        variant: true
+  5:
+    missing: true
+    concepts:
+  6:
+    missing: true
+    concepts:
+      - str: Symptoms After Vaccination
+        concept_id: 31935007
+        complete: Solicited Local Symptoms After Vaccination
+        variant: true
+  7:
+    missing: true
+    concepts:
+      - str: Partial [...]Seizures
+        concept_id: 29753000
+        complete: Partial Onset Seizures (Type I)
+  8:
+    missing: true
+    concepts:
+      - str: Leibowitz Social Anxiety Scale (LSAS)
+        concept_id: 1231512007
+        complete: Leibowitz Social Anxiety Scale (LSAS) Total Score
+  9:
+    missing: true
+    concepts:
+      - str: Brivaracetam
+        concept_id: 420813001
+        complete: Brivaracetam
+  10:
+    missing: true # Not all the concepts in the outcomes are mapped
+    comments: Disease vs Score to assess the disease
+    concepts:
+      - str: Dyspnea
+        concept_id: 267036007
+        complete: Dyspnea
+        variant: true
+  11:
+    missing: true # Not all the concepts in the outcomes are mapped
+    concepts:
+  12:
+    missing: true
+    concepts:
+      - str: protection Against Poliovirus Types 1, 2, and 3
+        concept_id: 1156921007
+        complete: Seroprotection Against Poliovirus Types 1, 2, and 3
+      - str: Vaccination
+        concept_id: 33879002
+        complete: Vaccination
+  13:
+    missing: true
+    concepts:
+      - str: Change From Baseline in Vital Sign Parameter of Heart Rate (HR) 
+        concept_id: 361134000
+        complete: Change From Baseline in Vital Sign Parameter of Heart Rate (HR) 
+  14:
+    missing: true
+    comments: tolerability?
+    concepts:
+      - str: Schizophrenia
+        concept_id: 58214004
+        complete: Schizophrenia
+      - str: Antipsychotic Medications
+        concept_id: 408490001
+        complete: Antipsychotic Medications
+      - str: Quit Smoking
+        concept_id: 160617001
+        complete: Recently Quit Smoking
+      - str: Safety
+        concept_id: 225858006
+        complete: Safety
+  15:
+    missing: true
+    concepts:
+      - str: Anxiety Symptoms
+        concept_id: 286644009
+        complete: Anxiety Symptoms
+  16:
+    missing: false
+    concepts:
+      - str: Lipids
+        concept_id: 104780002
+        complete: Lipids
+  17:
+    missing: true
+    comments: Survival concept?
+    concepts:
+      - str: Invasive Ventilator-Free
+        concept_id: 371820004
+        complete: Invasive Ventilator-Free
+  18:
+    missing: true
+    concepts:
+      - str: Inflammatory Bowel Disease
+        concept_id: 24526004
+        complete: Inflammatory Bowel Disease
+  19:
+    missing: true
+    concepts:
+      - str: Peripheral Blood Stem Cell (PBSC) Transplant
+        concept_id: 278257006
+        complete: Peripheral Blood Stem Cell (PBSC) Transplant
+      - str: Platelet (PLT)
+        concept_id: 250311007
+        complete: Platelet (PLT)
+  20:
+    missing: true
+    concepts:
+      - str: Sleep Onset Latency (sSOL)
+        concept_id: 366033007
+        complete: Sleep Onset Latency (sSOL)
+  21:
+    missing: true
+    concepts:
+      - str: Operator Satisfaction
+        concept_id: 405193005
+        complete: Operator Satisfaction
+      - str: Device
+        concept_id: 49062001
+        complete: Device
+        variant: true
+  22:
+    missing: true
+    concepts:
+  23:
+    missing: true
+    concepts:
+      - str: Eosinophils
+        concept_id: 71960002
+        complete: Blood Eosinophils (Cells/uL)
+  24:
+    missing: true
+    concepts:
+      - str: Hematology Abnormalities
+        concept_id: 34641000087106
+        complete: Grade 3-4 Hematology Abnormalities
+        variant: true
+  25:
+    missing: true
+    concepts:
+  26:
+    missing: true
+    concepts:
+      - str: Change in Diabetes
+        concept_id: 185755005
+        complete: Quantitative Change in Diabetes
+        variant: true
+  27:
+    missing: false
+    concepts:
+      - str: Serum Iron
+        concept_id: 250216004
+        complete: Serum Iron
+  28:
+    missing: true
+  29:
+    missing: false # 2150474019      20040131        1       900000000000207008      406644009       en      900000000000003001      Adverse drug event resulting from treatment of disorder (disorder)      900000000000020002
+    concepts:
+      - str: Severity
+        concept_id: 162465004
+        complete: Severity
+      - str: Occurence # attribute
+        concept_id: 246454002
+        complete: Occurence
+      - str: Treatment-emergent Adverse Events (TEAEs)
+        concept_id: 62014003
+        complete: Treatment-emergent Adverse Events (TEAEs)
+  30:
+    missing: true
+    concepts:
+  31:
+    missing: true
+  32:
+    missing: true
+  33:
+    missing: true
+    concepts:
+      - str: Descend Steps
+        concept_id: 282187005
+        complete: Descend Steps
+  34:
+    missing: true
+    concepts:
+      - str: Severity
+        concept_id: 162465004
+        complete: Maximum Severity
+  35:
+    missing: true
+    concepts:
+      - str: VAS Pain Scale
+        concept_id: 273904000
+        complete: VAS Pain Scale Scores
+      - str: Medical Devices
+        concept_id: 63653004
+        complete: Investigational Medical Devices
+  36:
+    missing: true
+    comments: typo
+    concepts:
+      - str: Adiponectin
+        concept_id: 413451007
+        complete: Adiponectin
+  37:
+    missing: true
+  38:
+    missing: true
+    concepts:
+      - str: Adverse Events
+        concept_id: 62014003
+        complete: Adverse Events
+        variant: true
+  39:
+    missing: true
+  40:
+    missing: true
+    concepts:
+      - str: TEAEs
+        concept_id: 62014003
+        complete: TEAEs
+        variant: true
+      - str: Grade >= 3 TEAEs
+        concept_id: 446431000124107
+        complete: Grade >= 3 TEAEs
+        variant: true
+  41:
+    missing: true
+    concepts:
+      - str: Buccal
+        concept_id: 60819002
+        complete: Buccal Cells
+        variant: true
+      - str: Cells
+        concept_id: 4421005
+        complete: Buccal Cells
+        variant: true
+  42:
+    missing: true
+    comments: spray-dose form?
+  43:
+    missing: true
+    concepts:
+      - str: Sleep
+        concept_id: 258158006
+        complete: Infant Sleep Quantity
+        variant: true
+      - str: Infant
+        concept_id: 133931009
+        complete: Infant Sleep Quantity
+        variant: true
+  44:
+    missing: true
+  45:
+    missing: true
+    comments: AEs vs TEAEs?
+    concepts:
+      - str: Adverse Events (AEs) 
+        concept_id: 62014003
+        complete: Adverse Events (AEs) 
+        variant: true
+      - str: Participants
+        concept_id: 428024001
+        complete: Participants
+        variant: true
+  46:
+    missing: true
+    concepts:
+      - str: Mutation
+        concept_id: 55446002
+        complete: PIK3CA Mutation
+        variant: true
+      - str: Participants
+        concept_id: 428024001
+        complete: Participants
+        variant: true
+  47:
+    missing: true
+    comments: generic term too far
+  48:
+    missing: false
+    concepts:
+      - str: Visual Analog Pain Scale 
+        concept_id: 273904000
+        complete: Visual Analog Pain Scale 
+  49:
+    missing: true
+    concepts:
+      - str: Severity
+        concept_id: 162465004
+        complete: Clinical Global Impressions of Severity (CGI-S) Total Score
+        variant: true
+  50:
+    missing: true
+    concepts:
+      - str: Patient Satisfaction
+        concept_id: 406193000
+        complete: Patient Satisfaction
+
+
+
+      
+    
+
+
+
+
+
+
+# snomed ct https://www.drivendata.org/competitions/258/competition-snomed-ct/
