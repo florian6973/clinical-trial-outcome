@@ -27,37 +27,16 @@ system_msg = "You are a clinical expert in named entity extraction."
 
 outputs = []
 outputs_json = []
-batch_size = 5
+batch_size = 250
 
-def save():
-    with open(f'outputs_{all_mode}.json', 'w') as f:
-        json.dump(outputs, f)
-        
-    with open(f'outputs_{all_mode}_json.json', 'w') as f:
-        json.dump(outputs_json, f)
-
-# for i, row in tqdm(enumerate(rows), total=len(rows)):
-for i in tqdm(range(len(rows), batch_size)):
-    row = rows[i]
-    if not all_mode:
-        print(i)
-        print("------")
-        print(row[0])
-        txt = row[0]
-    else:
-        txt = row
-    
-
-    res = pipeline(
-        system_msg,
-        """Extract following entities, if it exists in following text input (outcomes):
+prompt = """Extract following entities, if it exists in following text input (outcomes):
              - Time: when
              - Quantity Unit: measurement unit
              - Quantity Measure (examples: Percentage of Participants, Number of Participants, Mean Change from Baseline, CHange...)
              - Quantity or object of Interest (examples: Toxicity, Survival, specific element): the main concept(s) describing the outcome
              - Additional constraints: details that are not measure or quantity/object of interest
              - Quantity range: range for measurements
-             Do not duplicate elements between categories, each word have maximum one label. Do not hallucinate words. 
+             Do not duplicate elements between categories. Do not hallucinate words. Make sure to separate concepts of the same type.
              Additional Constraints should be used only if it does not fit in Time or Range.
              Avoid abbreviations.
              Provide the output in JSON form like 
@@ -69,22 +48,55 @@ for i in tqdm(range(len(rows), batch_size)):
   "Additional Constraints": [],
   "Quantity Range": []
 }
-Text to find entities: """ + txt) #  Make sure to associate everything to a category.
+Text to find entities: """ 
+
+def save():
+    with open(f'outputs_{all_mode}.json', 'w') as f:
+        json.dump(outputs, f)
+        
+    with open(f'outputs_{all_mode}_json.json', 'w') as f:
+        json.dump(outputs_json, f)
+
+# for i, row in tqdm(enumerate(rows), total=len(rows)):
+for i in tqdm(range(0, len(rows), batch_size)):
+    txts = []
+    for k in range(i, i+batch_size):
+        row = rows[k]
+        if not all_mode:
+            print(k)
+            print("------")
+            print(row[0])
+            txt = row[0]
+        else:
+            txt = row
+        txts.append(txt)
     
-    # print(res[res.find('<|end_header_id|>'):])
-    try:
-        print(txt)
-        txt = res[res.find('assistant<|end_header_id|>')+26:-10].strip()
-        print("BEGIN", txt, "END")
-        res_json = json.loads(txt)
-        outputs_json.append(res_json)
-    except Exception as e:
-        print(e)
-        print("Could not parse")
-        outputs_json.append({"error": True})
-    # input()
-    outputs.append(res)
-    # break
+
+    # res = pipeline(
+    #     system_msg,
+    #     prompt + txt) #  Make sure to associate everything to a category.
+
+    reses = pipeline_batch(
+        [(system_msg, prompt + txt) for txt in txts]
+    )
+
+    for res in reses:
+        # print(res[res.find('<|end_header_id|>'):])
+        try:
+            # print(txt)
+            txt = res[res.find('assistant<|end_header_id|>')+26:-10].strip()
+            txt = txt.replace('<|start_header_id|>', '')
+            print("BEGIN", txt, "END")
+            res_json = json.loads(txt)
+            outputs_json.append(res_json)
+        except Exception as e:
+            print(e)
+            print("Could not parse")
+            outputs_json.append({"error": True})
+        # input()
+        outputs.append(res)
+        # break
+
     if i % 100 == 0:
         save()
 
