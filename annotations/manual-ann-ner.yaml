@@ -474,7 +474,7 @@ annotations:
     partial: true
     structured:
       - object: Systolic Blood Pressure
-        specifier: <90 mmHg
+        range: <90 mmHg
         time: Within 30 minutes
         measure: Percentage of Patients
   71:
@@ -529,7 +529,9 @@ annotations:
     partial: true
     structured:
       - object: Time to Need for Antibiotics 
-        specifier: Inhaled and/or IV Antipseudomonal, for Respiratory Event
+        specifier: Inhaled Antipseudomonal for Respiratory Event
+      - object: Time to Need for Antibiotics
+        specifier: IV Antipseudomonal for Respiratory Event
   81:
     partial: false
     structured:
