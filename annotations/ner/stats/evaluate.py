@@ -5,9 +5,13 @@ import numpy as np
 # https://medium.com/@ameydhote007/fine-tuning-language-models-for-ner-a-hands-on-step-by-step-guide-408cfee1e93b
 
 import yaml
+import pandas as pd
+
+
+    
 
 # Step 1: Open the YAML file
-with open('manual-ann-ner.yaml', 'r') as file:
+with open('../data/manual-ann-ner.yaml', 'r') as file:
     # Step 2: Load the contents of the file
     data_gt = yaml.safe_load(file)['annotations']
 
@@ -15,20 +19,44 @@ with open('manual-ann-ner.yaml', 'r') as file:
 # print(data_gt)
 # input()
 
+import sys
+if len(sys.argv) > 1:
+    nb_ex = int(sys.argv[1])
+else:
+    nb_ex = 10
+
 import json
-with open('outputs_json.json', 'r') as file:
+with open(f'../llm/outputs/outputs_ICL_False_{nb_ex}_json.json', 'r') as file:
     data_pred = json.load(file)
 
+failed = 0
+successed = 0
 # print(data_pred)
 data_pred_lw = []
 for elt in data_pred:
     dico = {}
 
     # print(elt)
+    if "error" in elt:
+        dico = {
+            'Quantity or object of Interest'.lower(): [],
+            'Additional constraints'.lower(): [],
+            'Quantity Measure'.lower(): [],
+            'Time'.lower(): [],
+            'Quantity unit'.lower(): [],
+            'Quantity range'.lower(): [],
+            # 'error': ['True']
+        }
+        failed += 1
+        # dico = {"error":[]}
+        data_pred_lw.append(dico)
+        continue
+    successed += 1
     for key, vals in elt.items():
         # dico[key.lower()] = [v.lower() for v in vals]
         # dico[key.lower()] = [v.lower() for v in vals]
         dico[key.lower()] = []
+        # print(key,vals)
         for v in vals:
             if v.lower() not in dico[key.lower()]:
                 dico[key.lower()].append(v.lower())
@@ -41,7 +69,10 @@ data_pred = data_pred_lw
 # print(data_pred)
 # exit()
 
-rows = np.load("data-ann.npz", allow_pickle=True)['rows']
+# rows = np.load("data-ann.npz", allow_pickle=True)['rows']
+# rows = np.load("data-ann.npz", allow_pickle=True)['rows']
+with open('../data/manual-ann-ner-0_100.txt', 'r') as f:
+    rows = pd.Series(f.readlines())
 
 mapping = {
     'object': 'Quantity or object of Interest'.lower(),
@@ -54,8 +85,6 @@ mapping = {
 
 # duplicates as well
 
-failed = 0
-successed = 0
 hallucinations = 0 # need initial string
 exacts = {}
 partials = {}
@@ -68,10 +97,9 @@ multi_outcomes = 0
 
 # https://www.davidsbatista.net/blog/2018/05/09/Named_Entity_Evaluation/
 for i in range(len(data_gt)):
-    if "error" in data_pred[i]:
-        failed += 1
-    else:
-        successed += 1
+    # if "error" in data_pred[i]:
+    #     failed += 1
+    # else:
    
     gt_tmp = {
         "Time".lower(): [],
@@ -123,7 +151,7 @@ for i in range(len(data_gt)):
                     partials[key] = 0
                 partials[key] += 1
 
-    txt = rows[i][0].lower()
+    txt = rows[i].lower()
     hallucinate = False
     for key, arr_val in data_pred[i].items():
         counts += len(arr_val)

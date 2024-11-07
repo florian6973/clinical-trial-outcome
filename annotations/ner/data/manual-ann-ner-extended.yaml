@@ -74,7 +74,7 @@ annotations:
   12:
     partial: false
     structured:
-      - object: Quality of life score
+      - object: Quality of life
         measure: change in mean
         specifier: measured with the veines qol/sym questionnaire
   13:
@@ -100,7 +100,7 @@ annotations:
   17:
     partial: false
     structured:
-      - object: serious cae # clinical adverse event
+      - object: severe cae # clinical adverse event
         specifier: when albuterol use increased
         time: prior to the peak
         measure: Number of days
@@ -109,7 +109,7 @@ annotations:
     structured:
       - object: pain relief
         time: at 2 hours
-        specifier: during the thid migraine attack period
+        specifier: during the third migraine attack period
   19:
     partial: true
     structured:
@@ -164,7 +164,7 @@ annotations:
   28:
     partial: false
     structured:
-      - object: Antiretrovial resistance 
+      - object: Antiretroviral resistance 
         specifier: to gw873140 400 mg bid and other antiretroviral drugs
         measure: Number of participants
   29:
@@ -254,15 +254,15 @@ annotations:
       - object: resolution of dactylitis
         measure: percentage of participants
         specifier: among participants with dactylitis at baseline
-        time: week 52
+        time: weeks 52
       - object: resolution of dactylitis
         measure: percentage of participants
         specifier: among participants with dactylitis at baseline
-        time: week 76
+        time: weeks 76
       - object: resolution of dactylitis
         measure: percentage of participants
         specifier: among participants with dactylitis at baseline
-        time: week 100
+        time: weeks 100
   44:
     partial: false
     structured:
@@ -399,7 +399,7 @@ annotations:
     partial: false
     structured:
       - object: terminal half-life (t1/2) 
-        specfier: of danirixin for part 2
+        specifier: of danirixin for part 2
   67:
     partial: false
     structured:
@@ -423,7 +423,7 @@ annotations:
   70:
     partial: false
     structured:
-      - object: ambulatin
+      - object: ambulation
         measure: time of first
   71:
     partial: true
@@ -491,15 +491,15 @@ annotations:
       - object: days
         specifier: with < 8 micturitions
         measure: number
-        time: week 4
+        time: weeks 4
       - object: days
         specifier: with < 8 micturitions
         measure: number
-        time: week 8
+        time: weeks 8
       - object: days
         specifier: with < 8 micturitions
         measure: number
-        time: week 12
+        time: weeks 12
       - object: days
         specifier: with < 8 micturitions
         measure: number

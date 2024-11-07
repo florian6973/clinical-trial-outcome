@@ -1,17 +1,24 @@
 # from clinical sdoh project
 
-from transformers import AutoModelForCausalLM, BitsAndBytesConfig, MllamaForCausalLM, AutoProcessor
+from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig, MllamaForCausalLM, AutoProcessor
 
 import torch
 
 # https://discuss.huggingface.co/t/the-effect-of-padding-side/67188
 
-def load_model_processor():
-    cache_dir = '/gpfs/commons/groups/gursoy_lab/fpollet/models/Llama-11B-Vision-Instruct'
-    model_name = 'meta-llama/Llama-3.2-11B-Vision-Instruct'
-    model = MllamaForCausalLM.from_pretrained(model_name, device_map="cuda:1", torch_dtype=torch.bfloat16, cache_dir=cache_dir)
-    processor = AutoProcessor.from_pretrained(model_name, cache_dir=cache_dir, padding_side='left')
+def load_model_processor(device='cuda:1', model='11b'):
+    if model == '11b':
+        cache_dir = '/gpfs/commons/groups/gursoy_lab/fpollet/models/Llama-11B-Vision-Instruct'
+        model_name = 'meta-llama/Llama-3.2-11B-Vision-Instruct'
+        model = MllamaForCausalLM.from_pretrained(model_name, device_map=device, torch_dtype=torch.bfloat16, cache_dir=cache_dir)
+        processor = AutoProcessor.from_pretrained(model_name, cache_dir=cache_dir, padding_side='left')
 
+    elif model == '1b':
+        # tokenizer_path = 
+        # processor = AutoTokenizer.from_pretrained(tokenizer_path)
+        # model = AutoModelForCausalLM.from_pretrained(model_path, torch_dtype=torch.bfloat16, device_map="cuda:0")
+        pass
+    
     return model, processor
 
 def build_pipeline(model, processor):
