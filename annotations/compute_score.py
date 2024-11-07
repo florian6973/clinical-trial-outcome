@@ -1,7 +1,7 @@
 import yaml
 import numpy as np
 
-with open('manual-ann.yaml', 'r') as f:
+with open('manual-ann-snomed.yaml', 'r') as f:
     anns = yaml.safe_load(f)
 
 rows = np.load("data-ann.npz", allow_pickle=True)['rows']

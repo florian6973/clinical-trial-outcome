@@ -8,6 +8,8 @@ import json
 from tqdm import tqdm
 import pandas as pd
 import sys
+import gc
+import torch
 
 rows = np.load("data-ann.npz", allow_pickle=True)['rows']
 
@@ -16,7 +18,15 @@ if len(sys.argv) > 1:
     if sys.argv[1] == 'all':
         all_mode = True
         outcomes = pd.read_csv('outcomes.txt', sep='|')
+        outcomes['length'] = outcomes['title'].apply(lambda x: len(x))
+        outcomes.sort_values('length', ascending=False, inplace=True)
         rows = outcomes['title']
+        print(len(rows))
+        rows = rows.apply(lambda x: x.lower())
+        rows = rows.drop_duplicates()
+        rows = rows.reset_index(drop=True)
+        print(len(rows))
+        print(rows)
 
 
 llm = load_model_processor()
@@ -27,7 +37,7 @@ system_msg = "You are a clinical expert in named entity extraction."
 
 outputs = []
 outputs_json = []
-batch_size = 250
+batch_size = 10
 
 prompt = """Extract following entities, if it exists in following text input (outcomes):
              - Time: when
@@ -61,7 +71,7 @@ def save():
 for i in tqdm(range(0, len(rows), batch_size)):
     txts = []
     for k in range(i, i+batch_size):
-        row = rows[k]
+        row = rows.iloc[k]
         if not all_mode:
             print(k)
             print("------")
@@ -99,6 +109,9 @@ for i in tqdm(range(0, len(rows), batch_size)):
 
     if i % 100 == 0:
         save()
+
+    # gc.collect()
+    # torch.cuda.empty_cache()
 
 save()
 
