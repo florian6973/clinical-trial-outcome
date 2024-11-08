@@ -36,7 +36,7 @@ annotations:
   5:
     partial: true
     structured:
-      - object: Cost for Referrals
+      - object: Costs for Referrals
   6:
     partial: true
     structured:
@@ -58,7 +58,6 @@ annotations:
     partial: true
     structured:
       - object: Area Under the Plasma Concentration-time Curve
-        time: 1-Month
   10:
     partial: false
     structured:
@@ -106,9 +105,9 @@ annotations:
       - object: Social Function Domain Score
         time: Baseline
       - object: Social Function Domain Score
-        time: Week 6
+        time: Weeks 6
       - object: Social Function Domain Score
-        time: Week 14
+        time: Weeks 14
   19:
     partial: true
     structured:
@@ -232,7 +231,7 @@ annotations:
     structured:
       - object: TEAEs
         measure: Number of Participants
-      - object: Grade >=3 TEAEs
+      - object: Grade >= 3 TEAEs
         measure: Number of Participants
       - object: Serious TEAEs
         measure: Number of Participants
@@ -308,48 +307,48 @@ annotations:
     partial: true
     structured:
       - object: Severity Total Score
-        time: Week 0
+        time: Weeks 0
       - object: Severity Total Score
-        time: Week 2
+        time: Weeks 2
       - object: Severity Total Score
-        time: Week 4
+        time: Weeks 4
       - object: Severity Total Score
-        time: Week 5
+        time: Weeks 5
       - object: Severity Total Score
-        time: Week 6
+        time: Weeks 6
       - object: Severity Total Score
-        time: Week 8
+        time: Weeks 8
       - object: Severity Total Score
-        time: Week 12
+        time: Weeks 12
       - object: Severity Total Score
-        time: Week 16
+        time: Weeks 16
       - object: Severity Total Score
-        time: Week 20
+        time: Weeks 20
       - object: Severity Total Score
-        time: Week 24
+        time: Weeks 24
       - object: Severity Total Score
-        time: Week 28
+        time: Weeks 28
       - object: Severity Total Score
-        time: Week 32
+        time: Weeks 32
       - object: Severity Total Score
-        time: Week 36
+        time: Weeks 36
       - object: Severity Total Score
-        time: Week 40
+        time: Weeks 40
       - object: Severity Total Score
-        time: Week 44
+        time: Weeks 44
       - object: Severity Total Score
-        time: Week 48
+        time: Weeks 48
       - object: Severity Total Score
-        time: Week 52   # EW meaning?
+        time: Weeks 52   # EW meaning?
   50:
     partial: false
     structured:
-      - object: Patient Satisfication
+      - object: Patient Satisfaction
         time: 3 Months
   51:
     partial: false
     structured:
-      - object: Corneal Stainging Score
+      - object: Corneal Staining Score
         measure: Mean
   52:
     partial: true
@@ -374,10 +373,10 @@ annotations:
     structured:
       - object: Dengue Viremia
         measure: Number of Cases
-        time: After Vaccination
+        time: Following Vaccination
       - object: Dengue Viremia
         measure: Number of Cases
-        time: After Placebo
+        time: Following Placebo
   56:
     partial: false
     structured:
@@ -387,7 +386,7 @@ annotations:
   57:
     partial: false
     structured:
-      - object: Pain Intensity and TWB
+      - object: Pain Intensity and TBW
         measure: Correlation between Change
         time: 15 Minutes Post-treatment
   58:
@@ -400,16 +399,16 @@ annotations:
     structured:
       - object: MSIS-29 Psychological Score
         measure: Change From Baseline
-        time: Month 3
+        time: Months 3
       - object: MSIS-29 Psychological Score
         measure: Change From Baseline
-        time: Month 6
+        time: Months 6
       - object: MSIS-29 Psychological Score
         measure: Change From Baseline
-        time: Month 9
+        time: Months 9
       - object: MSIS-29 Psychological Score
         measure: Change From Baseline
-        time: Month 12
+        time: Months 12
   60:
     partial: false
     structured:
@@ -441,7 +440,7 @@ annotations:
         specifier: Within CYPs 2C8, 3A4, 3A5 and/or the UGT1A1 Collectively or Monogenically 
       - object: Efficacy
         specifier: Within CYPs 2C8, 3A4, 3A5 and/or the UGT1A1 Collectively or Monogenically 
-      - object: Toxicity
+      - object: Toxicities
         specifier: Within CYPs 2C8, 3A4, 3A5 and/or the UGT1A1 Collectively or Monogenically 
   65:
     partial: false
@@ -491,7 +490,7 @@ annotations:
     partial: false
     structured:
       - object: Surgical Site
-        measure: Occurence Rate
+        measure: Occurrence Rate
   74:
     partial: false
     structured:
@@ -535,7 +534,7 @@ annotations:
   81:
     partial: false
     structured:
-      - object: Incidence of Cervical Intraepithelial Neoplasial
+      - object: Incidence of Cervical Intraepithelial Neoplasia
         specifier: Associated With High-risk HPV Types Other Than 16/18 in Participants >26 Years of Age
   82:
     partial: false
@@ -616,7 +615,7 @@ annotations:
   95:
     partial: false
     structured:
-      - object: Knee Injury and Osteoarthritis Outcome Score Pain subscore
+      - object: Knee Injury and Osteoarthritis Outcome Score Pain sub scores
         measure: Change From Baseline
       - object: Knee Injury and Osteoarthritis Outcome Score Activities of Daily Living
         measure: Change From Baseline

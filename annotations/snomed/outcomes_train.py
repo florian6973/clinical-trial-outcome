@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # csv = pd.read_csv('outcomes.txt', sep='|')
-outcomes = pd.read_csv('outcomes.txt', sep='|')
+outcomes = pd.read_csv('raw/outcomes.txt', sep='|')
 
 outcomes['length'] = outcomes['title'].apply(lambda x: len(x))
 outcomes.sort_values('length', ascending=False, inplace=True)
@@ -36,11 +36,11 @@ plt.tight_layout()
 plt.savefig('test-words.png')
 
 
-rows.iloc[:1300].to_csv('check.csv')
+# rows.iloc[:1300].to_csv('check.csv')
 
 random_rows = rows.sample(n=200, random_state=0)
 random_rows = random_rows.reset_index(drop=True)
 print(random_rows)
-random_rows.to_csv('train_raw.csv')
+random_rows.to_csv('train_raw_2.csv')
 
 
