@@ -5,6 +5,15 @@ import matplotlib.pyplot as plt
 # csv = pd.read_csv('outcomes.txt', sep='|')
 outcomes = pd.read_csv('raw/outcomes.txt', sep='|')
 
+print(outcomes['dispersion_type'].value_counts())
+print(outcomes['units'].value_counts())
+print(outcomes['time_frame'].value_counts())
+outcomes['dispersion_type'].value_counts().to_csv('outputs/dispersion_type.csv')
+outcomes['units'].value_counts().to_csv('outputs/units.csv')
+outcomes['time_frame'].value_counts().to_csv('outputs/time_frame.csv')
+
+exit()
+
 outcomes['length'] = outcomes['title'].apply(lambda x: len(x))
 outcomes.sort_values('length', ascending=False, inplace=True)
 

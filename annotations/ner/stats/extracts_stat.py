@@ -3,14 +3,17 @@ import pandas as pd
 from tqdm import tqdm
 from itertools import product
 
+import sys
+sys.path.append('../llm')  # Replace with the actual path
+
 from read_outcomes import read_outcomes
 import numpy as np
 
 
-file = 'outputs_True_json.json'
+file = '../../outputs_True_json.json'
 with open(file, 'r') as f:
     data = json.load(f)
-file = 'outputs_True.json'
+file = '../../outputs_True.json'
 with open(file, 'r') as f:
     data_raw = json.load(f)
 
@@ -24,6 +27,8 @@ max_nb = 0
 data_max = None
 k_max = 0
 lengths_distrib = []
+
+final_format = []
 
 print(len(data))
 # print(rows.iloc[:5])
@@ -46,6 +51,8 @@ for k, d in tqdm(enumerate(data), total=len(data)):
     # print(data_raw[k][row_idx:row_idx_end].strip())
     # input()
     row = data_raw[k][row_idx:row_idx_end].strip()
+
+    final_format.append((row, d))
 
     tmp_ls = [dict(zip(d.keys(), values)) for values in product(*d.values())]
 
@@ -115,7 +122,11 @@ print(df)
 
 # df = df.lower
 import os
-os.makedirs('stats', exist_ok=True)
+os.makedirs('outputs_2', exist_ok=True)
 for col in df.columns:
     # print(df[col].value_counts())
-    df[col].value_counts().to_csv(f"stats/stats_{col}.csv")
+    df[col].value_counts().to_csv(f"outputs_2/stats_{col}.csv")
+
+with open("outputs_2/outcomes.json", 'w') as f:
+    json.dump(final_format, f, indent=4)
+# df[col].value_counts().to_csv(f"outputs_2/outcomes.json")

@@ -4,25 +4,30 @@ import matplotlib.pyplot as plt
 
 def read_outcomes():
     # csv = pd.read_csv('outcomes.txt', sep='|')
-    outcomes = pd.read_csv('outcomes.txt', sep='|')
+    outcomes = pd.read_csv('../../snomed/raw/outcomes.txt', sep='|')
 
     outcomes['length'] = outcomes['title'].apply(lambda x: len(x))
     outcomes.sort_values('length', ascending=False, inplace=True)
-
+    outcomes.set_index('id')
     rows = outcomes['title']
 
     print(len(rows))
     rows = rows.apply(lambda x: x.lower())
+    rows.value_counts()[:1000].to_csv('natural_normalization.csv')
+    print(rows.value_counts())
     rows = rows.drop_duplicates()
+    ids = rows.index
     rows = rows.reset_index(drop=True)
+    print(ids)
 
-    return rows
+    return ids, rows
 
 if __name__ == '__main__':
-    rows = read_outcomes()
+    ids, rows = read_outcomes()
     
-    print(len(rows))
+    print(len(ids), len(rows))
     print(rows)
+    exit()
 
 
     rows['length'] = rows.apply(lambda x: len(x))
