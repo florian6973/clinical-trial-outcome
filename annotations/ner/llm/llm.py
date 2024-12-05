@@ -25,6 +25,13 @@ def load_model_processor(device='cuda:0', model='llama-11b'):
         # processor = AutoTokenizer.from_pretrained(tokenizer_path)
         # model = AutoModelForCausalLM.from_pretrained(model_path, torch_dtype=torch.bfloat16, device_map="cuda:0")
         pass
+    elif model == 'llama-8b': # requires 24gb vram
+        # tokenizer_path = 
+        # processor = AutoTokenizer.from_pretrained(tokenizer_path)
+        # model = AutoModelForCausalLM.from_pretrained(model_path, torch_dtype=torch.bfloat16, device_map="cuda:0")
+        llama_models_path = Path('/gpfs/commons/groups/gursoy_lab/fpollet/models/Meta-Llama-3.1-8B-Instruct')
+        model = LLM(model=(llama_models_path))
+        processor = None
 
     elif model == 'ministral-8b': # requires 24gb vram
         # tokenizer_path = 

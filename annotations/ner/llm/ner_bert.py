@@ -186,6 +186,8 @@ def eval_bert(folder, dataset):
     results = trainer.evaluate()
     print(results)
 
+    # need to save the same way
+
 def load_model(folder):
     tokenizer = AutoTokenizer.from_pretrained(folder, device_map='cuda:0')
     model = AutoModelForTokenClassification.from_pretrained(folder, num_labels=num_labels, device_map='cuda:0')
@@ -193,7 +195,7 @@ def load_model(folder):
     return tokenizer, model
 
 
-def infer_bert(folder, dataset, all=True): # for test set
+def infer_bert(folder, dataset, all=False): # for test set
     tokenizer, model = load_model(folder)
     # pass
     # folder_inf = "./finetuned_clinicalbiobert_inf"
@@ -219,12 +221,18 @@ def infer_bert(folder, dataset, all=True): # for test set
 
     # outcome2 = [rows[k] for k in range(10)]
     # print(outcome2)
-    batch_size = 100 #100 # 1000 batch size on gpu possible
+    batch_size = 50 #100 #100 # 1000 batch size on gpu possible
     outcomes_json = []
     for i in tqdm(range(0, len(rows), batch_size)):
-        outcome2 = [rows.iloc[k+i] for k in range(batch_size)]
+        if all:
+            outcome2 = [rows.iloc[k+i] for k in range(batch_size)]
 
-        outcome2_pp = [preproc_bert(outcome['title']) for outcome in outcome2]
+            outcome2_pp = [preproc_bert(outcome['title']) for outcome in outcome2]
+        else:
+            outcome2 = [rows[k+i] for k in range(batch_size)]
+
+            outcome2_pp = [preproc_bert(outcome) for outcome in outcome2]
+
         outcome_words = [outcome_pp.split(' ') for outcome_pp in outcome2_pp]
         
         tokens = tokenizer(outcome_words, return_tensors="pt", truncation=True, is_split_into_words=True, padding=True)
@@ -273,11 +281,15 @@ def infer_bert(folder, dataset, all=True): # for test set
 
             # print(inf_st)
 
-            outcomes_json.append((outcome2[i]['title'], int(outcome2[i]['id']), outcome2[i]['nct_id'], inf_st))
+            if all:
+                outcomes_json.append((outcome2[i]['title'], inf_st, int(outcome2[i]['id']), outcome2[i]['nct_id']))
+            else:
+                outcomes_json.append((outcome2[i], inf_st, -1, None))
 
-            if i % 100 == 0:
-                with open(f'outputs/outcomes_extracted_{os.path.basename(folder)}_{all}.json', 'w') as f:
-                    json.dump(outcomes_json, f)
+            print(outcomes_json)
+            if i % (batch_size - 1) == 0:
+                with open(f'outputs/ner_infer_{os.path.basename(folder)}_{all}.json', 'w') as f:
+                    json.dump(outcomes_json, f, indent=4)
 
 # # Convert token IDs to actual tokens and predictions to labels
 # tokens = tokenizer.convert_ids_to_tokens(tokens["input_ids"][0])

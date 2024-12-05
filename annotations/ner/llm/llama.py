@@ -20,8 +20,8 @@ sampling_params = SamplingParams(max_tokens=8192)
 llm = LLM(model=llama_models_path)
 
 prompt = [
-"Do we need to think for 10 seconds to find the answer of 1 + 1?",
-"what is the meaning of life?"
+    "Do we need to think for 10 seconds to find the answer of 1 + 1?",
+    "what is the meaning of life?"
 ]
 
 messages = [[

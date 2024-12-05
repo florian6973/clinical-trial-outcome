@@ -56,7 +56,9 @@ def load_dataset_as_bio(
         nb_words = len(words)
         # # print(convert_yaml_to_json(data_gt[i]))
         labels = [0] * nb_words
-        for anns in data_gt[i]['structured']:
+        if 'structured' in data_gt[i]:
+            data_gt[i] = data_gt[i]['structured']
+        for anns in data_gt[i]:
             # print(anns)
             for key, val in anns.items():
                 if 'norm' in key:
@@ -73,7 +75,7 @@ def load_dataset_as_bio(
         tokens.append(words)
         ner_tags.append(labels)
         origs.append(txt)
-        true_labels.append(data_gt[i]['structured'])
+        true_labels.append(data_gt[i])
         # input()
 
         # ex = str(convert_yaml_to_json(data_gt[i])).replace("'", '"')
@@ -105,11 +107,16 @@ dataset = load_dataset_as_bio(
     "../data/manual-ann-ner-250.csv",
     "../data/manual-ann-ner-all.yaml"
 ).train_test_split(0.2, seed=0)
+dataset_jb = load_dataset_as_bio(
+    "../data/manual-ann-ner-250.csv",
+    "../data/manual-ann-ner-all-100-jb.yaml"
+).train_test_split(0.2, seed=0)
 
 # To TEST the file
 if __name__ == '__main__':
-    dataset = load_dataset_as_bio(
-        '/gpfs/commons/groups/gursoy_lab/fpollet/Git/clinical-trial-outcome/annotations/ner/data/manual-ann-ner-250.csv',
-        '/gpfs/commons/groups/gursoy_lab/fpollet/Git/clinical-trial-outcome/annotations/ner/data/manual-ann-ner-all.yaml'
-    )
+    # dataset = load_dataset_as_bio(
+    #     '/gpfs/commons/groups/gursoy_lab/fpollet/Git/clinical-trial-outcome/annotations/ner/data/manual-ann-ner-250.csv',
+    #     '/gpfs/commons/groups/gursoy_lab/fpollet/Git/clinical-trial-outcome/annotations/ner/data/manual-ann-ner-all.yaml'
+    # )
     print(dataset)
+    print(dataset_jb)
