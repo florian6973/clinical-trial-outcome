@@ -714,229 +714,229 @@ annotations:
       - object: pharmacokinetic profile
         measure: auc
         unit: ng*h/ml
-    116:
-      partial: false
-      structured:
-        - object: flu diagnosis
-          specifier: among fellow household members
-          range: high confidence
-    117:
-      partial: true
-      structured:
-        - object: quality of life # physical health composite score?
-          specifier: assessed by the multiple sclerosis quality of life-54 (msqol-54) questionnaire 
-    118:
-      partial: false
-      structured:
-        - measure: number of participants
-          object: clinical cessation of status epilepticus
-          specifier: intenton to treat
-    119:
-      partial: true
-      structured:
-        - measure: event rate
-          object: symptomatic hypoglycemia 
-          specifier: defined as the total number of episodes divided by the total duration of the on-treatment period in years (events per patient-year)
-    120:
-      partial: false
-      structured:
-        - measure: percent change from baseline
-          object: trabecular vbmd
-          specifier: central section of spine
-    121:
-      partial: false
-      structured:
-        - object: dor
-          specifier: as determined by the investgator using minrc in participants with neuroblastoma
-    122:
-      partial: false
-      structured:
-        - object: quality of life
-          specifier: physical health composite
-    123:
-      partial: false
-      structured:
-        - measure: change
-          object: evidence-based preventative care
-    124:
-      partial: false
-      structured:
-        - measure: change
-          object: cognitive function
-          specifier: pre-post changes functional assessment of cancer therapy-cognition [fact-cog]
-    125:
-      partial: false
-      structured:
-        - object: lipoprotein cholesterol
-          specifier: high-density hdl-c
-          unit: mmol/l
-          time: during the study
-    126:
-      partial: false
-      structured:
-        - object: speed
-          specifier: in the timed 25 feet walk test at self-selected speed (without exoskeleton)
-    127:
-      partial: false
-      structured:
-        - object: tumer response # composite
-          specifier: bone and soft tissue lesions
-    128:
-      partial: false
-      structured:
-        - measure: number of participants
-          object: leakage observed
-          specifier: during procedure
-    129:
-      partial: false
-      structured:
-        - measure: change from baseline
-          object: simplified disease activity index (sdai)
-          time: month 6
-        - measure: change from baseline
-          object: simplified disease activity index (sdai)
-          time: month 12
-    130:
-      partial: false
-      structured:
-        - object: tumor response
-          specifier: complete
-    131:
-      partial: false
-      structured:
-        - measure: mean change
-          object: average pain severity
-          specifier: by week by gabapentin exposure subgroup (de novo versus prior use)
-          time: weekly in 24 hour average
-    132:
-      partial: false
-      structured:
-        - measure: percentage of participants
-          object: physician's global assessment (pga) score
-          specifier: of clear or minimal with at least a 2 grade reduction from baseline
-          time: week 12
-    133:
-      partial: false
-      structured:
-        - measure: time to achieve
-          object: das28(crp) lda
-    134:
-      partial: true
-      structured:
-        - object: pittsburg sleep quality index (psqi
-          specifier: a commonly used and well-validated self-rated measure of sleep-quality and disturbance over 8-weeks
-    135:
-      partial: false
-      structured:
-        - object: minimum plasma concentration (cmin)
-          specifier: 9-hydroxyrisperidone pk over the secondary peak
-    136:
-      partial: false
-      structured:
-        - measure: change from baseline
-          object: self-monitored blood glucose (smbg)
-          specifier: 7-point
-    137:
-      partial: false
-      structured:
-        - object: default network activity
-    138:
-      partial: false
-      structured:
-        - measure: number of subjects
-          object: solicited systemic aes
-        - measure: number of subjects
-          object: other indicators
-          specifier: reactogenicity
-          time: after each vaccination
-    139:
-      partial: false
-      structured:
-        - object: overall survival
-          time: phase iia
-    140:
-      partial: false
-      structured:
-        - measure: change
-          object: activities of daily living inventory (adcs-adl)
-          specifier: alzheimer's disease cooperative study
-          time: from baseline to 104-week
-    141:
-      partial: false
-      structured:
-        - object: magnetic force
-    142:
-      partial: false
-      structured:
-        - object: stature-for-age z-score
-          measure: absolute change
-    143:
-      partial: false
-      structured:
-        - measure: mean number
-          object: biologic disease modifying antirheumatic drug (bdmard)
-          time: received during variable length pre-index period
-    144:
-      partial: false
-      sructured:
-        - measure: change
-          object: sdnn
-          unit: ms
-    145:
-      partial: true
-      structured:
-        - measure: change
-          object: brain tumor inferference score
-          specifier: m. d. anderson symptom inventory (mdasi-bt)
-    146:
-      partial: false
-      structured:
-        - measure: number of participants
-          object: clinical failure
-          time: after initation of radiotherapy
-    147:
-      partial: false
-      structured:
-        - measure: change from baseline
-          object: number of binge days # number of binge day
-          # SELECT * FROM ctgov.outcomes
-          # where title like '%Binge Days%'
-          # or cf outcomes, cannot really normalize
-          # do one at a time
-    148:
-      partial: false
-      structured:
-        - measure: number of participants 
-          object: intravitreal (ivt) aflibercerpt injections
-          specifier: qualifying to receive
-    149: # time from lentiglobin bb305 drug product infusion to last packed red blood cells (prbc) transfusion prior to achieving transfusion independence (ti) in participants with transfusion-dependent β-thalassemia (tdt)
-      partial: true
-      structured:
-        - object: time from product infusion to transfusion prior to transfusion independence
-          specifier: participants with transfusion-dependent β-thalassemia (tdt)
-    150:
-      partial: false
-      structured:
-        - object: concentration of rituximab (mabthera)
-          specifier: in plasma
-          time: following dose 4
-          measure: maximum
-        - object: concentration of bi 695500
-          specifier: in plasma
-          time: following dose 4
-          measure: maximum
-    
+  116:
+    partial: false
+    structured:
+      - object: flu diagnosis
+        specifier: among fellow household members
+        range: high confidence
+  117:
+    partial: true
+    structured:
+      - object: quality of life # physical health composite score?
+        specifier: assessed by the multiple sclerosis quality of life-54 (msqol-54) questionnaire 
+  118:
+    partial: false
+    structured:
+      - measure: number of participants
+        object: clinical cessation of status epilepticus
+        specifier: intenton to treat
+  119:
+    partial: true
+    structured:
+      - measure: event rate
+        object: symptomatic hypoglycemia 
+        specifier: defined as the total number of episodes divided by the total duration of the on-treatment period in years (events per patient-year)
+  120:
+    partial: false
+    structured:
+      - measure: percent change from baseline
+        object: trabecular vbmd
+        specifier: central section of spine
+  121:
+    partial: false
+    structured:
+      - object: dor
+        specifier: as determined by the investgator using minrc in participants with neuroblastoma
+  122:
+    partial: false
+    structured:
+      - object: quality of life
+        specifier: physical health composite
+  123:
+    partial: false
+    structured:
+      - measure: change
+        object: evidence-based preventative care
+  124:
+    partial: false
+    structured:
+      - measure: change
+        object: cognitive function
+        specifier: pre-post changes functional assessment of cancer therapy-cognition [fact-cog]
+  125:
+    partial: false
+    structured:
+      - object: lipoprotein cholesterol
+        specifier: high-density hdl-c
+        unit: mmol/l
+        time: during the study
+  126:
+    partial: false
+    structured:
+      - object: speed
+        specifier: in the timed 25 feet walk test at self-selected speed (without exoskeleton)
+  127:
+    partial: false
+    structured:
+      - object: tumer response # composite
+        specifier: bone and soft tissue lesions
+  128:
+    partial: false
+    structured:
+      - measure: number of participants
+        object: leakage observed
+        specifier: during procedure
+  129:
+    partial: false
+    structured:
+      - measure: change from baseline
+        object: simplified disease activity index (sdai)
+        time: month 6
+      - measure: change from baseline
+        object: simplified disease activity index (sdai)
+        time: month 12
+  130:
+    partial: false
+    structured:
+      - object: tumor response
+        specifier: complete
+  131:
+    partial: false
+    structured:
+      - measure: mean change
+        object: average pain severity
+        specifier: by week by gabapentin exposure subgroup (de novo versus prior use)
+        time: weekly in 24 hour average
+  132:
+    partial: false
+    structured:
+      - measure: percentage of participants
+        object: physician's global assessment (pga) score
+        specifier: of clear or minimal with at least a 2 grade reduction from baseline
+        time: week 12
+  133:
+    partial: false
+    structured:
+      - measure: time to achieve
+        object: das28(crp) lda
+  134:
+    partial: true
+    structured:
+      - object: pittsburg sleep quality index (psqi
+        specifier: a commonly used and well-validated self-rated measure of sleep-quality and disturbance over 8-weeks
+  135:
+    partial: false
+    structured:
+      - object: minimum plasma concentration (cmin)
+        specifier: 9-hydroxyrisperidone pk over the secondary peak
+  136:
+    partial: false
+    structured:
+      - measure: change from baseline
+        object: self-monitored blood glucose (smbg)
+        specifier: 7-point
+  137:
+    partial: false
+    structured:
+      - object: default network activity
+  138:
+    partial: false
+    structured:
+      - measure: number of subjects
+        object: solicited systemic aes
+      - measure: number of subjects
+        object: other indicators
+        specifier: reactogenicity
+        time: after each vaccination
+  139:
+    partial: false
+    structured:
+      - object: overall survival
+        time: phase iia
+  140:
+    partial: false
+    structured:
+      - measure: change
+        object: activities of daily living inventory (adcs-adl)
+        specifier: alzheimer's disease cooperative study
+        time: from baseline to 104-week
+  141:
+    partial: false
+    structured:
+      - object: magnetic force
+  142:
+    partial: false
+    structured:
+      - object: stature-for-age z-score
+        measure: absolute change
+  143:
+    partial: false
+    structured:
+      - measure: mean number
+        object: biologic disease modifying antirheumatic drug (bdmard)
+        time: received during variable length pre-index period
+  144:
+    partial: false
+    sructured:
+      - measure: change
+        object: sdnn
+        unit: ms
+  145:
+    partial: true
+    structured:
+      - measure: change
+        object: brain tumor inferference score
+        specifier: m. d. anderson symptom inventory (mdasi-bt)
+  146:
+    partial: false
+    structured:
+      - measure: number of participants
+        object: clinical failure
+        time: after initation of radiotherapy
+  147:
+    partial: false
+    structured:
+      - measure: change from baseline
+        object: number of binge days # number of binge day
+        # SELECT * FROM ctgov.outcomes
+        # where title like '%Binge Days%'
+        # or cf outcomes, cannot really normalize
+        # do one at a time
+  148:
+    partial: false
+    structured:
+      - measure: number of participants 
+        object: intravitreal (ivt) aflibercerpt injections
+        specifier: qualifying to receive
+  149: # time from lentiglobin bb305 drug product infusion to last packed red blood cells (prbc) transfusion prior to achieving transfusion independence (ti) in participants with transfusion-dependent β-thalassemia (tdt)
+    partial: true
+    structured:
+      - object: time from product infusion to transfusion prior to transfusion independence
+        specifier: participants with transfusion-dependent β-thalassemia (tdt)
+  150:
+    partial: false
+    structured:
+      - object: concentration of rituximab (mabthera)
+        specifier: in plasma
+        time: following dose 4
+        measure: maximum
+      - object: concentration of bi 695500
+        specifier: in plasma
+        time: following dose 4
+        measure: maximum
+  
 
-
-    
 
   
 
 
-      
-      
 
 
-
-      
     
+    
+
+
+
+    
+  

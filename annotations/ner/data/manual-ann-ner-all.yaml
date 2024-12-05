@@ -1,0 +1,1587 @@
+annotations:
+  0:
+    partial: false
+    structured:
+    - object: CHD Death
+    - object: Non-fatal MI
+    - object: Ischemic Stroke
+  1:
+    partial: true
+    structured:
+    - object: Acute Febrile Illness
+      time: 7-day Period Following the Onset
+      measure: Number
+  2:
+    partial: true
+    structured:
+    - object: Alanine Aminotransferase (ALT)
+      measure: Percentage of Participants
+      range: More Than 1.5 Times Upper Limit of Normal
+      range_norm: Above Normal
+    - object: Aspartate Aminotransferase (AST)
+      measure: Percentage of Participants
+      range: More Than 1.5 Times Upper Limit of Normal
+      range_norm: Above Normal
+  3:
+    partial: false
+    structured:
+    - object: CD4/CD8 Cell Counts
+      measure: Mean Change From Baseline
+  4:
+    partial: true
+    structured:
+    - object: Dasatinib
+      measure: Number of Subjects
+      measure_norm: Number of Participants
+  5:
+    partial: true
+    structured:
+    - object: Costs for Referrals
+  6:
+    partial: true
+    structured:
+    - object: Duration of Solicited Local Symptoms
+      time: After Vaccination
+  7:
+    partial: false
+    structured:
+    - object: Partial Onset Seizures (Type I)
+      measure: Percentage of Responder Subjects
+      time: Up-titration Period
+  8:
+    partial: true
+    structured:
+    - object: Leibowitz Social Anxiety Scale (LSAS) Total Score
+      measure: Change From Baseline
+      time: 1-Month
+  9:
+    partial: true
+    structured:
+    - object: Area Under the Plasma Concentration-time Curve
+  10:
+    partial: false
+    structured:
+    - object: Transitional Dyspnea Index (TDI) Score
+  11:
+    partial: true
+    structured:
+    - object: Survival
+      time: Step 1
+  12:
+    partial: true
+    structured:
+    - object: Equivalence of Seroprotection Against Poliovirus
+      time: After Vaccination
+  13:
+    partial: true
+    structured:
+    - object: Vital Sign Parameter of Heart Rate
+      time: During the Double-blind Treatment Period
+      measure: Change From Baseline
+  14:
+    partial: true
+    structured:
+    - object: Safety
+      time: Who Have Recently Quit Smoking
+    - object: Tolerability
+      time: Who Have Recently Quit Smoking
+  15:
+    partial: false
+    structured:
+    - object: Anxiety Symptoms
+      measure: Change
+  16:
+    partial: false
+    structured:
+    - object: Lipids
+  17:
+    partial: true
+    structured:
+    - object: Invasive Ventilator-Free Survival
+      measure: Number of Participants
+  18:
+    partial: true
+    structured:
+    - object: Social Function Domain Score
+      time: Baseline
+    - object: Social Function Domain Score
+      time: Weeks 6
+    - object: Social Function Domain Score
+      time: Weeks 14
+  19:
+    partial: true
+    structured:
+    - object: Achieved Platelet Engraftment
+      time: By Day 12 But No Later Than Day 21
+      measure: Number of Transplants
+  20:
+    partial: false
+    structured:
+    - object: Subjective Sleep Onset Latency
+      measure: Change From Baseline
+      time: Month 6
+  21:
+    partial: false
+    structured:
+    - object: Operator Satisfaction
+      specifier: With Manual Device and Powered Device
+  22:
+    partial: false
+    structured:
+    - object: Trough FEV1 Response
+      time: Week 6
+  23:
+    partial: false
+    structured:
+    - object: Blood Eosinophils (Cells/uL)
+      time: Week 52
+      measure: Mean Change from Baseline
+  24:
+    partial: true
+    structured:
+    - object: Grade 3-4 Hematology Abnormalities
+      specifier: Occurring in >=5% Participants
+      measure: Number of Participants
+  25:
+    partial: false
+    structured:
+    - object: Plasma Concentration
+      specifier: Cycle 1/Day 25
+      measure: Maximum Observed
+  26:
+    partial: false
+    structured:
+    - object: Diabetes
+      measure: Quantitative Change
+  27:
+    partial: false
+    structured:
+    - object: Serum Iron
+  28:
+    partial: true
+    structured:
+    - object: Number of Glucose-Lowering Treatments
+      time: Weeks 12 and 24
+      measure: Absolute Change From Baseline
+  29:
+    partial: false
+    structured:
+    - object: Occurrence of Treatment-emergent Adverse Events
+    - object: Severity of Treatment-emergent Adverse Events
+  30:
+    partial: false
+    structured:
+    - object: Best Overall Response Rate
+  31:
+    partial: false
+    structured:
+    - object: Difference Between Groups (HBO Minus HBA)
+      measure: Change in Scores
+      specifier: 'Pediatric Evaluation of Disability Inventory (PEDI) Functional Skills:
+        Social Function'
+      time: Post-treatment Minus Pre-treatment
+  32:
+    partial: false
+    structured:
+    - object: Clinical Global Impression Improvement Score
+      measure: Percentage of Participants
+      time: Week 26
+  33:
+    partial: false
+    structured:
+    - object: Descend Steps
+      time: Pre-Intervention
+  34:
+    partial: false
+    structured:
+    - object: Maximum Severity
+      measure: Number of Participants
+      specifier: Each stage
+  35:
+    partial: true
+    structured:
+    - object: Difference in VAS Pain Scale Scores
+      measure: Proportion of the Subjects
+      specifier: Within the Subject (VAS of the Control Medical Device - VAS of the
+        Test Medical Device)
+      time: Immediately After Treatment
+  36:
+    partial: false
+    structured:
+    - object: Adinopectin
+      measure: Adjusted Mean Change
+      time: Week 52
+  37:
+    partial: true
+    structured:
+    - object: HAQ-DI
+      measure: Change From Baseline
+      time: Month 6
+  38:
+    partial: true
+    structured:
+    - object: Adverse Events
+      measure: Number
+      time: Week 0-52
+  39:
+    partial: false
+    structured:
+    - object: Meeting the Criteria of the American College of Rheumatology for 20%
+        Improvement
+      measure: Percentage of Participants
+  40:
+    partial: false
+    structured:
+    - object: TEAEs
+      measure: Number of Participants
+    - object: Grade >= 3 TEAEs
+      measure: Number of Participants
+    - object: Serious TEAEs
+      measure: Number of Participants
+    - object: Treatment Related TEAEs
+      measure: Number of Participants
+  41:
+    partial: false
+    structured:
+    - object: Buccal Cells Demonstrating a Decline in Cyclin D1
+      measure: Number of Patients
+  42:
+    partial: false
+    structured:
+    - object: Self-Reported Spray Doses
+      measure: Maximum Total Daily Number
+      time: Week 17
+  43:
+    partial: false
+    structured:
+    - object: Infant Sleep Quantity
+      measure: Change
+  44:
+    partial: false
+    structured:
+    - object: Emotional Well-Being (EWB) Subscale Score
+      measure: Change From Baseline
+      time: 3 Months
+    - object: Emotional Well-Being (EWB) Subscale Score
+      measure: Change From Baseline
+      time: 6 Months
+    - object: Emotional Well-Being (EWB) Subscale Score
+      measure: Change From Baseline
+      time: 9 Months
+    - object: Emotional Well-Being (EWB) Subscale Score
+      measure: Change From Baseline
+      time: 12 Months
+    - object: Emotional Well-Being (EWB) Subscale Score
+      measure: Change From Baseline
+      time: 18 Months
+    - object: Emotional Well-Being (EWB) Subscale Score
+      measure: Change From Baseline
+      time: 24 Months
+    - object: Emotional Well-Being (EWB) Subscale Score
+      measure: Change From Baseline
+      time: 30 Months
+    - object: Emotional Well-Being (EWB) Subscale Score
+      measure: Change From Baseline
+      time: 36 Months
+    - object: Emotional Well-Being (EWB) Subscale Score
+      measure: Change From Baseline
+      time: 48 Months
+  45:
+    partial: false
+    structured:
+    - object: Adverse Events
+      measure: Percentage of Participants
+      time: Within 1 Month After Dose 2
+  46:
+    partial: false
+    structured:
+    - object: PIK3CA Mutation
+      measure: Number of Participants
+      time: Baseline
+  47:
+    partial: true
+    structured:
+    - object: eSAGE Score
+  48:
+    partial: true
+    structured:
+    - object: Visual Analog Pain Scale
+  49:
+    partial: true
+    structured:
+    - object: Severity Total Score
+      time: Weeks 0
+    - object: Severity Total Score
+      time: Weeks 2
+    - object: Severity Total Score
+      time: Weeks 4
+    - object: Severity Total Score
+      time: Weeks 5
+    - object: Severity Total Score
+      time: Weeks 6
+    - object: Severity Total Score
+      time: Weeks 8
+    - object: Severity Total Score
+      time: Weeks 12
+    - object: Severity Total Score
+      time: Weeks 16
+    - object: Severity Total Score
+      time: Weeks 20
+    - object: Severity Total Score
+      time: Weeks 24
+    - object: Severity Total Score
+      time: Weeks 28
+    - object: Severity Total Score
+      time: Weeks 32
+    - object: Severity Total Score
+      time: Weeks 36
+    - object: Severity Total Score
+      time: Weeks 40
+    - object: Severity Total Score
+      time: Weeks 44
+    - object: Severity Total Score
+      time: Weeks 48
+    - object: Severity Total Score
+      time: Weeks 52
+  50:
+    partial: false
+    structured:
+    - object: Patient Satisfaction
+      time: 3 Months
+  51:
+    partial: false
+    structured:
+    - object: Corneal Staining Score
+      measure: Mean
+  52:
+    partial: true
+    structured:
+    - object: ELISA Antibody
+      measure: Percentage of Subjects
+      range: Rise
+  53:
+    partial: false
+    structured:
+    - object: Elvitegravir Concentration
+      measure: Change
+      specifier: In Penile Secretions
+  54:
+    partial: false
+    structured:
+    - object: PTSD Symptoms
+      measure: Change
+      specifier: As Measured by the PCL
+  55:
+    partial: true
+    structured:
+    - object: Dengue Viremia
+      measure: Number of Cases
+      time: Following Vaccination
+    - object: Dengue Viremia
+      measure: Number of Cases
+      time: Following Placebo
+  56:
+    partial: false
+    structured:
+    - object: Adverse Events
+      measure: Number of Participants
+      specifier: High-Grade (Grade 3-4) Immune Mediated
+  57:
+    partial: false
+    structured:
+    - object: Pain Intensity and TBW
+      measure: Correlation between Change
+      time: 15 Minutes Post-treatment
+  58:
+    partial: true
+    structured:
+    - object: Area Under the Plasma Concentration-time Curve
+      time: From time 0
+  59:
+    partial: true
+    structured:
+    - object: MSIS-29 Psychological Score
+      measure: Change From Baseline
+      time: Months 3
+    - object: MSIS-29 Psychological Score
+      measure: Change From Baseline
+      time: Months 6
+    - object: MSIS-29 Psychological Score
+      measure: Change From Baseline
+      time: Months 9
+    - object: MSIS-29 Psychological Score
+      measure: Change From Baseline
+      time: Months 12
+  60:
+    partial: false
+    structured:
+    - object: Implant Insertion Time
+      unit: Seconds
+  61:
+    partial: true
+    structured:
+    - object: Confirmed Best Objective Response
+      measure: Percentage of Participants
+      specifier: Response Evaluation Criteria In Solid Tumors (RECIST) Version 1.1
+  62:
+    partial: true
+    structured:
+    - object: Treatment-emergent Resistance-associated Substitutions
+      measure: Percentage of Participants
+      time: Week 49
+      specifier: From the Pooled Treatment Group
+  63:
+    partial: false
+    structured:
+    - object: Follow-up Visits
+      measure: Change From Baseline
+      specifier: in Exercise Tolerance
+  64:
+    partial: true
+    structured:
+    - object: Associations Between Polymorphisms
+      specifier: Within CYPs 2C8, 3A4, 3A5 and/or the UGT1A1 Collectively or Monogenically
+    - object: Efficacy
+      specifier: Within CYPs 2C8, 3A4, 3A5 and/or the UGT1A1 Collectively or Monogenically
+    - object: Toxicities
+      specifier: Within CYPs 2C8, 3A4, 3A5 and/or the UGT1A1 Collectively or Monogenically
+  65:
+    partial: false
+    structured:
+    - object: Patients Treated With Pentamidine
+      measure: Response Rate
+  66:
+    partial: false
+    structured:
+    - object: Area Under Curve
+      specifier: Over a Uniform Dosing Interval Tau
+      time: at Steady State
+  67:
+    partial: false
+    structured:
+    - object: Heartburn-Free 24-hour Days
+      measure: Percentage
+  68:
+    partial: true
+    structured:
+    - object: Triiodothyronine
+      measure: Change From Baseline
+  69:
+    partial: false
+    structured:
+    - object: Worst Case Body Temperature Values
+      measure: Number of Participants
+      specifier: of PCI
+  70:
+    partial: true
+    structured:
+    - object: Systolic Blood Pressure
+      range: <90 mmHg
+      time: Within 30 minutes
+      measure: Percentage of Patients
+  71:
+    partial: true
+    structured:
+    - object: Abnormal Glycosylated Hemoglobin Value
+      measure: Number of Participants
+  72:
+    partial: false
+    structured:
+    - object: REGN10933 Concentration
+      specifier: in Serum
+  73:
+    partial: false
+    structured:
+    - object: Surgical Site
+      measure: Occurrence Rate
+  74:
+    partial: false
+    structured:
+    - object: Forced Vital Capacity
+      measure: Annual Rate of Decline
+  75:
+    partial: false
+    structured:
+    - object: Maternal Morbidity
+  76:
+    partial: false
+    structured:
+    - object: CD22 Expression Levels
+      specifier: From Peripheral Blood by Best Response
+  77:
+    partial: true
+    structured:
+    - object: Basophils
+      measure: Change
+  78:
+    partial: false
+    structured:
+    - object: Rescue Medication
+      specifier: Observed Data
+      time: Week 64
+      measure: Number of Participants
+  79:
+    partial: false
+    structured:
+    - object: Pathogen
+      specifier: Identified by the Karius Test and Standard Culture Methods
+      time: at Time Point IP2
+      measure: Number of Participants
+  80:
+    partial: true
+    structured:
+    - object: Time to Need for Antibiotics
+      specifier: Inhaled Antipseudomonal for Respiratory Event
+    - object: Time to Need for Antibiotics
+      specifier: IV Antipseudomonal for Respiratory Event
+  81:
+    partial: false
+    structured:
+    - object: Incidence of Cervical Intraepithelial Neoplasia
+      specifier: Associated With High-risk HPV Types Other Than 16/18 in Participants
+        >26 Years of Age
+  82:
+    partial: false
+    structured:
+    - object: SBP
+      measure: Combined Mean Change
+      time: from Baseline to Week 6
+      specifier: Mean by Patient
+    - object: SBP
+      measure: Combined Mean Change
+      time: from Baseline to Week 8
+      specifier: Mean by Patient
+  83:
+    partial: false
+    structured:
+    - object: Safety
+      specifier: Peptide Vaccines
+  84:
+    partial: false
+    structured:
+    - object: Low Density Lipoprotein Cholesterol
+      measure: Percent Change From Baseline
+      time: Week 12
+  85:
+    partial: true
+    structured:
+    - object: Hot Flash Related Daily Interference Scale
+  86:
+    partial: false
+    structured:
+    - object: Mean Worse Eye Intraocular Pressure
+      specifier: Analyzed by Mixed-Effect Model for Repeated Measure
+      measure: Change From Baseline
+  87:
+    partial: false
+    structured:
+    - object: Cartilage Thickness of the Total Tibiofemoral Compartment (tTFC)
+      specifier: the Target Knee by qMRI
+      time: Week 52
+      measure: Change From Baseline
+  88:
+    partial: true
+    structured:
+    - object: Brief Fatigue Inventory (BFI) Worst Fatigue Score
+      measure: Change From Baseline
+  89:
+    partial: false
+    structured:
+    - object: Ketamine
+      measure: AUC
+  90:
+    partial: false
+    structured:
+    - object: Recurrent Disease
+      measure: Percentage of Participants
+  91:
+    partial: false
+    structured:
+    - object: Progression-free Survival
+      time: 36 Months
+      specifier: Among Patients Who Are PET Positive After Induction Treatment
+  92:
+    partial: false
+    structured:
+    - object: Health Assessment Questionnaire-Disability Index Changes
+      time: From Week 24 at Week 48
+      specifier: in Patients Treated Continuously With GP2017 and in Patients Treated
+        With GP2017 After Switch From Humira
+  93:
+    partial: false
+    structured:
+    - object: Snack Added Sugars Purchased
+      time: Week 1
+  94:
+    partial: false
+    structured:
+    - object: Overall Survival
+      measure: Number of Participants
+  95:
+    partial: false
+    structured:
+    - object: Knee Injury and Osteoarthritis Outcome Score Pain sub scores
+      measure: Change From Baseline
+    - object: Knee Injury and Osteoarthritis Outcome Score Activities of Daily Living
+      measure: Change From Baseline
+  96:
+    partial: false
+    structured:
+    - object: Suppression of Plasma Renin Activity
+      measure: Magnitude
+      specifier: From Low Sodium to High Sodium Diets
+  97:
+    partial: false
+    structured:
+    - object: Terminal Half-life
+      specifier: Metabolite PR-389/M14
+  98:
+    partial: false
+    structured:
+    - object: Trichiasis Severity Levels
+      time: 3-6 Months
+      measure: Number of Eyelids
+  99:
+    partial: true
+    structured:
+    - object: Remission Rate
+      specifier: Retrospective-Modified Overt Aggression Scale (R-MOAS)
+  100:
+    partial: false
+    structured:
+    - object: adverse effects
+      measure: number of patients
+  101:
+    partial: true
+    structured:
+    - object: peak expiratory flow
+      time: last week of the 8-week treatment period
+      measure: mean
+      specifier: pre-dose (and pre-rescue), as assessed via asthma monitor (am2+)
+  102:
+    partial: true
+    structured:
+    - object: disease control
+      measure: percentage of participants
+      specifier: according to recist version 1.1 in participants with low ercc-1 levels
+  103:
+    partial: false
+    structured:
+    - object: bcva
+      measure: change
+      specifier: in non-treated contralateral eye
+  104:
+    partial: true
+    structured:
+    - object: forced expiratory volume (fev1)
+      specifier: in one second
+      measure: mean change from baseline
+      time: 2 hours post-dose
+  105:
+    partial: true
+    structured:
+    - object: asthma symptom score
+      time: night time
+  106:
+    partial: false
+    structured:
+    - object: enclomiphene pharmacokinetic parameters
+      time: week 6 - tmax
+  107:
+    partial: false
+    structured:
+    - object: observed serum
+      measure: maximum concentration (cmax)
+      specifier: after administration of tba7371
+  108:
+    partial: false
+    structured:
+    - object: subject compliance with iti treatment regimen
+      specifier: with iti treatment regimen
+  109:
+    partial: false
+    structured:
+    - object: phes
+      time: week 26
+      specifier: from pre-vancomycin
+  110:
+    partial: false
+    structured:
+    - object: pba of napba
+      measure: cmax
+      specifier: in plasma
+    - object: hpn-100
+      measure: cmax
+      specifier: in plasma
+  111:
+    partial: true
+    structured:
+    - measure: number of patients
+      object: adverse events
+  112:
+    partial: false
+    structured:
+    - object: Quality of life
+      measure: change in mean
+      specifier: measured with the veines qol/sym questionnaire
+  113:
+    partial: false
+    structured:
+    - object: promis measures-anger
+  114:
+    partial: false
+    structured:
+    - object: auct
+      specifier: dose-normalized
+      time: day 1
+  115:
+    partial: false
+    structured:
+    - object: patient satisfaction
+      specifier: deflation mechanism
+  116:
+    partial: false
+    structured:
+    - object: preferred brand smoke intake
+      specifier: co
+  117:
+    partial: false
+    structured:
+    - object: severe cae
+      specifier: when albuterol use increased
+      time: prior to the peak
+      measure: Number of days
+  118:
+    partial: false
+    structured:
+    - object: pain relief
+      time: at 2 hours
+      specifier: during the third migraine attack period
+  119:
+    partial: true
+    structured:
+    - object: attachment level
+      specifier: using a williams periodontal probe
+  120:
+    partial: false
+    structured:
+    - object: cognitive function
+      specifier: hopkins verbal learning test
+      measure: total recall score
+  121:
+    partial: false
+    structured:
+    - object: adenoma detection rate
+      specifier: colon ascendens
+  122:
+    partial: false
+    structured:
+    - object: area under the curve
+      specifier: auc3.9-ig
+      range: "ig \u22643.9 mmol/l [70 mg/dl]"
+  123:
+    partial: true
+    structured:
+    - object: significant laboratory values
+      measure: number of participants
+  124:
+    partial: false
+    structured:
+    - object: visual acuity
+      range: at least 0.30 logmar
+      specifier: gaining in binocular distance-corrected (without near correction)
+      measure: percentage of participants
+      time: from baseline at month 3
+  125:
+    partial: true
+    structured:
+    - object: palatability
+      specifier: trametinib oral solution
+  126:
+    partial: false
+    structured:
+    - object: patients with a stillbirth
+      specifier: after rpl
+  127:
+    partial: false
+    structured:
+    - object: insulin dose
+      specifier: total bolus
+      unit: units/kg/day
+  128:
+    partial: false
+    structured:
+    - object: Antiretroviral resistance
+      specifier: to gw873140 400 mg bid and other antiretroviral drugs
+      measure: Number of participants
+  129:
+    partial: false
+    structured:
+    - object: Adverse effect
+      measure: Number of participants
+  130:
+    partial: true
+    structured:
+    - measure: change in mean
+      object: self-confidence score
+  131:
+    partial: true
+    structured:
+    - measure: change from baseline
+      object: vitality
+      specifier: short form 36-item health survey domain
+      time: at week 34
+  132:
+    partial: false
+    structured:
+    - object: pain
+      specifier: with needling
+  133:
+    partial: true
+    structured:
+    - object: concentration of rivaroxaban
+      specifier: in plasma
+      time: day 1
+  134:
+    partial: false
+    structured:
+    - object: plasma concentration time profiles
+      specifier: by treatment group
+      time: in expansion phase
+  135:
+    partial: true
+    structured:
+    - object: physically active
+      measure: number of participants
+    - object: not physically active
+      measure: number of participants
+  136:
+    partial: false
+    structured:
+    - object: absolute fbf
+      measure: change
+      specifier: in response to l-nmma in participants treated with darbepoetin alfa
+      time: day 42 vs day 1
+  137:
+    partial: false
+    structured:
+    - object: pef
+      measure: change from baseline
+      specifier: averaged over the 12-week treatment period
+      time: in daily morning
+  138:
+    partial: true
+    structured:
+    - object: score of facit-fatigue scale
+  139:
+    partial: false
+    structured:
+    - object: bowel length
+  140:
+    partial: false
+    structured:
+    - object: evr
+      measure: number of participants
+      specifier: by selected chronic hcv genotypes (stage 1)
+  141:
+    partial: false
+    structured:
+    - measure: number of participants
+      object: dose-limiting toxicities (dlts)
+      time: in first 2 cycles of portion a
+  142:
+    partial: false
+    structured:
+    - object: medically significant conditions (mscs)
+      measure: number of subjects
+      time: from day 0 up to month 7
+  143:
+    partial: false
+    structured:
+    - object: resolution of dactylitis
+      measure: percentage of participants
+      specifier: among participants with dactylitis at baseline
+      time: weeks 52
+    - object: resolution of dactylitis
+      measure: percentage of participants
+      specifier: among participants with dactylitis at baseline
+      time: weeks 76
+    - object: resolution of dactylitis
+      measure: percentage of participants
+      specifier: among participants with dactylitis at baseline
+      time: weeks 100
+  144:
+    partial: false
+    structured:
+    - object: depressive symptoms
+      measure: level
+      specifier: per edinburgh postnatal depression scale (epds)
+  145:
+    partial: false
+    structured:
+    - object: event free survival (efs)
+      measure: median
+  146:
+    partial: false
+    structured:
+    - measure: change
+      object: smpg profiles per time point
+      time: from baseline to month 6
+      specifier: in 8--point
+  147:
+    partial: false
+    structured:
+    - object: hematology laboratory parameters
+      specifier: worst changes
+      measure: number of participants
+      time: during the in the placebo controlled period
+  148:
+    partial: true
+    structured:
+    - object: pcl-5 score
+      specifier: ptsd symptoms
+      measure: change
+  149:
+    partial: false
+    structured:
+    - measure: change from baseline
+      object: concentration of gag
+      specifier: in urine
+      time: at week 48
+  150:
+    partial: false
+    structured:
+    - object: toxicity
+      specifier: assessed using national cancer institute (nci) common terminology
+        criteria for adverse events (ctcae) version 5.0 (v5)
+  151:
+    partial: false
+    structured:
+    - object: insulin doses
+      measure: average daily
+  152:
+    partial: false
+    structured:
+    - object: objective response - phase 1
+      measure: percentage of participants
+  153:
+    partial: false
+    structured:
+    - object: renal deterioration
+      measure: percentage of participants
+      time: at any post baseline visit through day 14
+  154:
+    partial: false
+    structured:
+    - object: quality of life
+      specifier: measured by the breast-q questionnaire
+  155:
+    partial: true
+    structured:
+    - object: minor response rate
+  156:
+    partial: false
+    structured:
+    - object: evaluation of biomarkers
+  157:
+    partial: false
+    structured:
+    - object: reduction in tumour volume
+      measure: number of patients
+      time: from baseline volume (visit 1) to week 12 (visit 3)
+      range: at least a 20%
+    - object: reduction in tumour volume
+      measure: number of patients
+      time: from baseline volume (visit 1) to week 24 (visit 4)
+      range: at least a 20%
+  158:
+    partial: false
+    structured:
+    - object: influenza vaccine coverage
+      specifier: for all household contacts of newborns
+      measure: percent
+  159:
+    partial: true
+    structured:
+    - object: incidence
+      specifier: of new tec
+    - object: incidence
+      specifier: of major bleeding
+  160:
+    partial: false
+    structured:
+    - object: pulmonary exacerbation
+      measure: time to first
+      time: over the 26-week treatment period
+  161:
+    partial: false
+    structured:
+    - object: received concomitant non-cancer therapy
+      measure: percentage of participants
+  162:
+    partial: false
+    structured:
+    - object: mean pain score
+      measure: change from baseline
+      time: daily
+      specifier: pain rating scale (dprs)
+  163:
+    partial: false
+    structured:
+    - object: neck pain
+      measure: average level
+  164:
+    partial: false
+    structured:
+    - measure: change from baseline
+      object: toxin immunoglobulin g levels
+      specifier: among seropositive participants who received tdap to those who received
+        td
+  165:
+    partial: false
+    structured:
+    - object: estimated post-bronchodilator slow vital capacity (svc)
+      time: at month 48
+  166:
+    partial: false
+    structured:
+    - object: terminal half-life (t1/2)
+      specifier: of danirixin for part 2
+  167:
+    partial: false
+    structured:
+    - measure: number of patients
+      object: transmitted light intensity
+      specifier: to gastric wall thickness
+  168:
+    partial: false
+    structured:
+    - object: lens fit
+      measure: horizontal centration
+      specifier: hema-copolymer
+    - object: lens fit
+      measure: horizontal centration
+      specifier: etafilcon a
+  169:
+    partial: true
+    structured:
+    - object: objective response rate (or)
+      specifier: where or=cr+pr
+  170:
+    partial: false
+    structured:
+    - object: ambulation
+      measure: time of first
+  171:
+    partial: true
+    structured:
+    - object: terminal phase half-life (t1/2)
+      specifier: gsk3358699
+  172:
+    partial: false
+    structured:
+    - object: nbs
+      time: at week 40
+      measure: change from baseline
+  173:
+    partial: false
+    structured:
+    - object: efficacy
+      specifier: all-cause mortality
+  174:
+    partial: false
+    structured:
+    - object: spga
+      time: from baseline at week 24
+      specifier: by baseline bsa involvement subgroups
+      range: at least a 2 grade improvement
+      measure: percentage of participants
+  175:
+    partial: false
+    structured:
+    - object: experienced adverse events (aes)
+      measure: number of participants
+    - object: serious adverse events
+      measure: number of participants
+    - object: deaths
+      measure: number of participants
+  176:
+    partial: false
+    structured:
+    - object: success rate
+  177:
+    partial: true
+    structured:
+    - object: used concomitant medications and rescue medications
+      measure: number of participants
+  178:
+    partial: false
+    structured:
+    - measure: number of participants
+      object: hospitalization for heart failure (hhf)
+      time: until 30 days after initial hospital discharge
+  179:
+    partial: false
+    structured:
+    - object: vital signs data meeting categorical criteria
+      specifier: absolute values
+      measure: number of participants
+  180:
+    partial: false
+    structured:
+    - object: percent radioactivity recovered
+      specifier: for each metabolite in duodenal bile
+      time: "following a single dose of [14c]-gsk1278863 50 \xB5g iv infusion"
+  181:
+    partial: false
+    structured:
+    - object: days
+      specifier: with < 8 micturitions
+      measure: number
+      time: weeks 4
+    - object: days
+      specifier: with < 8 micturitions
+      measure: number
+      time: weeks 8
+    - object: days
+      specifier: with < 8 micturitions
+      measure: number
+      time: weeks 12
+    - object: days
+      specifier: with < 8 micturitions
+      measure: number
+      time: eot
+  182:
+    partial: false
+    structured:
+    - object: methotrexate clearance
+      specifier: in induction cycle 2
+  183:
+    partial: false
+    structured:
+    - measure: percentage of participants
+      object: psoriasis area severity index (pasi) score (pasi 100)
+      specifier: achieving 100% improvement
+      time: at week 16
+  184:
+    partial: false
+    structured:
+    - object: "montgomery \xE5sberg depression rating scale (madrs) total score"
+      specifier: through phase 3
+      measure: mean baseline
+    - object: "montgomery \xE5sberg depression rating scale (madrs) total score"
+      specifier: through phase 3
+      measure: adjusted mean change
+  185:
+    partial: false
+    structured:
+    - object: duration of remission
+      specifier: following cr (dor) in tp53 wt population
+  186:
+    partial: false
+    structured:
+    - object: resource utilization dementia-lite (rud - lite) scale
+      time: week 104
+      measure: change from baseline
+  187:
+    partial: false
+    structured:
+    - object: pharmacological interventions
+      specifier: for the management of the cognitive impairment in the subgroups of
+        the intervention arm with and without additional inputs from informants
+      measure: number of participants
+  188:
+    partial: true
+    structured:
+    - object: am, pre-dose, instantaneous total nasal symptom (itnss) scores
+      time: over the entire treatment period
+      measure: mean change from baseline
+  189:
+    partial: false
+    structured:
+    - object: terminal elimination half life
+  190:
+    partial: false
+    structured:
+    - object: treatment-emergent adverse events (teaes)
+      measure: number of participants
+    - object: treatment-emergent serious adverse events (tesaes)
+      measure: number of participants
+  191:
+    partial: false
+    structured:
+    - object: area under plasma concentration
+  192:
+    partial: false
+    structured:
+    - object: antibody response to mumps
+      specifier: for subjects who had previously received m-m-r ii + varivax - geometric
+        mean titer
+  193:
+    partial: false
+    structured:
+    - object: operator assessment
+  194:
+    partial: false
+    structured:
+    - object: electrocardiogram (ecg) values
+      range: outside range of potential clinical importance
+      measure: number of participants
+  195:
+    partial: false
+    structured:
+    - object: composite autonomic symptom score (compass)
+  196:
+    partial: false
+    structured:
+    - measure: percentage of patients
+      object: crohn's disease activity index (cdai) response
+      specifier: defined as a decrease of at least 100 points in cdai score from baseline
+      time: at week 10
+  197:
+    partial: false
+    structured:
+    - measure: percentage of participants
+      object: score for overall pelvic pain
+      time: at week 52
+      specifier: improvement, no change, or worsening from baseline
+  198:
+    partial: true
+    structured:
+    - measure: number of participants
+      object: seropositive
+      specifier: "within each treatment arm who achieved a a/h1n1 strain-specific\
+        \ hai antibody titer \u2265 32 post dose"
+  199:
+    partial: false
+    structured:
+    - object: passed bladder trial
+      measure: number of participants
+  200:
+    partial: false
+    structured:
+    - measure: cumulative percentage
+      object: radioactive dose
+      specifier: excreted in the urine
+      unit: cum%dose
+  201:
+    partial: false
+    structured:
+    - measure: change
+      object: site-level rates of weight monitoring
+      time: at baseline
+      specifier: within 30 days of a new antipsychotic prescription
+  202:
+    partial: false
+    structured:
+    - object: left ventricular ejection fraction
+      specifier: assessed by cardiac magnetic resonance imaging (cmri)
+  203:
+    partial: false
+    structured:
+    - object: breast cancer-specific distress
+      specifier: of the intrusive thoughts scale
+  204:
+    partial: false
+    structured:
+    - measure: geometric mean titers (gmts)
+      object: serum antibodies
+      specifier: to rsv
+      time: at day 28 post dose 2
+  205:
+    partial: false
+    structured:
+    - measure: time to
+      object: tumor response
+      specifier: cr and pr
+  206:
+    partial: false
+    structured:
+    - object: nurse response time
+  207:
+    partial: false
+    structured:
+    - object: aecopd rate
+      specifier: moderate with overall and specific viral pathogens in sputum
+  208:
+    partial: true
+    structured:
+    - measure: change from baseline
+      object: alt
+    - measure: change from baseline
+      object: ast
+    - measure: change from baseline
+      object: alp
+    - measure: change from baseline
+      object: serum cpk
+  209:
+    partial: false
+    structured:
+    - measure: number of eyes
+      object: corneal staining
+      specifier: slit lamp findings
+  210:
+    partial: false
+    structured:
+    - measure: percentage of participants
+      object: parkinson's disease symptoms
+      range: improvement (cgi-i)
+      specifier: clinical global impression
+  211:
+    partial: false
+    structured:
+    - object: patient enablement instrument
+  212:
+    partial: false
+    structured:
+    - measure: change from baseline
+      object: severity of hematemesis
+    - measure: change from baseline
+      object: severity of melena gastrointestinal symptom
+  213:
+    partial: false
+    structured:
+    - measure: percentage
+      object: tumor-specific t-cells
+      specifier: correlation between immunological parameters and efficacy
+  214:
+    partial: true
+    structured:
+    - measure: number of subjects
+      object: anti-rubella concentration
+      range: greater than or equal to 4 iu/ml
+  215:
+    partial: false
+    structured:
+    - measure: assessment
+      object: anti-tumor activity
+      specifier: mri k-trans
+      unit: 10^-3 / min
+    - measure: assessment
+      object: anti-tumor activity
+      specifier: ceus
+      unit: arbitrary units
+    - object: pharmacokinetic profile
+      measure: auc
+      unit: ng*h/ml
+  216:
+    partial: false
+    structured:
+    - object: flu diagnosis
+      specifier: among fellow household members
+      range: high confidence
+  217:
+    partial: true
+    structured:
+    - object: quality of life
+      specifier: assessed by the multiple sclerosis quality of life-54 (msqol-54)
+        questionnaire
+  218:
+    partial: false
+    structured:
+    - measure: number of participants
+      object: clinical cessation of status epilepticus
+      specifier: intention to treat
+  219:
+    partial: true
+    structured:
+    #219,rate and extent of absorption of azd5718 by assessment of the half-life associated with terminal slope of a semi-logarithmic plasma concentration-time curve (t½λz) for part a - amorphous and crystalline suspension
+
+    - measure: rate
+      object: azd5718
+      specifier: assessment of the half-life
+  220:
+    partial: false
+    structured:
+    - measure: percent change from baseline
+      object: trabecular vbmd
+      specifier: central section of spine
+  221:
+    partial: false
+    structured:
+    - object: dor
+      specifier: as determined by the investigator using minrc in participants with
+        neuroblastoma
+  222:
+    partial: false
+    structured:
+    - object: quality of life
+      specifier: physical health composite
+  223:
+    partial: false
+    structured:
+    - measure: change
+      object: evidence-based preventative care
+  224:
+    partial: false
+    structured:
+    - measure: change
+      object: cognitive function
+      specifier: pre-post changes functional assessment of cancer therapy-cognition
+        [fact-cog]
+  225:
+    partial: false
+    structured:
+    - object: lipoprotein cholesterol
+      specifier: high-density hdl-c
+      unit: mmol/l
+      time: during the study
+  226:
+    partial: false
+    structured:
+    - object: speed
+      specifier: in the timed 25 feet walk test at self-selected speed (without exoskeleton)
+  227:
+    partial: false
+    structured:
+    - object: tumor response
+      specifier: bone and soft tissue lesions
+  228:
+    partial: false
+    structured:
+    - measure: number of participants
+      object: leakage observed
+      specifier: during procedure
+  229:
+    partial: false
+    structured:
+    - measure: change from baseline
+      object: simplified disease activity index (sdai)
+      time: month 6
+    - measure: change from baseline
+      object: simplified disease activity index (sdai)
+      time: month 12
+  230:
+    partial: false
+    structured:
+    - object: tumor response
+      specifier: complete
+  231:
+    partial: false
+    structured:
+    - measure: mean change
+      object: average pain severity
+      specifier: by week by gabapentin exposure subgroup (de novo versus prior use)
+      time: weekly in 24 hour average
+  232:
+    partial: false
+    structured:
+    - measure: percentage of participants
+      object: physician's global assessment (pga) score
+      specifier: of clear or minimal with at least a 2 grade reduction from baseline
+      time: week 12
+  233:
+    partial: false
+    structured:
+    - measure: time to achieve
+      object: das28(crp) lda
+  234:
+    partial: true
+    structured:
+    - object: pittsburg sleep quality index (psqi
+      specifier: a commonly used and well-validated self-rated measure of sleep-quality
+        and disturbance over 8-weeks
+  235:
+    partial: false
+    structured:
+    - object: minimum plasma concentration (cmin)
+      specifier: 9-hydroxyrisperidone pk over the secondary peak
+  236:
+    partial: false
+    structured:
+    - measure: change from baseline
+      object: self-monitored blood glucose (smbg)
+      specifier: 7-point
+  237:
+    partial: false
+    structured:
+    - object: default network activity
+  238:
+    partial: false
+    structured:
+    - measure: number of subjects
+      object: solicited systemic aes
+    - measure: number of subjects
+      object: other indicators
+      specifier: reactogenicity
+      time: after each vaccination
+  239:
+    partial: false
+    structured:
+    - object: overall survival
+      time: phase iia
+  240:
+    partial: false
+    structured:
+    - measure: change
+      object: activities of daily living inventory (adcs-adl)
+      specifier: alzheimer's disease cooperative study
+      time: from baseline to 104-week
+  241:
+    partial: false
+    structured:
+    - object: magnetic force
+  242:
+    partial: false
+    structured:
+    - object: stature-for-age z-score
+      measure: absolute change
+  243:
+    partial: false
+    structured:
+    - measure: mean number
+      object: biologic disease modifying antirheumatic drug (bdmard)
+      time: received during variable length pre-index period
+  244:
+    partial: false
+    structured:
+    - measure: change
+      object: sdnn
+      unit: ms
+  245:
+    partial: true
+    structured:
+    - measure: change
+      object: brain tumor interference score
+      specifier: m. d. anderson symptom inventory (mdasi-bt)
+  246:
+    partial: false
+    structured:
+    - measure: number of participants
+      object: clinical failure
+      time: after initiation of radiotherapy
+  247:
+    partial: false
+    structured:
+    - measure: change from baseline
+      object: number of binge days
+  248:
+    partial: false
+    structured:
+    - measure: number of participants
+      object: intravitreal (ivt) aflibercept injections
+      specifier: qualifying to receive
+  249:
+    partial: false
+    structured:
+    - measure: change from baseline
+      object: basophils
+      time: at day 7
+    - measure: change from baseline
+      object: eosinophils
+      time: at day 7
+    - measure: change from baseline
+      object: lymphocytes
+      time: at day 7
+    - measure: change from baseline
+      object: monocytes
+      time: at day 7
+    - measure: change from baseline
+      object: total neutrophils
+      time: at day 7
+    - measure: change from baseline
+      object: platelet count
+      time: at day 7
+    - measure: change from baseline
+      object: white blood cell count
+      time: at day 7

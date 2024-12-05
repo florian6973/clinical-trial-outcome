@@ -1,21 +1,26 @@
-file = 'manual-ann-ner-extended.yaml'
-file2 = 'manual-ann-ner.yaml'
+# file = 'manual-ann-ner-extended.yaml'
+# file2 = 'manual-ann-ner.yaml'
 
 import yaml
 
-with open(file, 'r') as f:
+# with open(file, 'r') as f:
+#     anns = yaml.safe_load(f)
+# with open(file2, 'r') as f:
+#     anns2 = yaml.safe_load(f)
+
+
+
+with open("../data/manual-ann-ner-all.yaml", 'r') as f:
     anns = yaml.safe_load(f)
-with open(file2, 'r') as f:
-    anns2 = yaml.safe_load(f)
 
 anns_tot = []
-for ann_S in [anns, anns2]:
+for ann_S in [anns]: #, anns2]:
     ann_S = ann_S['annotations']
     for ann in ann_S.values():
         anns_tot.append(ann['structured'])
 
-print(anns_tot)
-print(len(anns_tot))
+# print(anns_tot)
+# print(len(anns_tot))
 
 mo = 0
 nb_keys = 0
@@ -25,6 +30,7 @@ object_and_time = 0
 object_and_measure_and_specifier = 0
 object_and_measure_and_time = 0
 composite = 0
+
 for anns in anns_tot:
     for ann in anns:
         if "object" in ann.keys():
