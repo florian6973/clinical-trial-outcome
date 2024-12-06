@@ -44,28 +44,50 @@ def load_model_processor(device='cuda:0', model='llama-11b'):
     
     return model, processor
 
-def build_messages(outcomes):
-    prompt = """
-    Extract following entities, if it exists in following text input (outcomes):
-             - Time: when
-             - Quantity Unit: measurement unit
-             - Quantity Measure (examples: Percentage of Participants, Number of Participants, Mean Change from Baseline, CHange...)
-             - Quantity or object of Interest (examples: Toxicity, Survival, specific element): the main concept(s) describing the outcome
-             - Additional constraints: details that are not measure or quantity/object of interest
-             - Quantity range: range for measurements
-             Do not duplicate elements between categories. Do not hallucinate words. Make sure to separate concepts of the same type.
-             Additional Constraints should be used only if it does not fit in Time or Range.
-             Avoid abbreviations.
-             Provide the output in JSON form like 
-             {
-  "Time": [],
-  "Quantity Unit": [],
-  "Quantity Measure": [],
-  "Quantity or Object of Interest": [],
-  "Additional Constraints": [],
-  "Quantity Range": []
-}
-Text to find entities: [[sentence]]"""
+def build_messages(outcomes, only_object):
+    if only_object:
+        # prompt = """
+        #     Extract the main objects from the given outcome, to get the general idea of it.
+        #     Provide the output in JSON form with the unique key 'Quantity or Object of Interest' with a list of strings (often of length one) as value:
+        #                     {
+        #         "Quantity or Object of Interest": [],
+        #         }
+        #         Do not make any comments, give just the JSON.
+        #         Text to analyze: [[sentence]] 
+        # """
+        # https://pmc.ncbi.nlm.nih.gov/articles/PMC11015372/
+        prompt = """
+Instruction::   Extract key medical, scientific, or measurable terms or phrases ("objects") from each title. These objects should represent the primary focus, condition, measurement, or outcome mentioned in the title.
+Do not extract:
+- Descriptive words like "number of," "percentage of," "mean change," or similar modifiers.
+- Temporal or procedural phrases such as "from baseline," "over the up-titration period," or "following the onset.", "month 5", "day"
+- General terms like "participants," "subjects," or "patients" unless directly linked to a measurable or specific outcome.
+- Only keep the highest level concept. There can be several only in composite endpoints.
+Format as JSON with only one key "Quantity or Object of Interest" and for value a list of strings (often one). Do not make any comments.
+
+Text to analyse::  [[sentence]]"""
+    else:
+        prompt = """
+        Extract following entities, if it exists in following text input (outcomes):
+                - Time: when
+                - Quantity Unit: measurement unit
+                - Quantity Measure (examples: Percentage of Participants, Number of Participants, Mean Change from Baseline, CHange...)
+                - Quantity or object of Interest (examples: Toxicity, Survival, specific element): the main concept(s) describing the outcome
+                - Additional constraints: details that are not measure or quantity/object of interest
+                - Quantity range: range for measurements
+                Do not duplicate elements between categories. Do not hallucinate words. Make sure to separate concepts of the same type.
+                Additional Constraints should be used only if it does not fit in Time or Range.
+                Avoid abbreviations.
+                Provide the output in JSON form like 
+                {
+    "Time": [],
+    "Quantity Unit": [],
+    "Quantity Measure": [],
+    "Quantity or Object of Interest": [],
+    "Additional Constraints": [],
+    "Quantity Range": []
+    }
+    Text to find entities: [[sentence]]"""
     messages = []
     for outcome in outcomes:
         conversation = [

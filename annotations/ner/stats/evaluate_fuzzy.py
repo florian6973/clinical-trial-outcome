@@ -28,7 +28,11 @@ def main():
     # Add argument for selecting the mode
     parser.add_argument(
         "--type",
-        choices=["ner", "llm-llama", "llm-ministral", "plot"],
+        choices=["bert", 
+                 "llm-llama", 
+                 "llm-llama-object",
+                 "llm-ministral",
+                 "plot"],
         required=True,
         help="Select the mode of operation: 'ner' for Named Entity Recognition or 'llm' for Large Language Model.",
     )
@@ -37,8 +41,8 @@ def main():
     args = parser.parse_args()
 
     # Execute based on the selected mode
-    if args.type == "ner":
-        print("NER mode selected. Running Named Entity Recognition tasks...")
+    if args.type == "bert":
+        print("BERT mode selected. Running Named Entity Recognition tasks...")
 
         file_json = "../llm/outputs/ner_infer_finetuned_bert-base-uncased_False.json"
         compute_distance("ner", file_json, "object", "object")
@@ -51,9 +55,15 @@ def main():
     elif args.type == "llm-llama":
         print("LLM mode selected. Running Large Language Model tasks...")
 
-        file_json = "../llm/outputs/llm_evaluate_llama-8b.json"
+        file_json = "../llm/outputs/llm_evaluate_llama-8b_False.json"
         # file_json = "../llm/outputs/llm_evaluate_ministral-8b.json"
         compute_distance("llm-llama", file_json, "Quantity or Object of Interest", "object")
+    elif args.type == "llm-llama-object":
+        print("LLM mode selected. Running Large Language Model tasks...")
+
+        file_json = "../llm/outputs/llm_evaluate_llama-8b_True.json"
+        # file_json = "../llm/outputs/llm_evaluate_ministral-8b.json"
+        compute_distance("llm-llama-object", file_json, "Quantity or Object of Interest", "object")
     elif args.type == "plot":
         plot()
 
@@ -75,14 +85,24 @@ def plot():
     files = [
         ("outputs/llm-ministral.txt", "LLM Ministral"),
         ("outputs/llm-llama.txt", "LLM Llama"),
+        ("outputs/llm-llama-object.txt", "LLM Llama Object Only"),
         ("outputs/ner.txt", "NER")
     ]
-    for file, name in files:
-        data = np.loadtxt(file)
-        plt.hist(data, alpha=0.3, label=name, bins=20)
-    plt.xlabel("Normalized Levenshtein distance")
-    plt.ylabel("Count")
-    plt.legend()
+    plt.figure(figsize=(10, 6))
+
+    for i, (file, name) in enumerate(files):
+        plt.subplot(2, 2, i+1)
+        data_all = np.loadtxt(file)
+        data = data_all[:, 0]
+        diffs = data_all[:, 1]
+        plt.hist(data, alpha=0.3, label=name + f" {np.mean(data):.2f} - {np.mean(diffs):.2f}", bins=20, ec="k")
+        plt.xlabel("Normalized Levenshtein distance")
+        plt.ylabel("Count")
+        plt.legend()
+        plt.twinx()
+        plt.twiny()
+        plt.boxplot(diffs)
+    plt.tight_layout()
     plt.savefig('outputs/perf.png')
 
 def compute_distance(name, file_json, category_json, category_annotation):
@@ -91,6 +111,7 @@ def compute_distance(name, file_json, category_json, category_annotation):
         data_pred = json.load(file)
 
     min_dist = []
+    diffs = []
     for i in tqdm(range(len(data_pred))):
         # category_json
         # category_annotation
@@ -123,16 +144,22 @@ def compute_distance(name, file_json, category_json, category_annotation):
             df = pd.DataFrame(distance_matrix, index=pred, columns=gts)
             print(df)
             min_dist.append(df.min().values[0])
+            # compute assignment, and take the score
+            # compute difference
+
+            diffs.append(np.abs(len(gts) - len(pred)))
         else:
             min_dist.append(1.)
+            diffs.append(len(gts))
     
     print(min_dist)
     print(sum(min_dist)/len(min_dist))
     print(np.count_nonzero(np.array(min_dist) == 0.)/len(min_dist))
     print(np.count_nonzero(np.array(min_dist) < 0.1)/len(min_dist))
+    print(np.mean(diffs))
 
     # save min_dist
-    np.savetxt(f"outputs/{name}.txt", min_dist)
+    np.savetxt(f"outputs/{name}.txt", np.c_[min_dist, diffs])
 
 # def convert_bio_to_json():
     # pass

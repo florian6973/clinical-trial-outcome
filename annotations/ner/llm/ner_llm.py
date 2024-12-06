@@ -46,7 +46,7 @@ def infer_llm(model_name, dataset):
             json.dump(list(zip(outcomes, outputs_parsed, outputs_outcomes, metadata)), f)
 
 # variant with object only 
-def eval_llm(model_name, dataset):
+def eval_llm(model_name, dataset, only_object=True):
     # dataset is for ICL
     llm, _ = load_model_processor(model=model_name)
 
@@ -61,7 +61,7 @@ def eval_llm(model_name, dataset):
         dataset_tmp = dataset['test'][i:min(len(dataset['test']), i+batch_size)]
         # print(dataset_tmp)
         outcomes_tmp = dataset_tmp['origs']
-        msgs = build_messages(outcomes_tmp)
+        msgs = build_messages(outcomes_tmp, only_object)
 
         outputs = compute(llm, msgs)
 
@@ -69,7 +69,7 @@ def eval_llm(model_name, dataset):
         outputs_parsed.extend(parse_outputs(outputs))
         outputs_outcomes.extend(outputs)
 
-    with open(f'outputs/llm_evaluate_{model_name}.json', 'w') as f:
+    with open(f'outputs/llm_evaluate_{model_name}_{only_object}.json', 'w') as f:
         json.dump(list(zip(outcomes, outputs_parsed, outputs_outcomes, [None]*len(outcomes))), f)
 
     # # chat vs generate method
