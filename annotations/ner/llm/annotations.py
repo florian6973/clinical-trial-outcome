@@ -120,3 +120,8 @@ if __name__ == '__main__':
     # )
     print(dataset)
     print(dataset_jb)
+
+    # test set 
+    with open('samples_gpt.txt', 'w') as f:
+        for sentence in dataset['test']['origs']:
+            f.write(sentence + "\n")

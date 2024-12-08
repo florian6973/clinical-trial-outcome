@@ -46,7 +46,8 @@ def main():
 
     os.environ["CUDA_VISIBLE_DEVICES"] = str(args.gpu)
 
-    llm_name = 'llama-8b' # 'ministral-8b'
+    llm_name = 'llama-8b' 
+    # llm_name = 'ministral-8b'
 
     
     # Logic based on parsed arguments
@@ -77,7 +78,30 @@ def main():
         elif args.type == "evaluate":
             print("Running evaluation with the LLM model...")
             # eval_bert("./finetuned_bert-base-uncased")
-            eval_llm(llm_name, dataset)
+            settings = {
+                "only_object": True,
+                "example_selection": "random",
+                "n_examples": 8
+            }
+            eval_llm(llm_name, dataset, settings)
+            settings = {
+                "only_object": True,
+                "example_selection": "random",
+                "n_examples": 50
+            }
+            eval_llm(llm_name, dataset, settings)
+            settings = {
+                "only_object": True,
+                "example_selection": "random",
+                "n_examples": 100
+            }
+            eval_llm(llm_name, dataset, settings)
+            settings = {
+                "only_object": True,
+                "example_selection": "random",
+                "n_examples": 0
+            }
+            eval_llm(llm_name, dataset, settings)
 
 if __name__ == "__main__":
     main()

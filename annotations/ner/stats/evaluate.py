@@ -66,6 +66,7 @@ for elt in data_pred:
 
 data_pred = data_pred_lw
 
+# llm_evaluate_llama-8b_{'only_object': False, 'example_selection': True, 'n_examples': 8}
 
 # print(data_pred)
 # exit()
