@@ -102,15 +102,16 @@ def get_outcomes():
     # print(rows)
     return rows
 
-
 dataset = load_dataset_as_bio(
     "../data/manual-ann-ner-250.csv",
-    "../data/manual-ann-ner-all.yaml"
+    "../data/manual-ann-ner-fp.yaml"
 ).train_test_split(0.2, seed=0)
 dataset_jb = load_dataset_as_bio(
     "../data/manual-ann-ner-250.csv",
-    "../data/manual-ann-ner-all-100-jb.yaml"
+    # "../data/manual-ann-ner-all-100-jb.yaml"
+    "../data/manual-ann-ner-jb.yaml"
 ).train_test_split(0.2, seed=0)
+
 
 # To TEST the file
 if __name__ == '__main__':

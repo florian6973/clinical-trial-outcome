@@ -38,7 +38,9 @@ def main():
                  "llm-ministral-object",
                  "llm-openai-4",
                  "llm-openai-4-all",
-                 "plot"],
+                 "comp-llm",
+                 "plot",
+                 "all"],
         required=True,
         help="Select the mode of operation: 'ner' for Named Entity Recognition or 'llm' for Large Language Model.",
     )
@@ -88,8 +90,57 @@ def main():
         file_json = "../llm/outputs/chatgpt_zero_4_all_raw_preprocessed.json"
         # file_json = "../llm/outputs/llm_evaluate_ministral-8b.json"
         compute_distance("llm-openai-4-all", file_json, "Quantity or Object of Interest", "object")
+    elif args.type == "comp-llm":
+        print("LLM mode selected. Running Large Language Model tasks...")
+
+        files = [
+            "llm_evaluate_llama-8b_{'only_object': True, 'example_selection': 'random', 'n_examples': 0}",
+            "llm_evaluate_llama-8b_{'only_object': True, 'example_selection': 'random', 'n_examples': 8}",
+            "llm_evaluate_llama-8b_{'only_object': True, 'example_selection': 'random', 'n_examples': 50}",
+            "llm_evaluate_llama-8b_{'only_object': True, 'example_selection': 'random', 'n_examples': 100}",
+        ]
+        for i, file in enumerate(files):
+        # file_json = "../llm/outputs/llm_evaluate_ministral-8b.json"
+            compute_distance(f"llm-all-{i}", "../llm/outputs/" + file + ".json", "Quantity or Object of Interest", "object")
     elif args.type == "plot":
-        plot()
+        plot(True)
+        plot(False)
+    elif args.type == "all":
+        print("BERT mode selected. Running Named Entity Recognition tasks...")
+
+        file_json = "../llm/outputs/ner_infer_finetuned_bert-base-uncased_False.json"
+        compute_distance("ner", file_json, "object", "object")
+        print("LLM mode selected. Running Large Language Model tasks...")
+
+        file_json = "../llm/outputs/llm_evaluate_ministral-8b_False.json"
+        # file_json = "../llm/outputs/llm_evaluate_ministral-8b.json"
+        compute_distance("llm-ministral", file_json, "Quantity or Object of Interest", "object")
+        print("LLM mode selected. Running Large Language Model tasks...")
+
+        file_json = "../llm/outputs/llm_evaluate_ministral-8b_True.json"
+        # file_json = "../llm/outputs/llm_evaluate_ministral-8b.json"
+        compute_distance("llm-ministral-object", file_json, "Quantity or Object of Interest", "object")
+        print("LLM mode selected. Running Large Language Model tasks...")
+
+        file_json = "../llm/outputs/llm_evaluate_llama-8b_False.json"
+        # file_json = "../llm/outputs/llm_evaluate_ministral-8b.json"
+        compute_distance("llm-llama", file_json, "Quantity or Object of Interest", "object")
+        print("LLM mode selected. Running Large Language Model tasks...")
+
+        file_json = "../llm/outputs/llm_evaluate_llama-8b_True.json"
+        # file_json = "../llm/outputs/llm_evaluate_ministral-8b.json"
+        compute_distance("llm-llama-object", file_json, "Quantity or Object of Interest", "object")
+        print("LLM mode selected. Running Large Language Model tasks...")
+
+        file_json = "../llm/outputs/chatgpt_zero_4_raw_preprocessed.json"
+        # file_json = "../llm/outputs/llm_evaluate_ministral-8b.json"
+        compute_distance("llm-openai-4", file_json, "Quantity or Object of Interest", "object")
+        print("LLM mode selected. Running Large Language Model tasks...")
+
+        file_json = "../llm/outputs/chatgpt_zero_4_all_raw_preprocessed.json"
+        # file_json = "../llm/outputs/llm_evaluate_ministral-8b.json"
+        compute_distance("llm-openai-4-all", file_json, "Quantity or Object of Interest", "object")
+    
 
 
 
@@ -103,41 +154,81 @@ def main():
 
 # print(f"The Levenshtein distance between '{str1}' and '{str2}' is {distance}.")
 
-def plot():
+def plot(all=True):
     import matplotlib.pyplot as plt
     
-    files = [
-        ("outputs/llm-ministral.txt", "LLM Ministral"),
-        ("outputs/llm-ministral-object.txt", "LLM Ministral Object Only"),
-        ("outputs/llm-llama.txt", "LLM Llama"),
-        ("outputs/llm-llama-object.txt", "LLM Llama Object Only"),
-        ("outputs/llm-openai-4.txt", "LLM OpenAI 4 Object Only"),
-        ("outputs/ner.txt", "NER")
-    ]
-    plt.figure(figsize=(15, 15))
+    
+    if all:
+         files = [
+            ("outputs/llm-all-0.txt", "LLM Llama Object 0 FS"),
+            ("outputs/llm-all-1.txt", "LLM Llama Object 8 FS"),
+            ("outputs/llm-all-2.txt", "LLM Llama Object 50 FS"),
+            ("outputs/llm-all-3.txt", "LLM Llama Object 100 FS")
+        ]
+    else:
+        files = [
+            ("outputs/llm-ministral.txt", "Ministral"),
+            ("outputs/llm-ministral-object.txt", "Ministral Object Only"),
+            ("outputs/llm-llama.txt", "Llama"),
+            ("outputs/llm-llama-object.txt", "Llama Object Only"),
+            ("outputs/llm-openai-4.txt", "OpenAI 4 Object Only"),
+            ("outputs/ner.txt", "BERT")
+        ]
+
+    # factor = 3
+    if all:
+        factor = 2
+    else:
+        factor = 3
+
+    fig1, ax1 = plt.subplots(2, factor, figsize=(12, 7))  # For histograms
+    fig2, ax2 = plt.subplots(2, factor, figsize=(12, 7))  # For boxplots
 
     for i, (file, name) in enumerate(files):
-        plt.subplot(2, 3, i+1)
         data_all = np.loadtxt(file)
         data = data_all[:, 0]
         diffs = data_all[:, 1]
-        plt.hist(data, alpha=0.3, label=name + f" {np.mean(data):.2f} - {np.mean(diffs):.2f}", bins=20, ec="k")
-        plt.xlabel("Normalized Levenshtein distance")
-        plt.ylabel("Count")
-        plt.xlim([-0.1, 1.1])
-        plt.legend()
-        plt.twinx()
-        plt.twiny()
-        plt.boxplot(diffs)
-    plt.tight_layout()
-    plt.savefig('outputs/perf.png')
+
+        # Histogram on fig1
+        row, col = divmod(i, factor)
+        ax1[row, col].hist(data, alpha=0.3, label=name + f" - avg {np.mean(data):.2f}", bins=20, ec="k")
+        ax1[row, col].set_xlabel("Normalized Levenshtein distance")
+        ax1[row, col].set_ylabel("Count")
+        ax1[row, col].set_xlim([-0.1, 1.1])
+        ax1[row, col].set_ylim([-1, 30])
+        ax1[row, col].legend()
+
+        # Boxplot on fig2
+        ax2[row, col].hist(diffs, alpha=0.3, label=name + f" - avg {np.mean(diffs):.2f}", bins=20, ec="k")
+        ax2[row, col].set_xlabel("Differences")
+        ax2[row, col].set_ylabel("Count")        
+        # ax2[row, col].set_title(name + f" - avg {np.mean(diffs):.2f}")
+        # ax2[row, col].set_ylabel("Differences")
+        ax2[row, col].set_ylim([-1, 50])
+        ax2[row, col].set_xlim([-1.1, 5])
+        ax2[row, col].legend()
+
+
+        # plt.subplot(2, 3, i+1)
+        # plt.hist(data, alpha=0.3, label=name + f" {np.mean(data):.2f} - {np.mean(diffs):.2f}", bins=20, ec="k")
+        # plt.xlabel("Normalized Levenshtein distance")
+        # plt.ylabel("Count")
+        # plt.xlim([-0.1, 1.1])
+        # plt.legend()
+        # # fig 2
+        # plt.boxplot(diffs)
+    fig1.tight_layout()
+    fig2.tight_layout()
+    fig1.savefig(f'outputs/perf-{all}-new.png')
+    fig2.savefig(f'outputs/perf-{all}-new2.png')
 
 def compute_distance(name, file_json, category_json, category_annotation):
     # print(data_all)
     with open(file_json, 'r') as file:
         data_pred = json.load(file)
 
-    metric = "sim"
+    metric = "sim" #"sim"
+    # metric = "levenshtein"
     if metric == "sim":
         model = load_model()
     

@@ -10,7 +10,7 @@ import yaml
 
 
 
-with open("../data/manual-ann-ner-all.yaml", 'r') as f:
+with open("../data/manual-ann-ner-fp.yaml", 'r') as f:
     anns = yaml.safe_load(f)
 
 anns_tot = []
@@ -62,9 +62,28 @@ for anns in anns_tot:
 
 print(mo)
 print(nb_keys/len(anns_tot))
-print(object_alone)
-print(object_and_measure)
-print(object_and_measure_and_specifier)
-print(composite)
-print(object_and_time)
-print(object_and_measure_and_time)
+# print(object_alone, object_alone/len(anns_tot))
+# print(object_and_measure)
+# print(object_and_measure_and_specifier)
+# print(composite)
+# print(object_and_time)
+# print(object_and_measure_and_time)
+
+# Assuming anns_tot is the total count
+total_count = len(anns_tot)
+
+# Normalize values
+object_alone_normalized = object_alone / total_count
+object_and_measure_normalized = object_and_measure / total_count
+object_and_measure_and_specifier_normalized = object_and_measure_and_specifier / total_count
+composite_normalized = composite / total_count
+object_and_time_normalized = object_and_time / total_count
+object_and_measure_and_time_normalized = object_and_measure_and_time / total_count
+
+# Print normalized values
+print(object_alone, object_alone_normalized)
+print(object_and_measure, object_and_measure_normalized)
+print(object_and_measure_and_specifier, object_and_measure_and_specifier_normalized)
+print(composite, composite_normalized)
+print(object_and_time, object_and_time_normalized)
+print(object_and_measure_and_time, object_and_measure_and_time_normalized)

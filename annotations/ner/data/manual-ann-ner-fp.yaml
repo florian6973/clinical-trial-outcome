@@ -538,8 +538,7 @@ annotations:
     partial: false
     structured:
     - object: Incidence of Cervical Intraepithelial Neoplasia
-      specifier: Associated With High-risk HPV Types Other Than 16/18 in Participants
-        >26 Years of Age
+      specifier: Associated With High-risk HPV Types Other Than 16/18 in Participants >26 Years of Age
   82:
     partial: false
     structured:

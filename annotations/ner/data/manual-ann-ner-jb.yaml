@@ -1,0 +1,305 @@
+annotations:
+  0:
+    - measure: Composite
+    - object: CHD Death
+    - object: Non-fatal MI
+    - object: Ischemic Stroke
+  1:
+    - measure: Number
+    - object: Acute Febrile Illness
+  2:
+    - measure: Percentage of Participants
+    - object: Alanine Aminotransferase (ALT) Level Elevation More Than 1.5 Times Upper Limit of Normal
+    - object: Aspartate Aminotransferase (AST) Level Elevation More Than 1.5 Times Upper Limit of Normal
+  3:
+    - measure: Change from Baseline
+    - object: CD4/CD8 Cell Counts
+  4:
+    - measure: Number of Subjects
+    - object: Toxicity
+  5:
+    - measure: Costs
+    - object: Referrals to Radiography
+  6:
+    - measure: Duration
+    - object: Solicited Local Symptoms
+  7:
+    - measure: Percentage of Responder Subjects
+    - object: Partial Onset Seizures (Type I)
+  8:
+    - measure: Change from Baseline
+    - object: Leibowitz Social Anxiety Scale (LSAS) Total Score
+  9:
+    - object: Area Under the Plasma Concentration-time Curve 
+  10:
+    - object: Transitional Dyspnea Index (TDI) Score
+  11:
+    - object: Progression-free Survival
+  12:
+    - object: Equivalence of Seroprotection Against Poliovirus
+  13:
+    - measure: Change From Baseline
+    - object: Vital Sign Parameter of Heart Rate
+  14:
+    - object: Brief Psychiatric Rating Scale
+  15:
+    - measure: Change
+  16:
+    - object: Lipids
+  17:
+    - measure: Number
+    - object: Invasive Ventilator-Free Survival
+  18:
+    - object: Inflammatory Bowel Disease Questionnaire (IBDQ) Social Function Domain Score
+  19:
+    - measure: Number
+    - object: Transplants in Which Participants Achieved Platelet (PLT) Engraftment
+  20:
+    - measure: Change From Baseline
+    - object: Subjective Sleep Onset Latency
+  21:
+    - object: Operator Satisfaction
+  22:
+    - object: Trough FEV1 Response
+  23:
+    - measure: Change From Baseline
+    - object: Blood Eosinophils (Cells/uL)
+  24:
+    - measure: Number of Participants
+    - object: Most Frequent Grade 3-4 Hematology Abnormalities
+  25:
+    - object: Maximum Observed Plasma Concentration (Cmax)
+  26:
+    - measure: Change
+    - object: Diabetes
+  27:
+    - object: Serum Iron
+  28:
+    - measure: Change From Baseline
+    - object: Glucose-Lowering Treatments
+  29:
+    - measure: Occurrence
+    - measure: Severity
+    - object: Treatment-emergent Adverse Events (TEAEs)
+  30:
+    - object: Best Overall Response Rate
+  31:
+    - measure: Change
+    - object: Pediatric Evaluation of Disability Inventory (PEDI) Functional Skills Scores
+  32:
+    - measure: Percentage of Participants
+    - object: Clinical Global Impression Improvement Score
+  33:
+    - object: Descend Steps Pre-Intervention
+  34:
+    - measure: Number of Participants
+    - object: Each Stage at Maximum Severity
+  35:
+    - measure: Proportion of the Subjects
+    - object: At Least 10mm Difference in VAS Pain Scale Scores
+  36:
+    - measure: Change
+    - object: Adinopectin
+  37:
+    - measure: Change From Baseline
+    - object: HAQ-DI
+  38:
+    - measure: Number
+    - object: Adverse Events
+  39:
+    - measure: Percentage of Participants
+    - object: 20% Improvement (ACR20)
+  40:
+    - measure: Number of Participants
+    - object: TEAEs
+    - object: Grade >= 3 TEAEs
+    - object: Serious TEAEs
+    - object: Treatment Related TEAEs
+  41:
+    - measure: Number of Patients
+    - object: Buccal Cells Demonstrating a Decline in Cyclin D1
+  42:
+    - measure: Maximum Total Daily Number
+    - object: Self-Reported Spray Doses
+  43:
+    - measure: Change
+    - object: Infant Sleep Quantity
+  44:
+    - measure: Change From Baseline
+    - object: Emotional Well-Being (EWB) Subscale Score
+  45:
+    - measure: Percentage of Participants
+    - object: Adverse Events
+  46:
+    - measure: Number of Participants
+    - object: PIK3CA Mutation at Baseline
+  47:
+    - measure: Compared
+    - object: eSAGE Score Compared to Hopkins Verbal Learning Test (HVLT) Score
+  48:
+    - object: Visual Analog Pain Scale
+  49:
+    - object: Clinical Global Impressions of Severity (CGI-S) Total Score
+  50:
+    - object: Patient Satisfaction
+  51:
+    - object: Corneal Staining Score
+  52:
+    - measure: Percentage of Subjects
+    - object: ≥4-fold Rise for Anti-H2 Full Length HA ELISA Antibody Concentration
+  53:
+    - measure: Change
+    - object: Elvitegravir (EVG) Concentration in Penile Secretions
+  54:
+    - measure: Change
+    - object: PTSD Symptoms
+  55:
+    - measure: Number of Cases
+    - object: Non-Serotype Specific Dengue Viremia
+  56:
+    - measure: Number of Participants
+    - object: High Grade (Grade 3-4) Immune Mediated Adverse Events (IMAEs)
+  57:
+    - measure: Correlation
+    - object: Change in Pain Intensity
+    - object: TBW
+  58:
+    - object: Area Under the Plasma Concentration versus Time Curve (AUC)
+  59:
+    - measure: Change From Baseline
+    - object: MSIS-29 Psychological Score
+  60:
+    - measure: Time
+    - object: Implant Insertion
+  61:
+    - measure: Percentage of Participants
+    - object: Confirmed Best Objective Response
+  62:
+    - measure: Percentage of Participants
+    - object: Treatment-emergent Resistance-associated Substitutions to OBT Components
+  63:
+    - measure: Change From Baseline
+    - object: Exercise Tolerance
+  64:
+    - measure: Associations
+    - object: Polymorphisms
+    - object: Efficacy
+    - object: Toxicities
+  65:
+    - measure: Patients Treated
+    - object: Response Rate
+  66:
+    - object: Area Under Curve
+  67:
+    - measure: Percentage
+    - object: Heartburn-Free 24-hour Days
+  68:
+    - measure: Change From Baseline
+    - object: Triiodothyronine (T3) Chemistry Laboratory Test Results
+  69:
+    - measure: Number of Participants
+    - object: Worst Case Body Temperature Values of PCI
+  70:
+    - measure: Percentage of Patients
+    - object: Systolic Blood Pressure <90 mmHg
+  71:
+    - measure: Number of Participants
+    - object: Abnormal Glycosylated Hemoglobin (HbA1c) Value
+  72:
+    - object: Concentration in Serum
+  73:
+    - measure: Occurrence Rate
+    - object: Surgical Site
+  74:
+    - measure: Rate of Decline
+    - object: Forced Vital Capacity (FVC)
+  75:
+    - object: Maternal Morbidity
+  76:
+    - object: CD22 Expression Levels
+  77:
+    - measure: Change
+    - object: Basophils
+  78:
+    - measure: Number of Participants
+    - object: Rescue Medication
+  79:
+    - measure: Number of Participants
+    - object: Pathogen Identified by the Karius Test
+  80:
+    - measure: Time to Need
+    - object: Inhaled and/or IV Antipseudomonal Antibiotics
+  81:
+    - measure: Incidence
+    - object: Cervical Intraepithelial Neoplasia
+  82:
+    - measure: Change From Baseline
+    - object: SBP
+  83:
+    - object: Safety
+  84:
+    - measure: Percent Change From Baseline
+    - object: Low Density Lipoprotein Cholesterol (LDL-C)
+  85:
+    - object: Hot Flash Related Daily Interference Scale (HFRDIS)
+  86:
+    - measure: Change From Baseline
+    - object: Mean Worse Eye Intraocular Pressure (IOP)
+  87:
+    - measure: Change From Baseline
+    - object: Cartilage Thickness of the Total Tibiofemoral Compartment (tTFC)
+  88:
+    - measure: Change From Baseline
+    - object: Brief Fatigue Inventory (BFI) Worst Fatigue Score
+  89:
+    - object: AUC
+  90:
+    - measure: Percentage of Participants
+    - object: Recurrent Disease
+  91:
+    - object: Progression-free Survival
+  92:
+    - measure: Changes
+    - object: Health Assessment Questionnaire-Disability Index (HAQ-DI©)
+  93:
+    - object: Snack Added Sugars Purchased
+  94:
+    - measure: Number of Participants
+    - object: Overall Survival
+  95:
+    - measure: Change From Baseline
+    - object: Knee Injury and Osteoarthritis Outcome Score (KOOS) Pain Sub-scores
+    - object: Knee Injury and Osteoarthritis Outcome Score (KOOS) ADL Sub-scores
+  96:
+    - measure: Magnitude of Suppression
+    - object: Plasma Renin Activity
+  97:
+    - object: Terminal Half-life (T½)
+  98:
+    - measure: Number
+    - object: Eyelids With Each of the Trichiasis Severity Levels
+  99:
+    - measure: Effect
+    - object: Retrospective-Modified Overt Aggression Scale (R-MOAS) Remission Rate
+  100:
+    - measure: Number of Patients
+    - object: Adverse Effects
+  101:
+    - measure: Mean
+    - object: Pre-dose Peak Expiratory Flow (PEF)
+  102:
+    - measure: Percentage of Participants
+    - object: Disease Control in Participants With Low ERCC-1 Levels
+  103:
+    - measure: Change
+    - object: BCVA in Non-treated Contralateral Eye
+  104:
+    - measure: Change From Baseline
+    - object: Forced Expiratory Volume in One Second (FEV1)
+  105:
+    - object: Asthma Symptom Score (Night-time)
+  106:
+    - measure: Pharmacokinetic Parameters
+    - object: tmax
+  107:
+    - object: Maximum Observed Concentration

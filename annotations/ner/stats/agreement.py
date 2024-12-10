@@ -11,8 +11,9 @@ from annotations import dataset, dataset_jb, load_dataset_as_bio
 
 tags = load_dataset_as_bio(
     "../data/manual-ann-ner-250.csv",
-    "../data/manual-ann-ner-all.yaml"
+    "../data/manual-ann-ner-fp.yaml"
 )[:101]['ner_tags']
+#['ner_tags'] #[:101]['ner_tags']
 tags_10 = [[int(tag == 1) for tag in tag_list] for tag_list in tags]
 tags_10f = [item for sublist in tags_10 for item in sublist]
 
@@ -20,13 +21,17 @@ tags_10f = [item for sublist in tags_10 for item in sublist]
 tags_jb = load_dataset_as_bio(
     "../data/manual-ann-ner-250.csv",
     "../data/manual-ann-ner-all-100-jb-m.yaml"
+    # "../data/manual-ann-ner-all-100-jb-m.yaml"
+    # "../data/manual-ann-ner-all-100-jb-m.yaml"
 )['ner_tags']
-tags_jbf = [item for sublist in tags_jb for item in sublist]
+tags_10jb = [[int(tag == 1) for tag in tag_list] for tag_list in tags_jb]
+tags_jbf = [item for sublist in tags_10jb for item in sublist]
 
 print(tags_10f)
 print(tags_jbf)
 
 print(sm.cohen_kappa_score(tags_10f, tags_jbf))
+# exit()
 
 
 file_jb =  "../data/group-ann-jb.csv"

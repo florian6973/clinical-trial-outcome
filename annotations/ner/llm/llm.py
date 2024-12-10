@@ -101,16 +101,23 @@ def build_messages(outcomes, dataset=None, only_object=False, example_selection=
     Format as JSON with only one key "Quantity or Object of Interest" and for value a list of strings (often one). Do not make any comments.
 
    """
-        if example_selection == "random":
+        if example_selection == "random" and n_examples > 0:
             dataset_length = len(dataset['train'])
+            print(dataset)
+            print(dataset_length)
             indices = random.sample(range(dataset_length), n_examples)
             samples = dataset['train'][indices]
             # print(samples)
 
             examples_text = ""
             for sample in zip(samples['origs'], samples['true_labels']):
+                print(sample)
                 examples_text += "Outcome::\t" + sample[0] + "\n"
-                examples_text += "Output::\t" + json.dumps(sample[1], indent=4) + "\n"
+                if only_object:
+                    examples_text += "Output::\t[" + ",".join(['{"Quantity or Object of Interest":"'+ (outcome["object"] if outcome["object"] is not None else "") + '"}'
+                                                           for outcome in sample[1]]) + "] \n"
+                else:
+                    raise NotImplementedError()
                 examples_text += "\n\n"
             # print(examples_text)
 
@@ -175,7 +182,14 @@ def build_pipeline(model, processor):
         output = model.generate(**inputs, max_new_tokens=4000, do_sample=False, num_beams=1)
         return processor.decode(output[0])
     return pipeline
-    
+
+
+def format_prompt(example):
+    output_texts = []
+    for i in range(len(example['origs'])):
+        text = f"### Question EXTRACT INFO JSON: {example['origs'][i]}\n ### Answer: {json.dumps(example['true_labels'][i], indent=4)}"
+        output_texts.append(text)
+    return output_texts
 
 
 def build_pipeline_batch(model, processor):
@@ -216,6 +230,7 @@ def build_pipeline_batch(model, processor):
 if __name__ == "__main__":
     from annotations import dataset
     messages = build_messages(
-        ['a'], False, dataset, "random"
+        ['a'], dataset, True, "random", 8
     )
     print(messages)
+    print(format_prompt(dataset['test']))

@@ -221,7 +221,7 @@ def infer_bert(folder, dataset, all=False): # for test set
 
     # outcome2 = [rows[k] for k in range(10)]
     # print(outcome2)
-    batch_size = 50 #100 #100 # 1000 batch size on gpu possible
+    batch_size = min(50, len(dataset)) #100 #100 # 1000 batch size on gpu possible
     outcomes_json = []
     for i in tqdm(range(0, len(rows), batch_size)):
         if all:
@@ -288,7 +288,7 @@ def infer_bert(folder, dataset, all=False): # for test set
 
             print(outcomes_json)
             if i % (batch_size - 1) == 0:
-                with open(f'outputs/ner_infer_{os.path.basename(folder)}_{all}.json', 'w') as f:
+                with open(f'outputs/ner_infer_{os.path.basename(folder)}_{all}-jb.json', 'w') as f:
                     json.dump(outcomes_json, f, indent=4)
 
 # # Convert token IDs to actual tokens and predictions to labels

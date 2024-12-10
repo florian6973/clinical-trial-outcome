@@ -10,16 +10,21 @@ from read_outcomes import read_outcomes
 import numpy as np
 
 
+# for previous version
 file = '../../outputs_True_json.json'
 with open(file, 'r') as f:
     data = json.load(f)
+
+file_bv = 'clinical-trial-outcome/annotations/ner/llm/outcomes_extracted_finetuned_bert-base-uncased_True.json'
+file = '../../outputs_True_json.json'
+with open(file, 'r') as f:
+    data = json.load(f)
+
 file = '../../outputs_True.json'
 with open(file, 'r') as f:
     data_raw = json.load(f)
 
 rows = read_outcomes()
-# print(rows.value_counts(sort=True, ascending=False))
-# exit()
 
 data_final = []
 errs = 0
@@ -33,6 +38,7 @@ final_format = []
 print(len(data))
 # print(rows.iloc[:5])
 # input()
+
 
 for k, d in tqdm(enumerate(data), total=len(data)):
     if "error" in d:
@@ -130,3 +136,4 @@ for col in df.columns:
 with open("outputs_2/outcomes.json", 'w') as f:
     json.dump(final_format, f, indent=4)
 # df[col].value_counts().to_csv(f"outputs_2/outcomes.json")
+

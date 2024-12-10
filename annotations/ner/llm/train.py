@@ -3,7 +3,7 @@ import os
 import argparse
 
 
-from annotations import dataset 
+from annotations import dataset, dataset_jb
 from ner_bert import train_bert, infer_bert, eval_bert
 from ner_llm import eval_llm, infer_llm, train_llm
 
@@ -40,6 +40,12 @@ def main():
         default=0, 
         help="Index of the GPU to use (default: 0)."
     )
+    parser.add_argument(
+        '--dataset', 
+        type=str, 
+        default="fp", 
+        help="Name of the dataset to use."
+    )
     
     # Parse the arguments
     args = parser.parse_args()
@@ -49,31 +55,35 @@ def main():
     llm_name = 'llama-8b' 
     # llm_name = 'ministral-8b'
 
+    ds = dataset
+    if args.dataset == "jb":
+        ds = dataset_jb
+
     
     # Logic based on parsed arguments
     if args.method == "ner_bert":
         if args.type == "train":
             print("Training the NER model...")
             # Add your training code here
-            train_bert('bert-base-uncased', "./finetuned_bert-base-uncased", dataset)
+            train_bert('bert-base-uncased', "./finetuned_bert-base-uncased-" + args.dataset, dataset)
         elif args.type == "inference":
             print("Running inference with the NER model...")
-            infer_bert("./finetuned_bert-base-uncased", dataset)
-            # infer_bert("./finetuned_clinicalbiobert_inf", dataset)
+            infer_bert("./finetuned_bert-base-uncased-" + args.dataset, ds)
+            # infer_bert("./finetuned_clinicalbiobert_inf", ds)
             # Add your inference code here
         elif args.type == "evaluate":
             print("Running evaluation with the NER model...")
-            eval_bert("./finetuned_bert-base-uncased", dataset)
-            # eval_bert("./finetuned_clinicalbiobert_inf", dataset)
+            eval_bert("./finetuned_bert-base-uncased-" + args.dataset, ds)
+            # eval_bert("./finetuned_clinicalbiobert_inf", ds)
     elif args.method == "ner_llm":
         if args.type == "train":
             print("Training the LLM model...")
             # Add your training code here
-            train_llm(llm_name, "lora", dataset)
+            train_llm(llm_name, "lora", ds)
         elif args.type == "inference":
             print("Running inference with the LLM model...")
             # Add your inference code here
-            infer_llm(llm_name, dataset)
+            infer_llm(llm_name, ds)
 
         elif args.type == "evaluate":
             print("Running evaluation with the LLM model...")
@@ -83,25 +93,25 @@ def main():
                 "example_selection": "random",
                 "n_examples": 8
             }
-            eval_llm(llm_name, dataset, settings)
+            eval_llm(llm_name, ds, settings)
             settings = {
                 "only_object": True,
                 "example_selection": "random",
                 "n_examples": 50
             }
-            eval_llm(llm_name, dataset, settings)
+            eval_llm(llm_name, ds, settings)
             settings = {
                 "only_object": True,
                 "example_selection": "random",
                 "n_examples": 100
             }
-            eval_llm(llm_name, dataset, settings)
+            eval_llm(llm_name, ds, settings)
             settings = {
                 "only_object": True,
                 "example_selection": "random",
                 "n_examples": 0
             }
-            eval_llm(llm_name, dataset, settings)
+            eval_llm(llm_name, ds, settings)
 
 if __name__ == "__main__":
     main()
