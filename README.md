@@ -7,3 +7,5 @@ The repo is subdivided in two parts:
 - structuring: for outcome structuring
 
 Each part contains their respective README.
+
+Required packages are listed in `requirements.txt`
