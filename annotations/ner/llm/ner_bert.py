@@ -102,7 +102,9 @@ def train_bert(model_name, folder, dataset):
     # model_name = 'dslim/bert-base-NER'
 
     tokenizer = AutoTokenizer.from_pretrained(model_name)
-    model = AutoModelForTokenClassification.from_pretrained(model_name, num_labels=num_labels)
+    # https://github.com/huggingface/transformers/issues/23165
+    model = AutoModelForTokenClassification.from_pretrained(model_name, num_labels=num_labels,
+                                                            torch_dtype=torch.bfloat16)
     data_collator = DataCollatorForTokenClassification(tokenizer)
 
     tokenize_and_align_labels = tokenize_method(tokenizer)
@@ -126,6 +128,7 @@ def train_bert(model_name, folder, dataset):
         greater_is_better=True,
         weight_decay=0.01,
         load_best_model_at_end=True,
+        bf16=True
     )
 
 
@@ -143,6 +146,8 @@ def train_bert(model_name, folder, dataset):
     )
     # https://stackoverflow.com/questions/69087044/early-stopping-in-bert-trainer-instances
 
+    print("Using device:", model.device)
+
     trainer.train()
 
     model.save_pretrained(folder)
@@ -154,7 +159,7 @@ def train_bert(model_name, folder, dataset):
     evals[model_name] = eval
 
     print(evals)
-    with open(f'perf_{model_name}.json', 'w') as f:
+    with open(f'perf_{model_name.replace("/", "-")}.json', 'w') as f:
         json.dump(evals, f)
 
 def eval_bert(folder, dataset):
@@ -173,6 +178,7 @@ def eval_bert(folder, dataset):
         logging_dir="./logs"  # Directory for logs
     )
 
+    # https://stackoverflow.com/questions/68098813/overfitting-when-fine-tuning-bert-sentiment-analysis
     trainer = Trainer(
         model=model,  # The pre-trained model
         args=training_args,
@@ -288,7 +294,7 @@ def infer_bert(folder, dataset, all=False): # for test set
 
             print(outcomes_json)
             if i % (batch_size - 1) == 0:
-                with open(f'outputs/ner_infer_{os.path.basename(folder)}_{all}-jb.json', 'w') as f:
+                with open(f'outputs/ner_infer_{os.path.basename(folder)}_{all}.json', 'w') as f:
                     json.dump(outcomes_json, f, indent=4)
 
 # # Convert token IDs to actual tokens and predictions to labels

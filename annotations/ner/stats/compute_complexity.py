@@ -31,11 +31,20 @@ object_and_measure_and_specifier = 0
 object_and_measure_and_time = 0
 composite = 0
 
+counts_per_cat = {
+}
+
 for anns in anns_tot:
     for ann in anns:
         if "object" in ann.keys():
             mo += 1
         nb_keys += len(ann)
+        for ank, _ in ann.items():
+            if ank in ['range_norm', 'measure_norm']:
+                continue
+            if ank not in counts_per_cat:
+                counts_per_cat[ank] = 0
+            counts_per_cat[ank] += 1
     if len(anns) == 1:
         if len(anns[0].keys()) == 1 and 'object' in anns[0].keys():
             object_alone += 1
@@ -59,6 +68,30 @@ for anns in anns_tot:
             object_and_measure_and_time += 1
     if len(anns) > 1:
         composite += 1
+
+print(counts_per_cat)
+
+import matplotlib.pyplot as plt
+# Extract keys and values
+
+sorted_data = dict(sorted(counts_per_cat.items(), key=lambda x: x[1], reverse=True))
+
+# Extract keys and values
+keys = [x.capitalize() for x in list(sorted_data.keys())]
+values = list(sorted_data.values())
+
+# Create the bar chart
+plt.figure(figsize=(8, 6))  # Set the figure size
+plt.bar(keys, values)
+
+# Add labels and title
+plt.xlabel('Categories')
+plt.ylabel('Counts')
+plt.title('Outcome complexity analysis - for 250 examples')
+
+# Display the chart
+plt.tight_layout()
+plt.savefig("complexity.png")
 
 print(mo)
 print(nb_keys/len(anns_tot))

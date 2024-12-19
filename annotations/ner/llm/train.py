@@ -59,21 +59,27 @@ def main():
     if args.dataset == "jb":
         ds = dataset_jb
 
+    # model_name = 'bert-base-uncased'    
+    model_name = 'UFNLP/gatortron-base'
+    # model_name = 'UFNLP/gatortron-medium'  
+    # model_name = "emilyalsentzer/Bio_ClinicalBERT"
+
+    model_name_path =  model_name.replace('/', '-')
     
     # Logic based on parsed arguments
     if args.method == "ner_bert":
         if args.type == "train":
             print("Training the NER model...")
             # Add your training code here
-            train_bert('bert-base-uncased', "./finetuned_bert-base-uncased-" + args.dataset, dataset)
+            train_bert(model_name, f"./finetuned_{model_name_path}-" + args.dataset, dataset)
         elif args.type == "inference":
             print("Running inference with the NER model...")
-            infer_bert("./finetuned_bert-base-uncased-" + args.dataset, ds)
+            infer_bert(f"./finetuned_{model_name_path}-" + args.dataset, ds)
             # infer_bert("./finetuned_clinicalbiobert_inf", ds)
             # Add your inference code here
         elif args.type == "evaluate":
             print("Running evaluation with the NER model...")
-            eval_bert("./finetuned_bert-base-uncased-" + args.dataset, ds)
+            eval_bert(f"./finetuned_{model_name_path}-" + args.dataset, ds)
             # eval_bert("./finetuned_clinicalbiobert_inf", ds)
     elif args.method == "ner_llm":
         if args.type == "train":
