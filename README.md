@@ -1,7 +1,7 @@
 # Clinical Trial Outcome Normalization and trend analysis.
 
 This repo contains the code for the project of clinical trial outcome normalization and trend analysis.
-The final output with normalized conditions and outcomes for each trial can be downloaded [here](./Outcome%20x%20Condition%20x%20Trial%20Mapping/trials.csv).
+The final output with normalized conditions and outcomes for each trial can be downloaded [here](./Outcome x Condition x Trial Mapping/trials.csv).
 
 The repo is subdivided in several subfolders:
 - SNOMED Outcome Normalization: code to directly map outcomes to SNOMED concepts
