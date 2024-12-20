@@ -1,4 +1,4 @@
-# Clinical Trial Outcome Normalization and trend analysis.
+# Structuring and Normalizing Clinical Trial Outcomes with Large Language Models
 
 This repo contains the code for the project of clinical trial outcome normalization and trend analysis.
 The final output with normalized conditions and outcomes for each trial can be downloaded [here](<./Outcome x Condition x Trial Mapping/trials.csv>).
