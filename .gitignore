@@ -16,3 +16,5 @@
 
 # Ignore the /cache directory
 /cache/
+
+.DS_Store

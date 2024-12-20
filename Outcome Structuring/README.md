@@ -7,18 +7,6 @@ Folder structure:
 
 Outputs are not included in the github repository.
 
-## Clustering (WIP)
-
-This folder contains the code to explore the results of the structuring output 
-and to classify outcome objects into large categories:
-- `preprocess-object` cleans the output from the BERT model
-- `embeddings` computes the embeddings of the objects
-- `clustering` clusters these embeddings to see if some categories can be isolated (but it is not clear)
-- `classification`, `classification-full` runs Llama to classify the outcome objects to the categories from COMET
-- `diff_res` allows to compare the results with different methods
-- `counts` computes some statistics
-- `test-set` samples some elements to check the accuracy
-
 ## NER (Named Entity Recognition)
 
 The annotated dataset can be found under the `data` subfolder. There are the 250 annotations `manual-ann-ner-fp` for the structuring, and the 100 annotations `group-ann-fp` for the normalization.
@@ -32,7 +20,7 @@ The `llm` folder contains the code to run the models (BERT-like and LLMs):
 - `ner_bert` contains the code specific to BERT-like model training
 - `ner_llm` contains the code specific to LLMs
 - `read_outcomes` contains the code to read outcomes
-- `train` contains the main code to launch training, evaluation or inference of the different models. Results will be saved in `outputs`
+- **`train` contains the main code to launch training, evaluation or inference of the different models. Results will be saved in `outputs`**
 
 The `stats` folder contains the code to compute the metrics and plot the graphs:
 - `agreement` computes the Cohen's kappa score
@@ -52,3 +40,14 @@ Workflow:
     - info_ann.py to display and manually annotate the examples
     - compute_score.py to show stats
 
+## Clustering (WIP)
+
+This folder contains the code to explore the results of the structuring output 
+and to classify outcome objects into large categories:
+- `preprocess-object` cleans the output from the BERT model
+- `embeddings` computes the embeddings of the objects
+- `clustering` clusters these embeddings to see if some categories can be isolated (but it is not clear)
+- `classification`, `classification-full` runs Llama to classify the outcome objects to the categories from COMET
+- `diff_res` allows to compare the results with different methods
+- `counts` computes some statistics
+- `test-set` samples some elements to check the accuracy
