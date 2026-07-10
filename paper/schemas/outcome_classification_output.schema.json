@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "outcome_classification_output.schema.json",
+  "title": "Outcome classification output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "normalized_outcome",
+    "outcome_category",
+    "coa_type",
+    "qwen_model",
+    "classification_method"
+  ],
+  "properties": {
+    "normalized_outcome": {"type": "string", "minLength": 1},
+    "outcome_category": {"type": "string", "minLength": 1},
+    "coa_type": {"type": "string", "minLength": 1},
+    "qwen_model": {"const": "Qwen/Qwen2.5-32B-Instruct"},
+    "classification_method": {"const": "qwen_constrained_taxonomy_selection"}
+  }
+}

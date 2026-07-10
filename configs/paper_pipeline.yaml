@@ -1,0 +1,78 @@
+schema_version: 1
+pipeline_name: paper_aligned_qwen_pipeline
+dry_run: true
+execution_flag: --execute
+
+models:
+  qwen:
+    name: Qwen/Qwen2.5-32B-Instruct
+  embedding:
+    name: nvidia/NV-Embed-v2
+
+outputs:
+  condition_mappings: condition_mappings.parquet
+  outcome_classifications: outcome_classifications.parquet
+  validation_predictions: validation_predictions.csv
+  run_manifest: run_manifest.json
+
+annotations:
+  train_size: 200
+  validation_size: 50
+  split_seed: 42
+  immutable_after_split: true
+
+outcome_normalization:
+  embedding_model: nvidia/NV-Embed-v2
+  qwen_model: Qwen/Qwen2.5-32B-Instruct
+  top_k_terms: 5
+  top_k_groups: 5
+  max_input_tokens: 512
+  max_new_tokens: 50
+  do_sample: false
+  num_beams: 1
+  response_prefix: "GROUP:"
+  train_size: 200
+  validation_size: 50
+
+condition_normalization:
+  embedding_model: nvidia/NV-Embed-v2
+  snomed_release: 2024-09-01
+  snomed_description_type_id: 900000000000003001
+  snomed_is_a_type_id: 116680003
+  faiss:
+    index_type: ivf_flat_inner_product
+    nlist_max: 4096
+    nlist_divisor: 30
+    nprobe: 64
+    top_k_candidates: 5
+    require_l2_normalized_vectors: true
+  qwen_selector:
+    model: Qwen/Qwen2.5-32B-Instruct
+    train_size: 200
+    validation_size: 50
+    split_seed: 42
+    lora_adapter_output: condition_qwen_lora_adapter
+    constrained_to_retrieved_candidates: true
+    response_format: json
+  disease_area_count: 24
+  output_schema: paper/schemas/condition_normalization_output.schema.json
+
+classification:
+  model: Qwen/Qwen2.5-32B-Instruct
+  outcome_category_count: 21
+  coa_type_count: 4
+  constrained_labels: true
+  response_format: json
+  output_schema: paper/schemas/outcome_classification_output.schema.json
+
+safety:
+  load_models_during_dry_run: false
+  import_faiss_during_dry_run: false
+  permit_training_from_pipeline: false
+  permit_full_dataset_execution_without_execute_flag: false
+  secrets_in_config: forbidden
+
+reported_results:
+  source: paper/expected_results.json
+  mode: validation_expectations_only
+  recompute_constants: false

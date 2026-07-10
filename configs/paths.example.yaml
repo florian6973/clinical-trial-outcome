@@ -1,0 +1,33 @@
+schema_version: 1
+# Copy to a local ignored file and replace placeholders. Never commit secrets.
+
+inputs:
+  aact_outcomes: /path/to/aact/outcomes.txt
+  aact_conditions: /path/to/aact/conditions.txt
+  aact_studies: /path/to/aact/studies.txt
+  outcome_annotations: /path/to/annotations/manual_outcome_annotations.jsonl
+  condition_annotations: /path/to/annotations/manual_condition_annotations.jsonl
+  snomed_relationships: /path/to/snomed/sct2_Relationship_Full_US1000124_20240901.txt
+  snomed_descriptions: /path/to/snomed/sct2_Description_Full-en_US1000124_20240901.txt
+
+embeddings:
+  outcome_objects: /path/to/generated/outcome_object_embeddings.parquet
+  conditions: /path/to/generated/condition_embeddings.parquet
+  snomed_candidates: /path/to/generated/snomed_candidate_embeddings.parquet
+
+outputs:
+  root: /path/to/generated/paper_pipeline
+  condition_mappings: /path/to/generated/paper_pipeline/condition_mappings.parquet
+  outcome_classifications: /path/to/generated/paper_pipeline/outcome_classifications.parquet
+  validation_predictions: /path/to/generated/paper_pipeline/validation_predictions.csv
+  run_manifest: /path/to/generated/paper_pipeline/run_manifest.json
+
+models:
+  cache_dir: /path/to/local/model-cache
+  outcome_qwen_lora_adapter: /path/to/archived/outcome_qwen_finetuned_32b
+  condition_qwen_lora_adapter: /path/to/archived/condition_qwen_finetuned_32b
+
+runtime:
+  dry_run: true
+  # Authentication must be supplied through the runtime environment, never here.
+  huggingface_token_env: HF_TOKEN

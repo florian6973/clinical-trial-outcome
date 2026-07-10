@@ -1,0 +1,47 @@
+schema_version: 1
+dry_run: true
+execution_flag: --execute
+train_size: 200
+validation_size: 50
+split_seed: 42
+learning_sizes: [0, 50, 100, 150, 200]
+primary_metric: exact_match_accuracy
+reported_results_are_validation_expectations_only: true
+recompute_reported_constants: false
+
+checkpoints:
+  - key: qwen2_5_7b
+    family: Qwen2.5
+    size: 7B
+    model_id: Qwen/Qwen2.5-7B-Instruct
+  - key: qwen2_5_14b
+    family: Qwen2.5
+    size: 14B
+    model_id: Qwen/Qwen2.5-14B-Instruct
+  - key: qwen2_5_32b
+    family: Qwen2.5
+    size: 32B
+    model_id: Qwen/Qwen2.5-32B-Instruct
+  - key: llama3_8b
+    family: Llama3
+    size: 8B
+    model_id: meta-llama/Meta-Llama-3-8B-Instruct
+  - key: llama3_15b
+    family: Llama3
+    size: 15B
+    model_id: paper-comparison/Llama3-15B-Instruct
+    artifact_status: archived_checkpoint_required
+  - key: llama3_34b
+    family: Llama3
+    size: 34B
+    model_id: paper-comparison/Llama3-34B-Instruct
+    artifact_status: archived_checkpoint_required
+
+comparison_contract:
+  identical_train_validation_split: true
+  identical_prompts: true
+  identical_retrieval_candidates: true
+  deterministic_decoding: true
+  no_training_on_import: true
+  no_training_during_tests: true
+  archived_outputs_required_before_reporting: true

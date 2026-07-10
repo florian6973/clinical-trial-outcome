@@ -8,9 +8,10 @@ from concurrent.futures import ThreadPoolExecutor
 
 print(torch.cuda.is_available())  # Should return True if CUDA is available
 
-# Step 1: Authenticate with Hugging Face API key
-api_key = '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'  # Your actual API key
-login(api_key)
+# Step 1: Authenticate only when a token is supplied by the environment.
+api_key = os.environ.get("HF_TOKEN")
+if api_key:
+    login(token=api_key)
 
 model_name = 'meta-llama/Llama-3.2-11B-Vision-Instruct'
 

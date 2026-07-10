@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clinical-trial-outcome"
+version = "0.2.0"
+description = "Paper-aligned Qwen pipeline for structuring and normalizing clinical-trial outcomes"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+  "numpy>=1.26",
+  "pandas>=2.1",
+  "pyarrow>=14",
+  "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+ml = [
+  "accelerate>=0.30",
+  "bitsandbytes>=0.43",
+  "datasets>=2.19",
+  "faiss-cpu>=1.8",
+  "peft>=0.11",
+  "scikit-learn>=1.4",
+  "sentence-transformers>=3.0",
+  "torch>=2.2",
+  "transformers>=4.42",
+  "trl>=0.9",
+]
+dev = ["pytest>=8.0", "ruff>=0.5"]
+
+[project.scripts]
+clinical-trial-outcome = "clinical_trial_outcome.pipeline:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+

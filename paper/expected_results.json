@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "validation_expectations_only": true,
+  "recompute": false,
+  "reproduction_requires_archived_predictions": true,
+  "annotation_contract": {
+    "train_size": 200,
+    "validation_size": 50
+  },
+  "taxonomy_contract": {
+    "outcome_categories": 21,
+    "coa_types": 4,
+    "disease_areas": 24
+  },
+  "expected_counts": {
+    "registered_trials": 563077,
+    "result_trials": 73427,
+    "mapped_outcome_records": 480273,
+    "normalized_outcome_concepts": 237820,
+    "outcome_categories": 21,
+    "raw_condition_strings": 26682,
+    "snomed_condition_concepts": 238,
+    "disease_areas": 24
+  },
+  "paper_reported_expectations": {
+    "outcome_exact_match_accuracy": {
+      "value": 0.88,
+      "tolerance": 0.0,
+      "evidence_status": "archived_predictions_required"
+    },
+    "condition_exact_match_accuracy": {
+      "value": 0.92,
+      "tolerance": 0.0,
+      "evidence_status": "archived_predictions_required"
+    },
+    "condition_macro_f1": {
+      "value": 0.95,
+      "tolerance": 0.0,
+      "evidence_status": "archived_predictions_required"
+    },
+    "raw_condition_strings": {
+      "value": 26682,
+      "evidence_status": "locked_mapping_expected"
+    },
+    "snomed_condition_concepts": {
+      "value": 238,
+      "evidence_status": "locked_mapping_expected"
+    }
+  },
+  "model_comparison": {
+    "checkpoint_count": 6,
+    "learning_sizes": [0, 50, 100, 150, 200],
+    "reported_winner": "Qwen/Qwen2.5-32B-Instruct",
+    "evidence_status": "archived_comparison_outputs_required"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "dry_run_plan.schema.json",
+  "title": "Paper pipeline dry-run plan",
+  "type": "object",
+  "required": ["mode", "stages", "qwen_model", "execution_required"],
+  "properties": {
+    "mode": {"const": "dry_run"},
+    "stages": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "qwen_model": {"type": "string", "minLength": 1},
+    "execution_required": {"const": true}
+  }
+}

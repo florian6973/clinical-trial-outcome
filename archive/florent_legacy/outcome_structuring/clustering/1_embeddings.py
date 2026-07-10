@@ -16,9 +16,10 @@ os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 print(torch.cuda.is_available())  # Should return True if CUDA is available
 
-# Step 1: Authenticate with Hugging Face API key
-# api_key = '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'  # Your actual API key
-# login(api_key)
+# Optional authentication is supplied through the HF_TOKEN environment variable.
+# api_key = os.environ.get("HF_TOKEN")
+# if api_key:
+#     login(token=api_key)
 
 # model_name = 'dunzhang/stella_en_400M_v5'
 
@@ -117,4 +118,3 @@ for i in tqdm(range(0, len(titles_list), batch_size), total=(len(titles_list) + 
 import numpy as np
 np.savez_compressed('embs.npz', np.array(results))
 # np.savetxt("embs.txt", np.array(results))
-

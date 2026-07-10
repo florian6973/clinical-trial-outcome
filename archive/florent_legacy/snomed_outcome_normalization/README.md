@@ -117,10 +117,10 @@ clinical_trials/
 
    - Create an account on [Hugging Face](https://huggingface.co/).
    - Generate an API token from your account settings.
-   - Replace the placeholder API key in the scripts with your own.
+   - Supply the token through the environment; do not place it in source code.
 
-     ```python
-     api_key = 'hf_your_actual_api_key_here'
+     ```bash
+     export HF_TOKEN="<your Hugging Face token>"
      ```
 
 ## Data Preparation

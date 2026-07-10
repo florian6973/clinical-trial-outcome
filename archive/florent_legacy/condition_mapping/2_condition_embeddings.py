@@ -23,9 +23,10 @@ print('Unique condition names:', len(unique_conditions_df))
 
 print('Setting up the model for embeddings')
 
-# Step 1: Authenticate with Hugging Face API key
-api_key = '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'  # Replace with your actual API key
-login(api_key)
+# Step 1: Authenticate only when a token is supplied by the environment.
+api_key = os.environ.get("HF_TOKEN")
+if api_key:
+    login(token=api_key)
 
 # Step 2: Define directories
 cache_dir = "./cache"
