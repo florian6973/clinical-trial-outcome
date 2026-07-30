@@ -1,0 +1,337 @@
+semantic_pattern,example_rank,aact_outcome_title,endpoint_record_count,word_count
+object_only,1,Overall Survival,2038,2
+object_only,2,Overall Survival (OS),1878,3
+object_only,3,Progression Free Survival (PFS),709,4
+object+measurement_operator+participant_population,1,Number of Participants With Adverse Events,724,6
+object+measurement_operator+participant_population,2,Number of Participants With Adverse Events (AEs),336,7
+object+measurement_operator+participant_population,3,Number of Participants With Adverse Events (AEs) and Serious Adverse Events (SAEs),194,12
+object+measurement_operator,1,Duration of Response,512,3
+object+measurement_operator,2,Objective Response Rate (ORR),499,4
+object+measurement_operator,3,Overall Response Rate (ORR),388,4
+object+measurement_operator+baseline_or_comparator,1,Disease Control Rate (DCR),239,4
+object+measurement_operator+baseline_or_comparator,2,Change From Baseline in Body Weight,112,6
+object+measurement_operator+baseline_or_comparator,3,Disease Control Rate,108,3
+object+temporal_expression+measurement_operator,1,Time to Progression,232,3
+object+temporal_expression+measurement_operator,2,Time to Progression (TTP),175,4
+object+temporal_expression+measurement_operator,3,Time to Response,137,3
+object+participant_population,1,Patient Satisfaction,143,2
+object+participant_population,2,Subject Satisfaction,45,2
+object+participant_population,3,Patient Survival,30,2
+object+instrument_or_scale,1,Body Mass Index (BMI),70,4
+object+instrument_or_scale,2,Body Mass Index,69,3
+object+instrument_or_scale,3,Pittsburgh Sleep Quality Index (PSQI),36,5
+object+measurement_operator+instrument_or_scale,1,Pain Score,51,2
+object+measurement_operator+instrument_or_scale,2,Change in Body Mass Index (BMI),46,6
+object+measurement_operator+instrument_or_scale,3,Change in Body Mass Index,29,5
+object+temporal_expression+measurement_operator+participant_population,1,Number of Participants With One or More Serious Adverse Event(s) (SAEs) Considered by the Investigator to be Related to Study Drug Administration,43,23
+object+temporal_expression+measurement_operator+participant_population,2,Number of Participants With Treatment-related Adverse Events as Assessed by CTCAE v4.0,31,13
+object+temporal_expression+measurement_operator+participant_population,3,Number of Patients With Grade 3 Through Grade 5 Adverse Events That Are Related to Study Drug,22,17
+object+measurement_operator+baseline_or_comparator+participant_population,1,Number of Participants With Clinically Significant Change From Baseline in Vital Signs,40,12
+object+measurement_operator+baseline_or_comparator+participant_population,2,Percentage of Participants With Disease Control,20,6
+object+measurement_operator+baseline_or_comparator+participant_population,3,Number of Participants With Laboratory Test Abnormalities (Without Regard to Baseline Abnormality),19,12
+object+temporal_expression+measurement_operator+explicit_unit+participant_population,1,Percentage of Participants With Sustained Virologic Response (SVR) 12 Weeks After Discontinuation of Therapy (SVR12),39,15
+object+temporal_expression+measurement_operator+explicit_unit+participant_population,2,Percentage of Participants With Sustained Virologic Response 12 Weeks Post-treatment (SVR12),20,11
+object+temporal_expression+measurement_operator+explicit_unit+participant_population,3,Percentage of Participants With Sustained Virologic Response 12 Weeks After Discontinuation of Therapy (SVR12),17,14
+object+temporal_expression+measurement_operator+composite_or_multiple_objects+participant_population,1,Number of Participants With Serious and/or Non-serious Adverse Events Assessed by the Common Terminology Criteria for Adverse Events (CTCAE v5.0),34,21
+object+temporal_expression+measurement_operator+composite_or_multiple_objects+participant_population,2,Number of Participants With Serious and/or Non-serious Adverse Events Assessed by the Common Terminology Criteria for Adverse Events (CTCAE v4.0),25,21
+object+temporal_expression+measurement_operator+composite_or_multiple_objects+participant_population,3,Number of Participants With Serious and/or Non-serious Adverse Events Assessed by the Common Terminology Criteria for Adverse Events (CTCAE v5.0).,14,21
+object+temporal_expression+measurement_operator+baseline_or_comparator+explicit_unit,1,Change From Baseline in Fasting Plasma Glucose (FPG) at Week 24,31,11
+object+temporal_expression+measurement_operator+baseline_or_comparator+explicit_unit,2,Change From Baseline in CD4+ Cell Count at Week 48,19,10
+object+temporal_expression+measurement_operator+baseline_or_comparator+explicit_unit,3,Change From Baseline in Body Weight at Week 24,16,9
+object+temporal_expression,1,Gestational Age at Delivery,30,4
+object+temporal_expression,2,Volume of Distribution at Steady State (Vss),20,7
+object+temporal_expression,3,Accuracy of Sensor by Arms Calculation,12,6
+object+measurement_operator+baseline_or_comparator+instrument_or_scale,1,Change From Baseline in Body Mass Index (BMI),29,8
+object+measurement_operator+baseline_or_comparator+instrument_or_scale,2,Change From Baseline on the Visual Analog Scale (VAS) for Pain,12,11
+object+measurement_operator+baseline_or_comparator+instrument_or_scale,3,Change From Baseline in Bath Ankylosing Spondylitis Functional Index (BASFI),8,10
+object+instrument_or_scale+participant_population,1,Patient Health Questionnaire (PHQ-9),29,4
+object+instrument_or_scale+participant_population,2,Patient Health Questionnaire-9 (PHQ-9),25,4
+object+instrument_or_scale+participant_population,3,Patient Health Questionnaire,13,3
+object+baseline_or_comparator,1,Disease Control,29,2
+object+baseline_or_comparator,2,Glycemic Control,19,2
+object+baseline_or_comparator,3,Local Control,11,2
+object+temporal_expression+explicit_unit,1,Ventilator-free Days,20,2
+object+temporal_expression+explicit_unit,2,28-day Mortality,19,2
+object+temporal_expression+explicit_unit,3,Drinks Per Drinking Day,18,4
+object+explicit_unit,1,Forced Expiratory Volume in 1 Second (FEV1),19,7
+object+explicit_unit,2,Forced Expiratory Volume in One Second (FEV1),11,7
+object+explicit_unit,3,Body Weight (kg),7,3
+object+temporal_expression+measurement_operator+explicit_unit,1,6-month Progression-free Survival (PFS) Rate,17,5
+object+temporal_expression+measurement_operator+explicit_unit,2,Percent Heavy Drinking Days,17,4
+object+temporal_expression+measurement_operator+explicit_unit,3,Number of Days With Solicited General Symptoms,14,7
+object+measurement_operator+explicit_unit+participant_population,1,Percentage of Participants Achieving American College of Rheumatology 70% (ACR70) Response,15,11
+object+measurement_operator+explicit_unit+participant_population,2,Percentage of Participants Achieving American College of Rheumatology 50% (ACR50) Response,12,11
+object+measurement_operator+explicit_unit+participant_population,3,Percentage of Participants Who Achieved Weight Loss ≥5%,6,8
+object+measurement_operator+composite_or_multiple_objects+participant_population,1,Number of Participants Reporting Local Reactogenicity Signs and Symptoms: Erythema and/or Induration,15,12
+object+measurement_operator+composite_or_multiple_objects+participant_population,2,Number of Participants Reporting Local Reactogenicity Signs and Symptoms: Pain and/or Tenderness,15,12
+object+measurement_operator+composite_or_multiple_objects+participant_population,3,Number of Participants Reporting Local Solicited Adverse Events Signs and Symptoms: Pain and/or Tenderness,4,14
+object+measurement_operator+baseline_or_comparator+explicit_unit,1,Change From Baseline in Forced Expiratory Volume in 1 Second (FEV1),15,11
+object+measurement_operator+baseline_or_comparator+explicit_unit,2,Change From Baseline in Forced Expiratory Volume in One Second (FEV1),7,11
+object+measurement_operator+baseline_or_comparator+explicit_unit,3,Change From Baseline in Peak Forced Expiratory Volume in One Second (FEV1),5,12
+object+measurement_operator+explicit_unit,1,Change in Body Weight (kg),14,5
+object+measurement_operator+explicit_unit,2,Absolute Change in Percent Predicted Forced Expiratory Volume in 1 Second (ppFEV1),13,12
+object+measurement_operator+explicit_unit,3,Change in Body Weight (%),6,4
+object+baseline_or_comparator+instrument_or_scale,1,Asthma Control Questionnaire (ACQ),12,4
+object+baseline_or_comparator+instrument_or_scale,2,Asthma Control Questionnaire,2,3
+object+baseline_or_comparator+instrument_or_scale,3,Baseline Hospital Anxiety and Depression Scale (HADS) Scores,2,8
+object+temporal_expression+explicit_unit+participant_population,1,"Overall Survival (OS), the Length of Time, in Months, That Patients Were Alive From Their First Date of Protocol Treatment Until Death",11,22
+object+temporal_expression+explicit_unit+participant_population,2,14-day Participant Mortality,7,3
+object+temporal_expression+explicit_unit+participant_population,3,"Progression Free Survival (PFS), the Length of Time, in Months, That Patients Were Alive From Their First Date of Protocol Treatment Until Worsening of Their Disease",7,26
+object+temporal_expression+measurement_operator+baseline_or_comparator+explicit_unit+participant_population,1,Percentage of Patients With at Least 5% Weight Loss From Baseline at Week 24,10,14
+object+temporal_expression+measurement_operator+baseline_or_comparator+explicit_unit+participant_population,2,Change From Baseline in Patient Oriented Eczema Measure (POEM) at Week 16,5,12
+object+temporal_expression+measurement_operator+baseline_or_comparator+explicit_unit+participant_population,3,Change From Baseline in SBP at Week 12 for All Participants,4,11
+object+temporal_expression+measurement_operator+baseline_or_comparator+instrument_or_scale+explicit_unit,1,Change From Baseline on the Sleep Scale From the Medical Outcomes Study (MOS Sleep Scale) - Average Hours of Sleep,9,19
+object+temporal_expression+measurement_operator+baseline_or_comparator+instrument_or_scale+explicit_unit,2,Change From Baseline in Dermatology Life Quality Index (DLQI) at Week 16,8,12
+object+temporal_expression+measurement_operator+baseline_or_comparator+instrument_or_scale+explicit_unit,3,Change From Baseline in Sheehan Disability Scale (SDS) Total Score at Week 8,8,13
+object+temporal_expression+measurement_operator+baseline_or_comparator,1,Change From Baseline in Daytime (6am to 10 pm) Mean Diastolic Blood Pressure Measured by Ambulatory Blood Pressure Monitoring.,8,19
+object+temporal_expression+measurement_operator+baseline_or_comparator,2,Change From Baseline in Daytime (6am to 10 pm) Mean Systolic Blood Pressure Measured by Ambulatory Blood Pressure Monitoring.,8,19
+object+temporal_expression+measurement_operator+baseline_or_comparator,3,Change From Baseline in the Nighttime (12 am to 6 am) Mean Diastolic Blood Pressure Measured by Ambulatory Blood Pressure Monitoring.,8,21
+object+temporal_expression+measurement_operator+instrument_or_scale,1,Pain Score at Rest,8,4
+object+temporal_expression+measurement_operator+instrument_or_scale,2,Overall Response Rate (ORR) by Investigator Assessment,5,7
+object+temporal_expression+measurement_operator+instrument_or_scale,3,Hb Level at Each Assessment Time Point,4,7
+object+measurement_operator+instrument_or_scale+participant_population,1,Patient Satisfaction Score,7,3
+object+measurement_operator+instrument_or_scale+participant_population,2,Patient Global Impression of Change (PGIC) Score,6,7
+object+measurement_operator+instrument_or_scale+participant_population,3,Subject Satisfaction Score,6,3
+object+temporal_expression+instrument_or_scale+explicit_unit,1,Time Unwell in Days as Measured by the Symptom and Clinical Event Scale,7,13
+object+temporal_expression+instrument_or_scale+explicit_unit,2,Body Mass Index at Week 12,6,6
+object+temporal_expression+instrument_or_scale+explicit_unit,3,3 Months Assessment for Beck Anxiety Inventory (BAI),4,8
+object+temporal_expression+measurement_operator+instrument_or_scale+explicit_unit,1,Mean Days Benefit as Measured by the Symptom and Clinical Event Scale,7,12
+object+temporal_expression+measurement_operator+instrument_or_scale+explicit_unit,2,Number of In-treatment Pregnancies (With +2 Day Window) Per 100 Woman Years of Exposure (Pearl Index),5,16
+object+temporal_expression+measurement_operator+instrument_or_scale+explicit_unit,3,Change in Clinical Status Using CGI-I Score at Week 8,4,10
+object+temporal_expression+instrument_or_scale,1,Quality of Life (QOL) as Measured by the PROMIS-29 - Anxiety,7,10
+object+temporal_expression+instrument_or_scale,2,Quality of Life (QOL) as Measured by the PROMIS-29 - Fatigue,7,10
+object+temporal_expression+instrument_or_scale,3,Quality of Life (QOL) as Measured by the PROMIS-29 - Pain,7,10
+object+temporal_expression+measurement_operator+baseline_or_comparator+instrument_or_scale,1,Change From Baseline in Average Pain Intensity as Measured by the Numeric Rating Scale (NRS),6,15
+object+temporal_expression+measurement_operator+baseline_or_comparator+instrument_or_scale,2,Time to an Improvement of One Category From Baseline Using an Ordinal Scale,4,13
+object+temporal_expression+measurement_operator+baseline_or_comparator+instrument_or_scale,3,Time to an Improvement of Two Categories From Baseline Using an Ordinal Scale,4,13
+object+temporal_expression+measurement_operator+instrument_or_scale+explicit_unit+participant_population,1,Number of Participants at Each Score on the COVID Clinical Progression Scale at Day 7,6,15
+object+temporal_expression+measurement_operator+instrument_or_scale+explicit_unit+participant_population,2,Percentage of Participants With a Psoriasis Area and Severity Index 90 (PASI90) Response at Week 16,4,16
+object+temporal_expression+measurement_operator+instrument_or_scale+explicit_unit+participant_population,3,Number of Participants Meeting Criteria for Each of the 8 Ordinal Scale Categories on Day 8,3,16
+object+temporal_expression+measurement_operator+baseline_or_comparator+participant_population,1,Change From Baseline for Overall Improvement as Measured by Patient's Global Impression of Change,6,15
+object+temporal_expression+measurement_operator+baseline_or_comparator+participant_population,2,Percent of Participants With Clinical Global Impression - Severity of Illness (CGI-S) at Baseline,3,13
+object+temporal_expression+measurement_operator+baseline_or_comparator+participant_population,3,Percentage of Participants With Systemic Manifestations of RA at Baseline,3,10
+object+explicit_unit+participant_population,1,Participants Who Achieve Weight Loss ≥5% (Yes/no),5,7
+object+explicit_unit+participant_population,2,Participants Who Achieve Weight Loss ≥10% (Yes/no),4,7
+object+explicit_unit+participant_population,3,Participants Who Achieve HbA1c <7.0% (53 mmol/Mol) ADA Target (Yes/no),3,11
+object+measurement_operator+baseline_or_comparator+instrument_or_scale+participant_population,1,Change From Baseline in Patient's Global Assessment of Disease Activity,5,11
+object+measurement_operator+baseline_or_comparator+instrument_or_scale+participant_population,2,Change From Baseline in the Total Score of the Patient Oriented Eczema Measure (POEM),5,14
+object+measurement_operator+baseline_or_comparator+instrument_or_scale+participant_population,3,Change From Baseline in the Patient Global Impression of Severity-Atopic Dermatitis (PGI-S-AD) Score,4,13
+object+temporal_expression+participant_population,1,Patients With Treatment-Emergent Adverse Experiences (TEAE) During the Treatment Period,5,10
+object+temporal_expression+participant_population,2,Pain Perceived by Patient,3,4
+object+temporal_expression+participant_population,3,Participants With a Positive Anti-Reslizumab Antibody Status During Study,3,9
+object+measurement_operator+baseline_or_comparator+explicit_unit+participant_population,1,Number of Participants With Glycosylated Hemoglobin Decrease From Baseline ≥ 0.5%.,5,11
+object+measurement_operator+baseline_or_comparator+explicit_unit+participant_population,2,Number of Participants With Glycosylated Hemoglobin Decrease From Baseline ≥ 1.0%.,5,11
+object+measurement_operator+baseline_or_comparator+explicit_unit+participant_population,3,Number of Participants With Glycosylated Hemoglobin Decrease From Baseline ≥ 1.5%.,5,11
+object+temporal_expression+measurement_operator+explicit_unit+composite_or_multiple_objects+participant_population,1,Percentage of Participants With Missing Sustained Virologic Response 12 Weeks Post-Treatment (SVR12) Data and/or Nonresponders Who Did Not Meet Specific SVR12 Nonresponder Criteria,5,23
+object+temporal_expression+measurement_operator+explicit_unit+composite_or_multiple_objects+participant_population,2,Number of Participants With Any Occurrence of Unplanned Re-hospitalization and/or Any Emergency/Urgent Care Visits Within 30 Days of Hospital Discharge,2,20
+object+temporal_expression+measurement_operator+explicit_unit+composite_or_multiple_objects+participant_population,3,Number of Subjects With 6-Month Composite Clinical Success,2,8
+object+temporal_expression+baseline_or_comparator,1,Intraocular Pressure (IOP) at Baseline,5,5
+object+temporal_expression+baseline_or_comparator,2,Apolipoprotein A1 at Baseline and at the Primary Efficacy Time Point,3,11
+object+temporal_expression+baseline_or_comparator,3,Apolipoprotein B at Baseline and at the Primary Efficacy Time Point,3,11
+object+baseline_or_comparator+participant_population,1,Subject's New York Heart Association (NYHA) Functional Class Compared to Baseline,5,12
+object+baseline_or_comparator+participant_population,2,Patient Satisfaction With Pain Control,3,5
+object+baseline_or_comparator+participant_population,3,Severity of EXACT-PRO for Patients With Baseline EOS>=220/uL,2,9
+object+temporal_expression+measurement_operator+instrument_or_scale+participant_population,1,Subject's Average Score on the EQ-5D- Quality of Life Questionnaire Over Time,5,13
+object+temporal_expression+measurement_operator+instrument_or_scale+participant_population,2,Percentage of Subjects With Hb Level at Each Assessment Time Point Within the Target Range During the Treatment Period,4,19
+object+temporal_expression+measurement_operator+instrument_or_scale+participant_population,3,Number of Participants With Suicidal Ideation and Suicidal Behavior as Assessed by the Electronic Columbia Suicide Severity Rating Scale (eC-SSRS),3,20
+object+measurement_operator+baseline_or_comparator+composite_or_multiple_objects+participant_population,1,"Percentage of Participants Who Achieve a Clinic Diastolic Blood Pressure Response, Defined as < 90 mm Hg and/or Reduction From Baseline ≥ 10 mm Hg",5,23
+object+measurement_operator+baseline_or_comparator+composite_or_multiple_objects+participant_population,2,"Percentage of Participants Who Achieve a Clinic Systolic Blood Pressure Response, Defined as < 140 mm Hg and/or Reduction From Baseline ≥ 20 mm Hg",5,23
+object+measurement_operator+baseline_or_comparator+composite_or_multiple_objects+participant_population,3,Percentage of Participants Who Were Composite Responders Based on Improvements From Baseline in Daily Worst Abdominal Pain And Daily Stool Consistency Scores,2,22
+object+instrument_or_scale+explicit_unit,1,Body Mass Index (BMI) (kg/m^2),5,6
+object+instrument_or_scale+explicit_unit,2,Augmentation Index (%),3,2
+object+instrument_or_scale+explicit_unit,3,Body Mass Index (kg/m^2),3,5
+object+temporal_expression+measurement_operator+baseline_or_comparator+instrument_or_scale+explicit_unit+participant_population,1,Change From Baseline in Patient's Assessment of Pain at Week 16,4,12
+object+temporal_expression+measurement_operator+baseline_or_comparator+instrument_or_scale+explicit_unit+participant_population,2,Percentage of Participants Achieving EASI-90 (≥90% Reduction in EASI Score) From Baseline to Week 16,4,15
+object+temporal_expression+measurement_operator+baseline_or_comparator+instrument_or_scale+explicit_unit+participant_population,3,Percentage of Subjects Who Had at Least a 2-grade Reduction From Baseline at Week 12 in the Evaluator's Global Severity Score (EGSS) and Had an EGSS at Week 12 That Equated to Clear or Almost Clear,4,37
+object+composite_or_multiple_objects,1,Composite Success,4,2
+object+composite_or_multiple_objects,2,Composite Cardiovascular Adverse Events (AEs),3,5
+object+composite_or_multiple_objects,3,"Serious Adverse Events Possibly, Probably, and/or Definitely Related to Treatment",3,10
+object+temporal_expression+baseline_or_comparator+explicit_unit,1,24-hour Urinary Cortisol Excretion at Baseline and Week 8,3,9
+object+temporal_expression+baseline_or_comparator+explicit_unit,2,ACRn - Comparison Between Fostamatinib and Placebo at Week 24,3,9
+object+temporal_expression+baseline_or_comparator+explicit_unit,3,Audiometry - Shift in Air-Bone Gap at 1000 Hz From Baseline to Week 12 (Month 3),3,15
+object+measurement_operator+baseline_or_comparator+instrument_or_scale+composite_or_multiple_objects,1,A Composite Responder Analysis Based on Change From Baseline in Penile Curvature and in the Peyronie's Disease Bother Score,3,20
+object+measurement_operator+baseline_or_comparator+instrument_or_scale+composite_or_multiple_objects,2,Change From Baseline in Daytime Composite Symptom Score,2,8
+object+measurement_operator+baseline_or_comparator+instrument_or_scale+composite_or_multiple_objects,3,Change From Baseline in Dyspareunia Component of the Composite Pelvic Signs and Symptoms Score (CPSSS),2,15
+object+temporal_expression+measurement_operator+composite_or_multiple_objects,1,Time to First Composite Cardiovascular Safety AE,3,7
+object+temporal_expression+measurement_operator+composite_or_multiple_objects,2,"Arm 1, Cohort 1, Dose Level -1, 1, and 2 Treatment Emergent Serious Grades 3, 4, and/or 5 Adverse Events Possibly Related to Drug Grouped by Relationship to the Study Drug and/or Combination",1,33
+object+temporal_expression+measurement_operator+composite_or_multiple_objects,3,Average Vector Copy Number (VCN) in Peripheral Blood Leukocytes as Assessed by Quantitative Polymerase Chain Reaction (qPCR) and/or Droplet Digital Polymerase Chain Reaction (ddPCR),1,24
+object+measurement_operator+instrument_or_scale+composite_or_multiple_objects,1,Clinical Composite Score,3,3
+object+measurement_operator+instrument_or_scale+composite_or_multiple_objects,2,Change in Ability to Conduct Activities of Daily Living Score (OHDAS Composite Score),2,13
+object+measurement_operator+instrument_or_scale+composite_or_multiple_objects,3,Change in the Alzheimer's Prevention Initiative Composite Cognitive (APCC) Test Score,2,12
+object+temporal_expression+baseline_or_comparator+instrument_or_scale+explicit_unit,1,"36-Item Short-Form Health Survey (SF-36) at Baseline, Month 1, 3 and 6",3,12
+object+temporal_expression+baseline_or_comparator+instrument_or_scale+explicit_unit,2,Asthma Control as Assessed by Asthma Control Questionnaire (ACQ) at the End of the 24-week Treatment Period.,2,17
+object+temporal_expression+baseline_or_comparator+instrument_or_scale+explicit_unit,3,EQ-5D Visual Analogue Scale (VAS) Scores at Baseline and Week 8/ET Visit,2,12
+object+measurement_operator+composite_or_multiple_objects,1,Co-primary: Body Weight- Mean Percent Change,3,6
+object+measurement_operator+composite_or_multiple_objects,2,Composite Major Adverse Event (MAE) Rate,3,6
+object+measurement_operator+composite_or_multiple_objects,3,1-level Composite Responders of the Target Buttock,2,7
+object+temporal_expression+measurement_operator+baseline_or_comparator+instrument_or_scale+participant_population,1,Change in NPI Anxiety Item Score in Patients With an NPI Anxiety Item Score of at Least 2 at Baseline,3,20
+object+temporal_expression+measurement_operator+baseline_or_comparator+instrument_or_scale+participant_population,2,Change in Psoriasis Scalp Severity Index (PSSI) Total Score in Participants With Scalp Involvement at Baseline,3,16
+object+temporal_expression+measurement_operator+baseline_or_comparator+instrument_or_scale+participant_population,3,Cumulative Incidence (Percentage of Participants) of Intensive Care Unit Discharge -- Critical COVID Population (WHO Clinical Progression Scale >5 at Baseline),3,20
+object+temporal_expression+instrument_or_scale+participant_population,1,Participants Assessment of Fatigue Over Time,3,6
+object+temporal_expression+instrument_or_scale+participant_population,2,Participants Assessment of Pain Over Time,3,6
+object+temporal_expression+instrument_or_scale+participant_population,3,Patient's Global Evaluation Scale (P-GES) Evaluated at Last Visit or Early Discontinuation Visit,3,14
+object+measurement_operator+explicit_unit+composite_or_multiple_objects+participant_population,1,Co-primary: Body Weight- Proportion of Subjects With ≥5% Decrease,3,9
+object+measurement_operator+explicit_unit+composite_or_multiple_objects+participant_population,2,Co-Primary Outcome: Percentage of Subjects Who Achieve Body Weight Loss ≥ 5%,1,11
+object+measurement_operator+explicit_unit+composite_or_multiple_objects+participant_population,3,"Incidence of Local Skin Reactions (LSRs) in Participants Treated With PAT-001 0.1%, 0.2% and/or Vehicle",1,17
+object+instrument_or_scale+composite_or_multiple_objects,1,Health-related Quality of Life Using the SF-36 Physical Composite,2,9
+object+instrument_or_scale+composite_or_multiple_objects,2,Length of Intensive Care Unit (ICU) and/or Coronary Care Unit (CCU) Stay for the Index AHF Hospitalization,2,17
+object+instrument_or_scale+composite_or_multiple_objects,3,Quality of Life Assessments: Expanded Prostate Cancer Index Composite (EPIC) -26 Urinary Incontinence,2,13
+object+measurement_operator+instrument_or_scale+explicit_unit+participant_population,1,Number of Participants With a 30% or Greater Change in Pain Rating on the Visual Analog Scale (VAS),2,18
+object+measurement_operator+instrument_or_scale+explicit_unit+participant_population,2,Overall Survival (OS) in Participants With a Tumor Proportion Score (TPS) of ≥50%,2,13
+object+measurement_operator+instrument_or_scale+explicit_unit+participant_population,3,Percentage of Participants Achieving Psoriasis Area and Severity Index ≥75% (PASI 75) Improvement,2,13
+object+temporal_expression+baseline_or_comparator+instrument_or_scale,1,Control of Asthma as Assessed by Asthma Control Questionnaire (ACQ),2,10
+object+temporal_expression+baseline_or_comparator+instrument_or_scale,2,Personal Perception of Fatigue as Measured by Multidimensional Fatigue Symptom Inventory - Short Form at Baseline,2,15
+object+temporal_expression+baseline_or_comparator+instrument_or_scale,3,Work Productivity and Activity Impairment Questionnaire for Osteoarthritis (WPAI:OA) Scores at Baseline,2,13
+object+baseline_or_comparator+instrument_or_scale+participant_population,1,Patient's Global Assessment of Pain Control,2,7
+object+baseline_or_comparator+instrument_or_scale+participant_population,2,Assess Changes From Baseline in Quality of Life Based on Patient Completed Questionnaire (QOLIE-31-P),1,14
+object+baseline_or_comparator+instrument_or_scale+participant_population,3,Assessment of Baseline Characteristics in Participants With SVR,1,8
+object+temporal_expression+baseline_or_comparator+explicit_unit+participant_population,1,Achievement of vIGA-AD Success at Week 4 in Participants With Moderate Baseline Scores,2,13
+object+temporal_expression+baseline_or_comparator+explicit_unit+participant_population,2,Participants Who Achieved A ≥2.0 g/dL Increase In Hemoglobin At Any Time From Baseline To Week 5,2,18
+object+temporal_expression+baseline_or_comparator+explicit_unit+participant_population,3,Subjects Who Achieve ≥70% Reduction in TSS From Baseline to Weeks 23-24,2,12
+object+temporal_expression+measurement_operator+explicit_unit+composite_or_multiple_objects,1,Annualized Rate of Exacerbations Requiring Hospitalization and/or Emergency Department (ED) Visit up to 52 Weeks,2,15
+object+temporal_expression+measurement_operator+explicit_unit+composite_or_multiple_objects,2,Mean Number of New and/or Enlarging T2-Hyperintense Lesions Per Year,2,10
+object+temporal_expression+measurement_operator+explicit_unit+composite_or_multiple_objects,3,Number of Scheduled Bleeding and/or Spotting Days Per Cycle,2,9
+object+measurement_operator+baseline_or_comparator+composite_or_multiple_objects,1,Mean Change From Baseline in Multiple Sclerosis Quality of Life (MSQOL)-54 Physical Health Composite Summary and Mental Health Composite Summary Scores,2,22
+object+measurement_operator+baseline_or_comparator+composite_or_multiple_objects,2,Biopsy Study: Change From Baseline in Proliferation (Using Ki67+ Marker) of Carcinoma and/or Immune Cells (Including CD8+ T Cells) - Cell Density in Center Tumour Region,1,25
+object+measurement_operator+baseline_or_comparator+composite_or_multiple_objects,3,Change From Baseline in Attention Composite,1,6
+object+temporal_expression+measurement_operator+instrument_or_scale+explicit_unit+composite_or_multiple_objects+participant_population,1,Composite Safety and Effectiveness Endpoint That is Based on the Percentage of Subjects Who Experienced (a) Access and/or Deployment Failures; and/or (b) Major Device Effect (MDE) Within 30 Days Post Index Procedure,2,32
+object+temporal_expression+measurement_operator+instrument_or_scale+explicit_unit+composite_or_multiple_objects+participant_population,2,Number of Participants With Clinical Response Based on Composite Score at Week 12,2,13
+object+temporal_expression+measurement_operator+instrument_or_scale+explicit_unit+composite_or_multiple_objects+participant_population,3,CFBL in the 7-day Average Composite Score of 3CS in All Participants at Week 24.,1,15
+object+temporal_expression+baseline_or_comparator+instrument_or_scale+participant_population,1,Patient Assessment of Pain Using Visual Analog Scale (VAS) at Baseline,2,11
+object+temporal_expression+baseline_or_comparator+instrument_or_scale+participant_population,2,Assessment of Patient Happiness With Psoriasis Control Over Time Using Numerical Rating Scale,1,13
+object+temporal_expression+baseline_or_comparator+instrument_or_scale+participant_population,3,Assessment of Patients' Assessment of Effectiveness on a 5-point VRS at Pre-dose Baseline and at the End-of-study Evaluation,1,18
+object+measurement_operator+instrument_or_scale+composite_or_multiple_objects+participant_population,1,Patient-level Outcome: Composite Sleep Health Score,2,6
+object+measurement_operator+instrument_or_scale+composite_or_multiple_objects+participant_population,2,Caregiver General Self-Efficacy Scale (GSES) - Sum Composite Score,1,8
+object+measurement_operator+instrument_or_scale+composite_or_multiple_objects+participant_population,3,Caregiver Mental Health - Change (Short Form - 12 [SF-12] Mental Composite Score [MCS]),1,12
+object+temporal_expression+measurement_operator+baseline_or_comparator+instrument_or_scale+composite_or_multiple_objects,1,Change From Baseline in Disability as Assessed by the Multiple Sclerosis Functional Composite (MSFC) Score,2,15
+object+temporal_expression+measurement_operator+baseline_or_comparator+instrument_or_scale+composite_or_multiple_objects,2,Change From Baseline in European Quality of Life 5-dimensions (EQ-5D-5L) Health Outcome Questionnaire Through Composite Index Score at End of Treatment (EOT),2,22
+object+temporal_expression+measurement_operator+baseline_or_comparator+instrument_or_scale+composite_or_multiple_objects,3,"Change From Baseline in the National Eye Institute Visual Functioning Questionnaire-25 (NEI VFQ-25) Composite Score Over Time, ITT Population",2,19
+object+temporal_expression+measurement_operator+baseline_or_comparator+instrument_or_scale+explicit_unit+composite_or_multiple_objects,1,Change From Baseline in Multiple Sclerosis Functional Composite (MSFC) Score at Year 2,2,13
+object+temporal_expression+measurement_operator+baseline_or_comparator+instrument_or_scale+explicit_unit+composite_or_multiple_objects,2,Change From Baseline in National Eye Institute Visual Functioning Questionnaire 25-item (NEI VFQ-25) Version Composite Score at Week 48,2,19
+object+temporal_expression+measurement_operator+baseline_or_comparator+instrument_or_scale+explicit_unit+composite_or_multiple_objects,3,"Change From Baseline in Symptoms as Measured by a Composite Score for Each Symptom of Nasal Congestion, Facial Pain or Pressure Sensation, and Nasal Discharge (Anterior and/or Posterior) at the End of Week 4",2,34
+object+temporal_expression+baseline_or_comparator+participant_population,1,Age of Participants at Baseline,2,5
+object+temporal_expression+baseline_or_comparator+participant_population,2,Description of PACT-Q1 Items for Patients in Cohort B at Baseline,2,11
+object+temporal_expression+baseline_or_comparator+participant_population,3,FEV1 - Baseline Measured by Patient at Home (L) in the Morning,2,11
+object+measurement_operator+baseline_or_comparator+instrument_or_scale+explicit_unit+participant_population,1,"Number of Participants (Vehicle Arm vs. Sofpironium Bromide Gel, 15%) With and Without an Observed ≥2-point Improvement in Hyperhidrosis Disease Severity Measure-Axillary-7 Item Total Score From Baseline to End of Treatment",2,31
+object+measurement_operator+baseline_or_comparator+instrument_or_scale+explicit_unit+participant_population,2,Pain VAS (Visual Analog Scale) Response. Percentage of Subjects With a Greater Than or Equal to 30% Reduction in Pain VAS From Baseline (BOCF).,2,24
+object+measurement_operator+baseline_or_comparator+instrument_or_scale+explicit_unit+participant_population,3,Percentage of Participants With a ≥90% Improvement in Psoriasis Area and Severity Index (PASI 90) From Baseline,2,17
+object+baseline_or_comparator+explicit_unit+participant_population,1,Efficacy of NatrOVA Creme Rinse - 1% Relative to NIX Creme Rinse in Subjects Infested With Head Lice,2,17
+object+baseline_or_comparator+explicit_unit+participant_population,2,Responder Analysis for Subjects With a ≥ 30% Reduction in Pain Compared to Baseline,2,13
+object+baseline_or_comparator+explicit_unit+participant_population,3,Responder Analysis for Subjects With a ≥ 50% Reduction in Pain Compared to Baseline,2,13
+object+temporal_expression+instrument_or_scale+explicit_unit+participant_population,1,6 Question Subject Preference Survey at Week 3,2,8
+object+temporal_expression+instrument_or_scale+explicit_unit+participant_population,2,Main Period: Global Aesthetic Improvement Scale (GAIS) at Day 30 as Assessed by the Subjects,2,15
+object+temporal_expression+instrument_or_scale+explicit_unit+participant_population,3,Patient Assessment of Need for Retreatment at Week 4,2,9
+object+temporal_expression+composite_or_multiple_objects,1,Overall Survival as Noted by Follow-up Via Composite of Telephone or Medical Record Review.,2,14
+object+temporal_expression+composite_or_multiple_objects,2,"A Composite of Biopsy-proven Chronic Rejection Graft Loss, Death, or Lost to Follow up.",1,14
+object+temporal_expression+composite_or_multiple_objects,3,Ability to Detect Stress-induced Myocardial Perfusion Abnormalities by Analysis of MDCT Images Confirmed by Coronary Angiography and/or SPECT.,1,18
+object+composite_or_multiple_objects+participant_population,1,Participants With Pre-Existing and/or Treatment-Emergent Antidrug Antibodies (ADA),2,8
+object+composite_or_multiple_objects+participant_population,2,Subjects Included in the Composite Endpoint of CV Death or Hospitalization Due to Heart Failure.,2,15
+object+composite_or_multiple_objects+participant_population,3,"Subjects Included in the Composite Endpoint of CV Death, Hospitalization Due to Heart Failure or Urgent Visit Due to Heart Failure.",2,21
+object+measurement_operator+instrument_or_scale+explicit_unit,1,Change in Homeostasis Model Assessment Index for Beta Cell Function (HOMA-%B),2,12
+object+measurement_operator+instrument_or_scale+explicit_unit,2,Proportion (%) of Events in Each Classification of the Columbia Suicide Severity Rating Scale (C SSRS).,2,15
+object+measurement_operator+instrument_or_scale+explicit_unit,3,% Acid Resistance Score Per Each of Five Arms,1,8
+object+temporal_expression+baseline_or_comparator+instrument_or_scale+explicit_unit+participant_population,1,"Patient Assessment of Arthritis Pain at Baseline, Month 1, 3 and 6",2,12
+object+temporal_expression+baseline_or_comparator+instrument_or_scale+explicit_unit+participant_population,2,Patient Global Assessment (PGA) of Pain Control at Hour 24,2,10
+object+temporal_expression+baseline_or_comparator+instrument_or_scale+explicit_unit+participant_population,3,"Subjects With 'Controlled Disease' ('Clear'/'Almost Clear' for Subjects w. at Least Moderate Disease at Baseline, 'Clear' for Subjects With Mild Disease at Baseline) According to the Investigator's Global Assessment (IGA) on the Trunk and Limbs at Week 4.",2,40
+object+temporal_expression+measurement_operator+baseline_or_comparator+instrument_or_scale+explicit_unit+composite_or_multiple_objects+participant_population,1,"Composite Achievement of Grade 1 or 2 (Minimal or Mild) and at Least a 2-Grade Improvement From Baseline Based on Both Investigator's Assessment Using C-APPS and Participant's Self-Assessment Using P-APPS, at Maximum Contraction at Day 14",2,38
+object+temporal_expression+measurement_operator+baseline_or_comparator+instrument_or_scale+explicit_unit+composite_or_multiple_objects+participant_population,2,CRISS (American College of Rheumatology Composite Response Index for Clinical Trials) at Week 52 Reported as Number of Participants With a CRISS Probability >=0.60 or <0.60 From Baseline to Week 52,1,33
+object+temporal_expression+measurement_operator+baseline_or_comparator+instrument_or_scale+explicit_unit+composite_or_multiple_objects+participant_population,3,Change From Baseline (CFBL) in the 7-day Average Composite Score of 3 Cardinal Symptoms (3CS) in Participants Without Nasal Polyps.,1,20
+object+temporal_expression+measurement_operator+baseline_or_comparator+explicit_unit+composite_or_multiple_objects,1,Co-Primary Endpoint: Absolute Change in Inflammatory Lesion Count From Baseline to Week 12,2,13
+object+temporal_expression+measurement_operator+baseline_or_comparator+explicit_unit+composite_or_multiple_objects,2,Co-Primary Endpoint: Absolute Change in NonInflammatory Lesion Counts From Baseline to Week 12,2,13
+object+temporal_expression+measurement_operator+baseline_or_comparator+explicit_unit+composite_or_multiple_objects,3,2 Year Local Control (LC) Rate After De-intensified Chemoradiotherapy (CRT) in Human Papilloma Virus (HPV)-Positive and/or p16 Positive Low-risk Oropharyngeal Squamous Cell Carcinoma (OPSCC),1,25
+object+temporal_expression+measurement_operator+baseline_or_comparator+explicit_unit+composite_or_multiple_objects+participant_population,1,Co-primary Endpoint- Percentage of Participants Achieving Greater Than or Equal to 5% Weight Loss From Baseline to Week 52,2,19
+object+temporal_expression+measurement_operator+baseline_or_comparator+explicit_unit+composite_or_multiple_objects+participant_population,2,Amlodipine: Percentage of Participants With 24-hour Mean SBP <130 mmHg and/or Reduction From Baseline ≥20 mmHg Assessed by ABPM Without Escape Antihypertensive Medications at Month 6,1,26
+object+temporal_expression+measurement_operator+baseline_or_comparator+explicit_unit+composite_or_multiple_objects+participant_population,3,Change of Serum Hepatitis B Surface Antigen (HBsAg as Measured in log10 IU/mL) Level as an Indicator of Antiviral Activity of Ledipasvir and/or Sofosbuvir in Subjects With Chronic Hepatitis B From Baseline to End of 12 Weeks Treatment.,1,38
+object+measurement_operator+instrument_or_scale+explicit_unit+composite_or_multiple_objects,1,"Vineland Adaptive Behavior Scales, Second Edition (Vineland-II) Adaptive Behavior Composite Standard Score",2,12
+object+measurement_operator+instrument_or_scale+explicit_unit+composite_or_multiple_objects,2,1: Assessment of Anti-tumor Activity: MRI K-trans in [ 10^-3/Min] and/or CEUS in [Arbitrary Units]; 2: Pharmacokinetic Profile: AUC in [ng*h/mL],1,22
+object+measurement_operator+instrument_or_scale+explicit_unit+composite_or_multiple_objects,3,Change in Score on Multiple Sclerosis Functional Composite (MSFC). This a Composite Score Based on the Measurement of Time in Seconds for the Three Separate Measurements.,1,26
+object+temporal_expression+measurement_operator+instrument_or_scale+composite_or_multiple_objects,1,Percentage of Responders Based on Composite Facial Wrinkle Scale Assessment of Crow's Feet Line Severity at Maximum Smile,2,19
+object+temporal_expression+measurement_operator+instrument_or_scale+composite_or_multiple_objects,2,"A Composite of Death or Dependency, With Dependency Being Defined by a Score of 3 to 5 on the Modified Rankin Scale (mRS)",1,23
+object+temporal_expression+measurement_operator+instrument_or_scale+composite_or_multiple_objects,3,Addiction Severity Index (ASI) Alcohol Composite Score at End of Study.,1,11
+object+temporal_expression+instrument_or_scale+explicit_unit+composite_or_multiple_objects,1,"Hour 4 Swanson, Kotkin, Alger, M-Flynn and Pelham Scale for Composite (SKAMP-Composite)",2,12
+object+temporal_expression+instrument_or_scale+explicit_unit+composite_or_multiple_objects,2,BILAG-based Composite Lupus Assessment (BICLA) Response at Week 24 and 48,1,11
+object+temporal_expression+instrument_or_scale+explicit_unit+composite_or_multiple_objects,3,Co-primary Variable: Investigator's Global Assessment of Efficacy at Week 12,1,11
+object+temporal_expression+baseline_or_comparator+explicit_unit+composite_or_multiple_objects,1,"The First Occurrence of the Composite Endpoint of Onset of Kidney Failure, a Sustained Decrease in eGFR of ≥57% From Baseline Over at Least 4 Weeks, or Renal Death",2,29
+object+temporal_expression+baseline_or_comparator+explicit_unit+composite_or_multiple_objects,2,Association Between a Composite of Baseline Hand and Wrist Synovitis and Bone Marrow Edema RAMRIS Scores and Flare up to Week 40 in the Tapering Arm,1,26
+object+temporal_expression+baseline_or_comparator+explicit_unit+composite_or_multiple_objects,3,"Clinical Benefit as Defined by the Composite of Complete Response, Partial Response and Stable Disease Lasting 16 Weeks or More Per RECIST 1.1 as a Measure of Disease Control",1,30
+object+temporal_expression+measurement_operator+instrument_or_scale+composite_or_multiple_objects+participant_population,1,"Cognitive Composite Score for Group of Subjects With TBI and Healthy Controls Matched by Age, Education, and Treatment Group.",1,19
+object+temporal_expression+measurement_operator+instrument_or_scale+composite_or_multiple_objects+participant_population,2,Number of Participants With At Least One Event of Suicidal Ideation And/or Suicidal Behavior as Assessed by The Columbia-Suicide Severity Rating Scale (C-SSRS),1,23
+object+temporal_expression+measurement_operator+instrument_or_scale+composite_or_multiple_objects+participant_population,3,"Number of Participants With Composite of Net Adverse Clinical Endpoint (NACE), by Propensity Score Quintiles",1,15
+object+baseline_or_comparator+explicit_unit,1,% BOLD Response Increase Above Baseline,1,5
+object+baseline_or_comparator+explicit_unit,2,% Changes From Baseline in Body Surface Area (BSA) Involved in Atopic Dermatitis,1,12
+object+baseline_or_comparator+explicit_unit,3,% Cyclic Amine Mono Phosphate (cAMP) Response Element Binding Protein (CBP) White Blood Cell (WBC) Phosphorylation (Metformin Treated vs no Treatment),1,20
+object+temporal_expression+measurement_operator+baseline_or_comparator+composite_or_multiple_objects,1,Change From Baseline in Insulin Glargine Dose at Each Visit (Office and/or Phone),1,13
+object+temporal_expression+measurement_operator+baseline_or_comparator+composite_or_multiple_objects,2,Change From Baseline to Last Available Observation in Horizontal Corneal Diameter (by Caliper and/or Ruler),1,15
+object+temporal_expression+measurement_operator+baseline_or_comparator+composite_or_multiple_objects,3,Change From Baseline to Last Available Observation in Length of Eyelash (by Caliper and/or Ruler),1,15
+object+temporal_expression+explicit_unit+composite_or_multiple_objects,1,"1. Composite Outcome of Necrotizing Enterocolitis, Intraventricular Hemorrhage, Bronchopulmonary Dysplasia and Retinopathy of Prematurity at 30 and 90-days. 2. Mortality",1,20
+object+temporal_expression+explicit_unit+composite_or_multiple_objects,2,12-month Composite Major Adverse Cardiac Event (MACE),1,7
+object+temporal_expression+explicit_unit+composite_or_multiple_objects,3,12-month Composite Safety Endpoint.,1,4
+object+measurement_operator+baseline_or_comparator+instrument_or_scale+explicit_unit,1,% Change in Hamilton Depression Rating Scale From Baseline to week8,1,10
+object+measurement_operator+baseline_or_comparator+instrument_or_scale+explicit_unit,2,Achievement of a 75% Reduction From Baseline in Psoriasis Scalp Severity Index (PSSI) Score (PSSI-75),1,15
+object+measurement_operator+baseline_or_comparator+instrument_or_scale+explicit_unit,3,"Adjusted Mean Change From Baseline in Evaporative Sensitivity Pain Response of Hypersensitive Tooth on a Visual Analogue Scale (VAS) Immediately Post Application of 5% KNO3 Solution, 2.5% KNO3 Solution and Sterile Water",1,33
+object+explicit_unit+composite_or_multiple_objects,1,"Absence of the Following Procedural Safety Events: Death, Stroke, Myocardial Infarction, Bowel Ischemia, Paraplegia, Respiratory Failure, Renal Failure, Procedural Blood Loss ≥1000 mL",1,23
+object+explicit_unit+composite_or_multiple_objects,2,Composite Variable of Infant Morbidity of Second Stage Cesarean Section,1,10
+object+explicit_unit+composite_or_multiple_objects,3,Composite Variable of Maternal Morbidity of Second Stage Cesarean Section,1,10
+object+temporal_expression+explicit_unit+composite_or_multiple_objects+participant_population,1,"A Composite of Patient Survival at Day 30 Post Transplantation, and Absence of International Society for Heart & Lung Transplantation (ISHLT) Primary Graft Dysfunction (PGD3) Grade 3 Within the First 72 Hours Post-transplantation.",1,32
+object+temporal_expression+explicit_unit+composite_or_multiple_objects+participant_population,2,Analysis of Primary Composite Outcome in Participants Randomized Before the 13th Week of Pregnancy,1,14
+object+temporal_expression+explicit_unit+composite_or_multiple_objects+participant_population,3,Analysis of Primary Composite Outcome in Participants Randomized on or After the 13th Week of Pregnancy,1,16
+object+measurement_operator+explicit_unit+composite_or_multiple_objects,1,Change in Glucose Variability (GV) (mg/dl) (Standard Deviation and/or Coefficient Variation),1,11
+object+measurement_operator+explicit_unit+composite_or_multiple_objects,2,Dose-limiting Toxicities (DLT) and/or Maximum Plasma Level > 1000 pg/mL,1,9
+object+measurement_operator+explicit_unit+composite_or_multiple_objects,3,Efficacy: Composite Response Rate (%) for Phase 2 Randomized and Phase 2 Single-arm Treatment Groups,1,14
+object+temporal_expression+measurement_operator+baseline_or_comparator+composite_or_multiple_objects+participant_population,1,Baseline Biomarker-positive Participants for ITT Population: Percentage of Participants With No Evidence of HPV-16 and/or HPV-18 in Cervical Samples by Type Specific HPV Testing,1,24
+object+temporal_expression+measurement_operator+baseline_or_comparator+composite_or_multiple_objects+participant_population,2,Baseline Biomarker-positive Participants for ITT Population: Percentage of Participants With No Evidence of LSIL or HSIL on Histology Sample and No Evidence of HPV-16 and/or HPV-18 by Type Specific HPV Testing,1,31
+object+temporal_expression+measurement_operator+baseline_or_comparator+composite_or_multiple_objects+participant_population,3,Composite Endpoint of All-Cause Mortality and Frequency of All-Cause Hospitalizations and Urgent HF Visits in Participants Not on Tafamidis at Baseline,1,21
+object+baseline_or_comparator+instrument_or_scale+explicit_unit+participant_population,1,Subjects With >=75% Reduction in Baseline Psoriasis Area and Severity Index (PASI) (Efficacy),1,13
+object+temporal_expression+baseline_or_comparator+explicit_unit+composite_or_multiple_objects+participant_population,1,Changes in Serum Hepatitis B Virus DNA Levels (HBV DNA as Measured in IU/mL) With Treatment of Ledipasvir and/or Sofosbuvir From Baseline to End of 12 Weeks of Treatment in Subjects With Chronic Hepatitis B Infection.,1,36
+object+temporal_expression+baseline_or_comparator+explicit_unit+composite_or_multiple_objects+participant_population,2,Determine if the Treatment of AMG 479 at 12 mg/kg and/or 20 mg/kg in Combination With Gemcitabine Improves Overall Survival as Compared With Placebo in Combination With Gemcitabine in Subjects With Metastatic Adenocarcinoma of the Pancreas,1,36
+object+temporal_expression+instrument_or_scale+composite_or_multiple_objects,1,Additional Investigations at Index Consultation and/or During Follow-up,1,8
+object+temporal_expression+instrument_or_scale+composite_or_multiple_objects,2,Changes of Expanded Prostate Cancer Index Composite (EPIC-26) Quality of Life (QOL) Scores During and After Treatment,1,17
+object+temporal_expression+instrument_or_scale+composite_or_multiple_objects,3,Composite Severity Scale of Labial Adhesion Over Time,1,8
+object+temporal_expression+composite_or_multiple_objects+participant_population,1,Adjudicated Composite of Major/Clinically Relevant Non-major Bleeding During the Treatment Period - Treated Participants,1,13
+object+temporal_expression+composite_or_multiple_objects+participant_population,2,Changes in QTcF After Treatment With DS-8201a in Participants With HER2-expressing Metastatic and/or Unresectable Breast Cancer,1,16
+object+temporal_expression+composite_or_multiple_objects+participant_population,3,Composite Success in Patients With Cefepime-Resistant Pathogens at End of Treatment (EOT) in the microITT Population,1,16
+object+temporal_expression+instrument_or_scale+composite_or_multiple_objects+participant_population,1,Assessment of Patients Reported Pain Through Composite Analysis of Pain Questionaires.,1,11
+object+temporal_expression+instrument_or_scale+composite_or_multiple_objects+participant_population,2,"Best Overall Response By The Investigator's Assessment (Unconfirmed) in Participants With HER2-Positive Advanced and/or Refractory Gastric, Gastroesophageal Junction Adenocarcinoma, or Breast Cancer",1,23
+object+temporal_expression+instrument_or_scale+composite_or_multiple_objects+participant_population,3,Comparative Evaluation of Any Variability in Quality of Life Assessed by SF-12 (Mental Composite) Questionnaire Between Subjects Receiving LCS Complete Duofix™ and Porocoat® Knee Systems at Pre-op.,1,27
+object+instrument_or_scale+composite_or_multiple_objects+participant_population,1,Composite Behavioral Risk Factor Adherence MOS (Medical Outcomes Study Patient Adherence Questionnaire),1,12
+object+instrument_or_scale+composite_or_multiple_objects+participant_population,2,Composite Success Assessment (CEA) and Patient Self Assessment(PSA).,1,9
+object+instrument_or_scale+composite_or_multiple_objects+participant_population,3,Expanded Prostate Cancer Index Composite (EPIC) Quality of Life Questionnaires Will be Assessed in Patients.,1,15
+object+baseline_or_comparator+instrument_or_scale+explicit_unit,1,% Changes From Baseline in Eczema Area and Severity Index (EASI),1,10
+object+baseline_or_comparator+instrument_or_scale+explicit_unit,2,% Changes From Baseline in Investigator Global Assessment (IGA) for Atopic Dermatitis,1,11
+object+baseline_or_comparator+instrument_or_scale+explicit_unit,3,% Changes From Baseline in Irritability Visual Analogue Scale (VAS),1,9
+object+measurement_operator+baseline_or_comparator+instrument_or_scale+composite_or_multiple_objects+participant_population,1,Change From Baseline for Cognitive Decline on Composite Score on the Cognitive Test Battery for Pioglitazone-treated Participants Versus Placebo-treated Participants in the High-risk Stratum,1,24
+object+measurement_operator+baseline_or_comparator+instrument_or_scale+composite_or_multiple_objects+participant_population,2,Change From Baseline in Composite Gene Expression Score Based on IL-12 Pathway Related Interferon Gamma (IFN-γ)-Modulated Genes in Psoriatic Lesions of Participants Treated With Ustekinumab,1,26
+object+measurement_operator+baseline_or_comparator+instrument_or_scale+composite_or_multiple_objects+participant_population,3,Change From Baseline in Depression (Patient Health Questionnaire-9; Beck Depression Inventory-II Composite),1,12
+object+instrument_or_scale+explicit_unit+participant_population,1,Euro Quality of Life Questionnaire- 5 Dimensions (EQ-5D) Visual Analog Scale (VAS): Second-Line Participants,1,14
+object+instrument_or_scale+explicit_unit+participant_population,2,Inter - Observer Reliability: Assessment of Severe Disease is Diagnosesed on Official Read (70% or Greater),1,15
+object+instrument_or_scale+explicit_unit+participant_population,3,Investigator Global Aesthetic Improvement Scale (I-GAIS) in Treatment Phase for Participants With Second EN3835 Treatment,1,15
+object+temporal_expression+measurement_operator+instrument_or_scale+explicit_unit+composite_or_multiple_objects,1,"Acute Gastrointestinal Toxicity, as Measured by Change in Expanded Prostate Cancer Index Composite (EPIC) Bowel Domain Score at 5 Weeks From the Start of Pelvic Radiation",1,26
+object+temporal_expression+measurement_operator+instrument_or_scale+explicit_unit+composite_or_multiple_objects,2,Average Penalties Adjusted Composite Efficacy Score (CFS) Score Over the 4 Months,1,12
+object+temporal_expression+measurement_operator+instrument_or_scale+explicit_unit+composite_or_multiple_objects,3,Change From Month 24 in Health Related Quality of Life (HRQoL) as Measured by Multiple Sclerosis Quality of Life 54 Questionnaire (MSQoL-54) Physical and Mental Health Composite Summary Scores at 4 Years,1,32
+object+baseline_or_comparator+composite_or_multiple_objects,1,"Composite Outcome of Stroke, Myocardial Infarction, Vascular Death, or New or Worsening Congestive Heart Failure (CHF) (Telmisartan vs. Placebo Only)",1,20
+object+baseline_or_comparator+composite_or_multiple_objects,2,Condom and/or Birth Control Use,1,5
+object+baseline_or_comparator+composite_or_multiple_objects,3,Economic Analysis of Cost of Compounding Buffered Lidocaine Versus Cost of Purchasing Regular Lidocaine and/or Bacteriostatic Normal Saline,1,18
+object+baseline_or_comparator+composite_or_multiple_objects+participant_population,1,Antimicrobial Resistance Patterns of Isolates of Streptococcus Pneumoniae and Nontypeable Haemophilus Influenzae Cultured From the Oropharynx and/or Nasopharynx of Subjects Treated With Viscous-adherent Xylitol Compared to Placebo.,1,27
+object+baseline_or_comparator+composite_or_multiple_objects+participant_population,2,Fraction of Grade 3 and Grade 4 Serious and/or Non-serious Adverse Events in Participants With Newly Diagnosed Chronic Graft-versus-host Disease (GvHD),1,21
+object+baseline_or_comparator+composite_or_multiple_objects+participant_population,3,IL-7 and IL-7R Expression in Peripheral Blood Mononuclear Cells of RA Patients With Active vs. Inactive Disease Treated With DMARD and/or CIMZIA.,1,22
+object+measurement_operator+baseline_or_comparator+instrument_or_scale+explicit_unit+composite_or_multiple_objects+participant_population,1,Number of Responders and Non-Responders With a Treatment Response in 3 Treated Lesions as Defined as a ≥50% Improvement in the Composite Assessment of Index Lesion Disease Severity (CAILS) Score When Compared to Patients Receiving Placebo,1,36
+object+temporal_expression+measurement_operator+baseline_or_comparator+instrument_or_scale+composite_or_multiple_objects+participant_population,1,Change From Baseline in Composite Symptom Score at Each Time Point in Participants Randomized to Baloxavir or Placebo,1,18
+object+temporal_expression+measurement_operator+baseline_or_comparator+instrument_or_scale+composite_or_multiple_objects+participant_population,2,Difference in Huntington's Disease Cognitive Assessment Battery (HD-CAB) Composite Score Between Participants With HD vs HP at Baseline,1,19
+object+temporal_expression+measurement_operator+baseline_or_comparator+instrument_or_scale+composite_or_multiple_objects+participant_population,3,Proportion of Subjects Achieving an American College of Rheuamtology Low Disease Activity Score and/or Remission Score in the Cimzia Group Compared to the Placebo Group as Calculated by DAS28 (CRP),1,30
+object+explicit_unit+composite_or_multiple_objects+participant_population,1,"Subjects Included in the Composite Endpoint of ≥50% Sustained Decline in eGFR, ESRD or Renal Death.",1,16
+object+temporal_expression+baseline_or_comparator+instrument_or_scale+explicit_unit+composite_or_multiple_objects,1,"Changes in Quality of Life (QOL) ,From Baseline to 12 Months, as Measured on the Expanded Prostate Cancer Index Composite (EPIC-26) Questionnaire Scoring.",1,23
+object+temporal_expression+baseline_or_comparator+instrument_or_scale+explicit_unit+composite_or_multiple_objects,2,Occurrence of Events of Reported Reduction of Blood Flow That Prevents the Ability to Cannulate or Requires Further Assessment and/or Intervention From Baseline Procedure to 12 Months.,1,27
+object+temporal_expression+baseline_or_comparator+composite_or_multiple_objects+participant_population,1,ADA Titre in Participants Who Were ADA Positive at Baseline and/or Post-baseline,1,12
+object+temporal_expression+baseline_or_comparator+composite_or_multiple_objects+participant_population,2,Compare the Seroprevalence of SARS-CoV 2 IgM and/or IgG Positive Samples at Study Entry and Study Conclusion in All Participants Receiving HCQ Compared to Those Receiving Placebo.,1,27
+object+temporal_expression+baseline_or_comparator+composite_or_multiple_objects+participant_population,3,The Composite of MACE in the Subgroup of Participants With Established CV Disease(CVD) at Baseline,1,16
+object+temporal_expression+instrument_or_scale+explicit_unit+composite_or_multiple_objects+participant_population,1,Comparative Evaluation of Any Variability in Quality of Life Assessed by SF-12 (Mental Composite) Questionnaire Between Subjects Receiving LCS Complete Duofix™ and Porocoat® Knee Systems at 3 Months.,1,28
+object+temporal_expression+instrument_or_scale+explicit_unit+composite_or_multiple_objects+participant_population,2,Comparative Evaluation of Any Variability in Quality of Life Assessed by SF-12 (Physical Composite) Questionnaire Between Subjects Receiving LCS Complete Duofix™ and Porocoat® Knee Systems at 60 Months.,1,28
+object+temporal_expression+instrument_or_scale+explicit_unit+composite_or_multiple_objects+participant_population,3,Neuropsychiatric Inventory Irritability-Aggression Domains Composite Measure Completed by Participant [Time Frame: 42 Days],1,13
+object+baseline_or_comparator+explicit_unit+composite_or_multiple_objects+participant_population,1,Co-primary Safety Endpoint: % of Subjects Reporting Moderate or Severe Hot Flushes as Adverse Events Throughout the Treatment Period for PGL4001 Compared With GnRH-agonist,1,23
+object+baseline_or_comparator+instrument_or_scale+composite_or_multiple_objects,1,"Composite Asthma Severity Index (CASI), Treatment Steps 2-5: Omalizumab vs. Placebo",1,11
+object+baseline_or_comparator+instrument_or_scale+composite_or_multiple_objects,2,Weighted vs. Unweighted Composite BASA Scale Scores,1,7
+object+baseline_or_comparator+explicit_unit+composite_or_multiple_objects,1,"A Renal Composite Endpoint, Defined as; Reduction in Estimated GFR of >50% (for Individuals With Baseline GFR <60) or Reduction in GFR of >30 (for Individuals With Baseline GFR >= GFR 60) or ESRD.",1,33
+object+baseline_or_comparator+explicit_unit+composite_or_multiple_objects,2,Composite 30% Reduction in Pain Intensity or Pain Interference From Baseline to End of Treatment (EOT),1,16
+object+baseline_or_comparator+explicit_unit+composite_or_multiple_objects,3,"DB Phase: Composite Endpoint ALP And Total Bilirubin, 5-10 mg Versus Placebo",1,12
+object+measurement_operator+baseline_or_comparator+explicit_unit+composite_or_multiple_objects,1,"A Composite Endpoint of Reduction in Estimated GFR of 30ml/Min/1.73m*m in Individuals w/a Baseline Estimated GFR >= 60 ml/Min/1.73m*m, Reduction in Estimated GFR >50% in Individuals w/ Baseline Estimated GFR <60ml/Min/1.73m*m; ESRD or Death",1,39
+object+measurement_operator+instrument_or_scale+explicit_unit+composite_or_multiple_objects+participant_population,1,Percentage of Participants With a ≥ 30% Reduction in Composite Symptom Severity Score According to MDASI Scale,1,16

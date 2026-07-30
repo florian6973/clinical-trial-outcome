@@ -1,0 +1,39 @@
+{
+  "status": "paper-aligned implementation; analyses not rerun",
+  "embedding": {
+    "model_id": "nvidia/NV-Embed-v2",
+    "dtype": "float16",
+    "batch_size": 50,
+    "l2_normalize": true,
+    "index": "faiss.IndexFlatIP"
+  },
+  "selector": {
+    "model_id": "Qwen/Qwen2.5-32B-Instruct",
+    "load_in_8bit": true,
+    "int8_threshold": 6.0,
+    "max_sequence_length": 512,
+    "max_new_tokens": 50,
+    "do_sample": false,
+    "temperature": 0.0
+  },
+  "lora": {
+    "rank": 8,
+    "alpha": 32,
+    "dropout": 0.1,
+    "epochs": 3,
+    "learning_rate": 0.00001,
+    "per_device_train_batch_size": 1,
+    "optimizer": "adamw_torch",
+    "target_modules": null,
+    "seed": 42
+  },
+  "implementation_notes": {
+    "training_compatibility": "The runner follows the historical Accelerate/PEFT response-masked loop. Seed 42 is an explicit reproducibility default; the original LoRA script did not name target modules, so PEFT model defaults are retained."
+  },
+  "audit": {
+    "retain_candidates": true,
+    "retain_raw_model_text": true,
+    "retain_failures": true,
+    "hash_inputs": true
+  }
+}

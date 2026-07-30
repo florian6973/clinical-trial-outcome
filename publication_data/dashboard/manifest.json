@@ -1,0 +1,116 @@
+{
+  "excluded_trial_dates": 17,
+  "files": [
+    {
+      "bytes": 1480,
+      "file": "all_21_outcome_categories_ranked.csv",
+      "sha256": "1701d78e515550307c9b504a5ef02aaa62da884fe139e3e750e97567bfed3a24"
+    },
+    {
+      "bytes": 2953,
+      "file": "category_by_disease_domain_counts.csv",
+      "sha256": "124a26ca67e8c830403a0e0ffc52976cc9e890ff22b6757ae421ef886adc467c"
+    },
+    {
+      "bytes": 5555,
+      "file": "category_by_disease_domain_within_domain_pct.csv",
+      "sha256": "c8f76c71450aad29ffda651e25ea7d37c5778d51b7af0b93456bd11d8035038c"
+    },
+    {
+      "bytes": 6082,
+      "file": "category_by_disease_domain_standardized_residuals.csv",
+      "sha256": "42bf974ac35cd4eda0a8a9fafa623ed6cbdaf33ed3c908224f284383b21ac7f8"
+    },
+    {
+      "bytes": 395,
+      "file": "category_by_disease_domain_association_summary.csv",
+      "sha256": "1aef038410088f8d419837c4c1fb8702aed56e0a442f7a0044d55d1841a77bcf"
+    },
+    {
+      "bytes": 1596,
+      "file": "cohort_count_audit.csv",
+      "sha256": "bbadf124d3e465a2d1dccfc2dbcf2f9e6f913bc0d10785bdf45097d1cd55446c"
+    },
+    {
+      "bytes": 462,
+      "file": "outcome_complexity_summary.csv",
+      "sha256": "21d908e083ec8740cbbd5c9b114666bc3db2bc15a73edf5a67a91f16f3d7eea9"
+    },
+    {
+      "bytes": 464,
+      "file": "outcome_complexity_word_bins.csv",
+      "sha256": "869548e8d257c537c0a421c6b4997435b401c61a50e0759e77a1676eb676e8a6"
+    },
+    {
+      "bytes": 464,
+      "file": "semantic_aspect_frequencies.csv",
+      "sha256": "f7f25a665072bafd30ed4780d3808ecc509653614659c812459d3c802b179a77"
+    },
+    {
+      "bytes": 12883,
+      "file": "semantic_pattern_frequencies.csv",
+      "sha256": "0c5f4584daa2e52dfb6b703ef02e4ea7440e4e5b9e957402996e1ccf7f9a6c16"
+    },
+    {
+      "bytes": 25856,
+      "file": "descriptive_mapping_difficulty_casebook.csv",
+      "sha256": "52e5e37407e369362dd951c419729bfd1f362a1d4cf1897ba26dd34e71c32aa7"
+    },
+    {
+      "bytes": 12162,
+      "file": "disease_explorer.csv",
+      "sha256": "45077906c880d66faea3152abd61cfb82fc1ccabb1c645d3503fe5fb42805f1c"
+    },
+    {
+      "bytes": 291460,
+      "file": "disease_year_counts.csv",
+      "sha256": "f20cab8d65b7c30abbcd54d9042c21ab7f903a81a692c0ed6f77763fb9970ad5"
+    },
+    {
+      "bytes": 30760,
+      "file": "outcome_explorer.csv",
+      "sha256": "5753106052989f8df07858a1bebd228b014dc99ef2f1f6bebeb2867aacd91045"
+    },
+    {
+      "bytes": 595208,
+      "file": "outcome_year_counts.csv",
+      "sha256": "0b7dc7a7df15ce774e038902e9c6240bb9d34b602ee2843819aff5cb7af0b59c"
+    },
+    {
+      "bytes": 1920349,
+      "file": "outcome_disease_counts.csv",
+      "sha256": "dd349e174a6a89a950bb77702e9cd1008647de1d946ece0fce5004c268f63010"
+    },
+    {
+      "bytes": 98418,
+      "file": "outcome_phase_counts.csv",
+      "sha256": "8e17bc496396f2246b43685930dfc51abfc006c47def7f8b253f4ea82977bd86"
+    },
+    {
+      "bytes": 109584,
+      "file": "outcome_completion_counts.csv",
+      "sha256": "dca4f79d4d7e995802d55c7d118284799b88813df33486d58f23566aeb5d1038"
+    },
+    {
+      "bytes": 3820181,
+      "file": "disease_year_outcome_counts.csv",
+      "sha256": "a7d004e7e7d26fd373d6f17a5fea0e70caec6aa78644673a6882ed2911b54ac2"
+    },
+    {
+      "bytes": 700573,
+      "file": "disease_phase_outcomes.csv",
+      "sha256": "10dcbb354a82ce9c22ef2b431351668d92b13ce4065b8e9443b9217565a23897"
+    },
+    {
+      "bytes": 2004246,
+      "file": "disease_phase_trends.csv",
+      "sha256": "9884df7684e01af2170dfca281fd84457b770124bc3dcf0e5649563b885ebb02"
+    }
+  ],
+  "label_source": "an identifier-free projection of the internal indication crosswalk",
+  "schema_version": 3,
+  "source_repository": "https://github.com/florian6973/clinical-trial-outcome",
+  "source_subdirectory": "publication_data/dashboard",
+  "transformation": "byte-for-byte copies of existing descriptive outputs plus label-only unique-trial, annual, phase, and completion-period descriptive aggregates, including a top-500 normalized-outcome explorer; no model or manuscript analysis was rerun and no terminology identifiers were exported",
+  "trial_time_source": "data/output/research/research_trials.parquet restricted to the 73,427-trial outcome cohort"
+}

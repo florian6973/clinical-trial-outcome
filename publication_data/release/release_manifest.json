@@ -1,0 +1,72 @@
+{
+  "analysis_unit": {
+    "disease_crosswalk.csv.gz": "one mapped disease",
+    "disease_year_counts.csv.gz": "one mapped disease and trial start year",
+    "disease_year_outcome_counts.csv.gz": "one mapped disease, trial start year, and outcome category"
+  },
+  "assets": [
+    {
+      "bytes": 3864,
+      "columns": [
+        "disease_area",
+        "disease",
+        "trial_count"
+      ],
+      "file": "disease_crosswalk.csv.gz",
+      "rows_excluding_header": 274,
+      "sha256": "e08123fbf69b30836807621fab2c9194f40074d35737c644e19da65fc991e40c"
+    },
+    {
+      "bytes": 33395,
+      "columns": [
+        "disease_area",
+        "disease",
+        "start_year",
+        "trial_count"
+      ],
+      "file": "disease_year_counts.csv.gz",
+      "rows_excluding_header": 6102,
+      "sha256": "4fe58273de58ed7af9d36ee8705117a0e2de88bab56da38ea88562b8d57976e4"
+    },
+    {
+      "bytes": 345843,
+      "columns": [
+        "disease_area",
+        "disease",
+        "start_year",
+        "outcome_category",
+        "outcome_record_count",
+        "trial_count"
+      ],
+      "file": "disease_year_outcome_counts.csv.gz",
+      "rows_excluding_header": 54895,
+      "sha256": "ab4c79abf35c73bc661483ed07ea570c73e52d66ee9d8596314e2b1f7920d9b1"
+    }
+  ],
+  "excluded_content": "SNOMED CT identifiers, terminology descriptions, hierarchy relationships, reference-set content, and raw condition strings",
+  "observed_counts": {
+    "cohort_trials": 73427,
+    "dated_outcome_records": 467865,
+    "dated_trials": 73410,
+    "disease_areas": 24,
+    "diseases_over_100_trials": 213,
+    "mapped_diseases": 274,
+    "outcome_categories": 21,
+    "undated_trials": 17
+  },
+  "public_fields": "Project disease labels, analytic disease-area labels, years, outcome categories, and aggregate counts only",
+  "release_format_version": "2.0",
+  "release_status": "public_label_only_no_SNOMED_CT_identifiers",
+  "source_files": [
+    {
+      "bytes": 6770175,
+      "project_relative_path": "data/output/research/research_trials.parquet",
+      "sha256": "c791d9b9456e6b6590afb214e846e571c9c5fdf0b9e616416188aec408dd75b2"
+    },
+    {
+      "bytes": 52822741,
+      "project_relative_path": "3_research/publication_data/release/linked_outcome_records.csv.gz",
+      "sha256": "7d9bead2570d94fe7c4ecb3485c2434be7cfead35a3198c62e06bcaa8a10c16e"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+aspect,n_distinct_titles,pct_distinct_titles,n_endpoint_records,pct_endpoint_records
+temporal_expression,163273,41.840411,175749,37.560990
+measurement_operator,263179,67.442367,307344,65.685409
+baseline_or_comparator,86483,22.162172,94811,20.262960
+instrument_or_scale,71147,18.232162,78278,16.729536
+explicit_unit,110996,28.443884,118347,25.293063
+composite_or_multiple_objects,3877,0.993522,4133,0.883303
+participant_population,110989,28.442090,129768,27.733953

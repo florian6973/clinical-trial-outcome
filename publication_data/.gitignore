@@ -1,0 +1,8 @@
+# Keep local Python caches out of the publication release.
+__pycache__/
+*.py[cod]
+
+# The repository-level ignore file excludes JSON generally. This generated,
+# checksum-covered release manifest is an intentional publication artifact.
+!release/release_manifest.json
+!release/outcome_release_manifest.json

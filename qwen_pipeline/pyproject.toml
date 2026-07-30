@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trial-evidence-qwen-pipeline"
+version = "0.1.0"
+description = "Paper-aligned Qwen retrieve-then-select pipeline for clinical-trial normalization"
+requires-python = ">=3.10"
+dependencies = [
+  "accelerate>=0.33",
+  "bitsandbytes>=0.43; platform_system != 'Darwin'",
+  "datasets>=2.20",
+  "faiss-cpu>=1.8",
+  "jsonschema>=4.22",
+  "numpy>=1.26",
+  "peft>=0.12",
+  "sentence-transformers>=3.0",
+  "torch>=2.2",
+  "transformers>=4.44",
+]
+
+[project.scripts]
+qwen-normalize = "qwen_pipeline.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

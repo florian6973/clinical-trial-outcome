@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vocabulary.schema.json",
+  "title": "Retrieval vocabulary item",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["vocabulary_id", "term", "normalized_group"],
+      "additionalProperties": false,
+      "properties": {
+        "vocabulary_id": {"type": "string", "minLength": 1},
+        "term": {"type": "string", "minLength": 1},
+        "normalized_group": {"type": "string", "minLength": 1}
+      }
+    },
+    {
+      "type": "object",
+      "required": ["vocabulary_id", "concept_id", "preferred_term"],
+      "additionalProperties": false,
+      "properties": {
+        "vocabulary_id": {"type": "string", "minLength": 1},
+        "concept_id": {"type": "string", "minLength": 1},
+        "preferred_term": {"type": "string", "minLength": 1}
+      }
+    }
+  ]
+}

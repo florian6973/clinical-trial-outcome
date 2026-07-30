@@ -1,0 +1,22 @@
+metric,value,definition
+mapping_rows,792091,Rows in locked mapping CSV before de-duplication
+exact_duplicate_rows,43,Exact duplicates across all 11 source columns
+unique_trials,73427,Distinct NCT IDs in locked mapping cohort
+unique_raw_condition_strings,26682,Distinct original AACT condition strings
+unique_raw_outcome_title_strings,390228,"Distinct title text, ignoring trial"
+unique_trial_raw_title_records,467903,"Distinct (NCT ID, raw outcome title) endpoint records"
+unique_normalized_outcome_strings,243916,Distinct normalized outcome strings
+unique_trial_normalized_outcomes,468627,"Distinct (NCT ID, normalized outcome) pairs"
+outcome_categories,21,Distinct outcome categories
+coa_types,4,Distinct FDA COA types
+snomed_condition_codes,238,Distinct SNOMED condition codes
+snomed_condition_descriptions,264,Distinct SNOMED condition descriptions
+disease_domain_codes,24,Distinct disease-domain codes
+disease_domain_descriptions,24,Distinct disease-domain descriptions
+endpoint_records_with_multiple_normalizations,947,Endpoint records with >1 normalized value across source rows
+endpoint_records_with_multiple_categories,124,Endpoint records with >1 outcome category across source rows
+endpoint_records_spanning_multiple_domains,68606,Endpoint records linked to >1 disease domain
+trial_metadata_rows_in_cohort,73427,Cohort NCT IDs found in locked trial metadata
+cohort_trials_missing_trial_metadata,0,Cohort NCT IDs absent from metadata join
+cohort_trials_unknown_phase,24805,Cohort trials with unknown phase
+cohort_trials_missing_completion_year,609,Cohort trials missing completion year

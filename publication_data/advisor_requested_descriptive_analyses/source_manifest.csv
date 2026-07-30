@@ -1,0 +1,3 @@
+role,path,bytes,sha256,modified_utc
+cohort_authority,data/output/research/outcome_and_condition_aact_mapping.csv,423325898,1065422cb2479a667fa4017787f9090d7293e63c6e7c1dfe933ab95ebc6799b4,2026-02-05T05:33:14.154123068+00:00
+trial_metadata_join,data/output/research/research_trials.parquet,6770175,c791d9b9456e6b6590afb214e846e571c9c5fdf0b9e616416188aec408dd75b2,2026-02-02T04:51:10.350998163+00:00

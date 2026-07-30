@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "condition_prediction.schema.json",
+  "title": "Condition selector audit record",
+  "type": "object",
+  "required": ["record_id", "raw_condition", "candidates", "raw_model_text", "selected_candidate_id", "selected_concept_id", "selected_preferred_term", "no_match", "disease_area", "status", "error_detail", "run_id"],
+  "properties": {
+    "record_id": {"type": "string", "minLength": 1},
+    "raw_condition": {"type": "string", "minLength": 1},
+    "candidates": {"type": "array"},
+    "raw_model_text": {"type": ["string", "null"]},
+    "selected_candidate_id": {"type": ["string", "null"]},
+    "selected_concept_id": {"type": ["string", "null"]},
+    "selected_preferred_term": {"type": ["string", "null"]},
+    "no_match": {"type": ["boolean", "null"]},
+    "disease_area": {"type": ["string", "null"]},
+    "status": {"enum": ["ok", "abstain", "retrieval_error", "format_error", "selector_error", "crosswalk_error"]},
+    "error_detail": {"type": ["string", "null"]},
+    "run_id": {"type": "string"}
+  }
+}

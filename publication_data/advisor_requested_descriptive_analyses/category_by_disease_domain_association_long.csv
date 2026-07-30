@@ -1,0 +1,505 @@
+disease_domain,outcome_category,observed_endpoint_domain_records,expected_under_independence,within_domain_pct,standardized_residual,residual_flag
+Mental illness,Mental Health Outcomes,13560,2136.321597,32.000755,247.156851,overrepresented
+Neoplastic disease,Survival/Time-to-Event,20153,5208.581914,20.610554,207.070990,overrepresented
+Infection,Immunogenicity,7592,1550.337594,13.970521,153.441669,overrepresented
+Disorder of skin,Disease Activity Scores,3696,478.758316,20.134009,147.036624,overrepresented
+Disorder of endocrine system,Biomarkers/Lab Values,17107,6264.518197,38.461711,136.988738,overrepresented
+Infection,Microbiological/Virological,3618,518.456424,6.657711,136.126167,overrepresented
+Situation with explicit context,Pharmacokinetics,8292,2137.221847,29.252805,133.133577,overrepresented
+Neoplastic disease,Response Rates,15244,5930.254999,15.590100,120.944928,overrepresented
+Disorder of immune function,Disease Activity Scores,3030,645.073170,12.250344,93.901076,overrepresented
+Clinical finding,Symptoms/Pain,3482,817.849742,29.750513,93.158386,overrepresented
+Neurological disorder,Functional Status,6191,2047.940824,14.776362,91.550861,overrepresented
+Respiratory disease,Vital Signs/Physical Measures,4754,1585.304221,16.129470,79.583720,overrepresented
+Disorder of eye,Functional Status,2691,756.698933,17.382598,70.317352,overrepresented
+Disorder of digestive system,Remission/Cure,939,140.553745,3.987430,67.347965,overrepresented
+Disorder of eye,Imaging Outcomes,1924,489.948156,12.428138,64.787286,overrepresented
+Mental illness,Treatment Adherence,3238,1181.563757,7.641478,59.825546,overrepresented
+Disorder of endocrine system,Vital Signs/Physical Measures,5146,2392.317335,11.569765,56.299495,overrepresented
+Cardiovascular disease,Imaging Outcomes,2947,1126.080056,8.282510,54.263302,overrepresented
+Sleep disorder,Quality of Life/PRO,1912,605.987707,31.734440,53.053661,overrepresented
+Musculoskeletal disorder,Functional Status,2909,1143.186787,12.438002,52.225928,overrepresented
+Cardiovascular disease,Mortality,1617,481.501543,4.544560,51.747301,overrepresented
+Cardiovascular disease,Vital Signs/Physical Measures,4066,1913.778567,11.427447,49.197282,overrepresented
+Neurological disorder,Symptoms/Pain,5506,2927.739961,13.141439,47.649733,overrepresented
+Musculoskeletal disorder,Symptoms/Pain,3521,1634.301929,15.054729,46.669834,overrepresented
+Neurological disorder,Mental Health Outcomes,4219,2112.323649,10.069693,45.837148,overrepresented
+Infection,Adverse Events/Safety,11775,7778.684863,21.667924,45.311312,overrepresented
+Neoplastic disease,Pharmacokinetics,11061,7372.382423,11.312129,42.959548,overrepresented
+Cardiovascular disease,Biomarkers/Lab Values,8032,5011.417374,22.573846,42.668800,overrepresented
+Disorder of haemostatic system,Immunogenicity,882,237.872677,10.578076,41.763746,overrepresented
+Neoplastic disease,Dose-Finding,1143,361.445917,1.168951,41.109044,overrepresented
+Mental illness,Quality of Life/PRO,6866,4261.929143,16.203332,39.888682,overrepresented
+Disorder of haemostatic system,Adverse Events/Safety,2556,1193.505592,30.654833,39.438692,overrepresented
+Disorder of skin,Response Rates,2283,1113.332901,12.436673,35.054982,overrepresented
+Disorder of immune function,Remission/Cure,572,147.626495,2.312606,34.927388,overrepresented
+Respiratory disease,Disease Control,1442,592.934323,4.892448,34.868879,overrepresented
+Musculoskeletal disorder,Imaging Outcomes,1662,740.191685,7.106208,33.881960,overrepresented
+Disorder of ear,Functional Status,520,133.977894,18.971178,33.349982,overrepresented
+Neoplastic disease,Disease Control,3374,1967.059716,3.450603,31.722462,overrepresented
+Disorder of the genitourinary system,Symptoms/Pain,2645,1459.607435,12.662773,31.027313,overrepresented
+Musculoskeletal disorder,Disease Activity Scores,1375,609.968921,5.879083,30.975992,overrepresented
+Blood disease,Biomarkers/Lab Values,2936,1677.749466,24.647414,30.718752,overrepresented
+Procedure,Hospitalization/Healthcare Use,809,289.375715,7.292230,30.546285,overrepresented
+Disorder of labour / delivery,Hospitalization/Healthcare Use,292,66.957586,11.375146,27.502013,overrepresented
+Disorder of digestive system,Disease Activity Scores,1295,614.167869,5.499172,27.472393,overrepresented
+Respiratory disease,Hospitalization/Healthcare Use,1523,768.799335,5.167266,27.200721,overrepresented
+Disorder of digestive system,Symptoms/Pain,2742,1645.552254,11.643807,27.029132,overrepresented
+Congenital disease,Biomarkers/Lab Values,776,308.592099,35.417618,26.607474,overrepresented
+Sleep disorder,Symptoms/Pain,959,421.013730,15.917012,26.219419,overrepresented
+Disorder of skin,Symptoms/Pain,2158,1282.746729,11.755734,24.437866,overrepresented
+Neoplastic disease,Adverse Events/Safety,16791,13996.279298,17.172223,23.622840,overrepresented
+Musculoskeletal disorder,Quality of Life/PRO,3443,2352.338670,14.721225,22.487439,overrepresented
+Procedure,Vital Signs/Physical Measures,1140,596.707777,10.275825,22.240914,overrepresented
+Disorder of skin,Quality of Life/PRO,2743,1846.326362,14.942529,20.867968,overrepresented
+Blood disease,Survival/Time-to-Event,1149,634.532908,9.645735,20.423517,overrepresented
+Neurological disorder,Quality of Life/PRO,5518,4214.053600,13.170080,20.086752,overrepresented
+Cardiovascular disease,Hospitalization/Healthcare Use,1519,928.094224,4.269132,19.396448,overrepresented
+Disorder of labour / delivery,Mortality,146,34.738047,5.687573,18.877478,overrepresented
+Infection,Hospitalization/Healthcare Use,2124,1417.481926,3.908507,18.765689,overrepresented
+Sleep disorder,Mental Health Outcomes,627,303.755549,10.406639,18.546799,overrepresented
+Disorder of the genitourinary system,Biomarkers/Lab Values,3940,2941.977069,18.862505,18.400129,overrepresented
+Disorder of the genitourinary system,Quality of Life/PRO,2943,2100.891489,14.089429,18.372415,overrepresented
+Cardiovascular disease,Adverse Events/Safety,6404,5093.082570,17.998370,18.368977,overrepresented
+Disorder of ear,Quality of Life/PRO,580,275.686689,21.160161,18.327914,overrepresented
+Disorder of immune function,Response Rates,2207,1500.091298,8.922940,18.251749,overrepresented
+Disorder of eye,Symptoms/Pain,1682,1081.778184,10.864931,18.249151,overrepresented
+Disorder of eye,Quality of Life/PRO,2277,1557.061525,14.708352,18.244942,overrepresented
+Procedure,Adverse Events/Safety,2313,1588.000844,20.849108,18.193327,overrepresented
+Disorder of ear,Immunogenicity,237,78.197290,8.646479,17.958169,overrepresented
+Injury,Mental Health Outcomes,373,152.860884,12.302111,17.805289,overrepresented
+Injury,Functional Status,358,148.201742,11.807388,17.233569,overrepresented
+Neurological disorder,Imaging Outcomes,1931,1326.002703,4.608812,16.614269,overrepresented
+Situation with explicit context,Immunogenicity,1277,808.675808,4.505045,16.468702,overrepresented
+Disorder of labour / delivery,Adverse Events/Safety,681,367.441695,26.529022,16.357770,overrepresented
+Blood disease,Response Rates,1143,722.450374,9.595366,15.646357,overrepresented
+Disorder of eye,Disease Activity Scores,717,403.751021,4.631484,15.589524,overrepresented
+Disorder of digestive system,Biomarkers/Lab Values,4209,3316.766469,17.873370,15.492485,overrepresented
+Mental illness,Other Clinical Endpoints,719,427.128508,1.696795,14.122527,overrepresented
+Infection,Pharmacokinetics,4997,4097.334608,9.195297,14.054982,overrepresented
+Infection,Mortality,1113,735.399183,2.048102,13.924235,overrepresented
+Respiratory disease,Symptoms/Pain,2663,2059.578205,9.035082,13.296332,overrepresented
+Blood disease,Mortality,328,161.199696,2.753526,13.137561,overrepresented
+Disorder of labour / delivery,Other Clinical Endpoints,89,25.875274,3.467082,12.409578,overrepresented
+Disorder of skin,Disease Control,594,369.291422,3.235823,11.693245,overrepresented
+Disorder of body system,Vital Signs/Physical Measures,169,71.751233,12.668666,11.480728,overrepresented
+Disorder of eye,Disease Control,512,311.434357,3.307280,11.365100,overrepresented
+Situation with explicit context,Treatment Adherence,1109,790.404641,3.912369,11.332212,overrepresented
+Injury,Hospitalization/Healthcare Use,179,79.086639,5.903694,11.234972,overrepresented
+Clinical finding,Hospitalization/Healthcare Use,501,305.286945,4.280588,11.201229,overrepresented
+Procedure,Other Clinical Endpoints,229,111.827150,2.064179,11.080347,overrepresented
+Congenital disease,Imaging Outcomes,159,69.341542,7.256960,10.766995,overrepresented
+Neurological disorder,Disease Activity Scores,1446,1092.717542,3.451239,10.687303,overrepresented
+Disorder of haemostatic system,Pharmacokinetics,896,628.665623,10.745982,10.662154,overrepresented
+Blood disease,Adverse Events/Safety,2141,1705.089783,17.973472,10.556584,overrepresented
+Disorder of labour / delivery,Vital Signs/Physical Measures,259,138.070026,10.089599,10.291632,overrepresented
+Cardiovascular disease,Other Clinical Endpoints,549,358.655294,1.542958,10.050836,overrepresented
+Disorder of the genitourinary system,Other Clinical Endpoints,355,210.550344,1.699540,9.954937,overrepresented
+Disorder of the genitourinary system,Hospitalization/Healthcare Use,775,544.842251,3.710264,9.860302,overrepresented
+Blood disease,Dose-Finding,108,44.032970,0.906649,9.639782,overrepresented
+Disorder of body system,Functional Status,143,65.204856,10.719640,9.634130,overrepresented
+Respiratory disease,Functional Status,1799,1440.665613,6.103685,9.440759,overrepresented
+Disorder of haemostatic system,Mortality,213,112.834374,2.554569,9.429703,overrepresented
+Mental illness,Symptoms/Pain,3472,2961.001793,8.193704,9.390745,overrepresented
+Injury,Other Clinical Endpoints,81,30.562459,2.671504,9.123464,overrepresented
+Disorder of eye,Vital Signs/Physical Measures,1089,832.669289,7.034429,8.883096,overrepresented
+Injury,Quality of Life/PRO,460,304.955141,15.171504,8.878496,overrepresented
+Clinical finding,Quality of Life/PRO,1466,1177.175124,12.525632,8.418100,overrepresented
+Cardiovascular disease,Disease Control,919,715.790057,2.582839,7.595426,overrepresented
+Situation with explicit context,Quality of Life/PRO,3254,2851.008720,11.479574,7.547383,overrepresented
+Disorder of body system,Mental Health Outcomes,129,67.254756,9.670165,7.529082,overrepresented
+Sleep disorder,Treatment Adherence,264,168.002115,4.381743,7.406351,overrepresented
+Mental illness,Remission/Cure,358,252.911987,0.844858,6.607976,overrepresented
+Sleep disorder,Vital Signs/Physical Measures,443,324.063850,7.352697,6.606913,overrepresented
+Procedure,Symptoms/Pain,958,775.224286,8.635298,6.564548,overrepresented
+Disorder of digestive system,Hospitalization/Healthcare Use,773,614.251732,3.282517,6.405246,overrepresented
+Injury,Treatment Adherence,143,84.544799,4.716359,6.357403,overrepresented
+Congenital disease,Functional Status,172,107.094333,7.850297,6.271904,overrepresented
+Respiratory disease,Mortality,519,398.858280,1.760874,6.015677,overrepresented
+Congenital disease,Pharmacokinetics,242,165.196256,11.045185,5.975611,overrepresented
+Disorder of ear,Symptoms/Pain,274,191.535043,9.996352,5.958615,overrepresented
+Infection,Treatment Adherence,1740,1515.309370,3.201884,5.772106,overrepresented
+Disorder of immune function,Biomarkers/Lab Values,3818,3483.668175,15.436242,5.664471,overrepresented
+Disorder of digestive system,Disease Control,592,473.739919,2.513907,5.433356,overrepresented
+Disorder of ear,Other Clinical Endpoints,56,27.629189,2.043050,5.397438,overrepresented
+Injury,Imaging Outcomes,148,95.957807,4.881266,5.312702,overrepresented
+Situation with explicit context,Other Clinical Endpoints,368,285.726735,1.298243,4.867246,overrepresented
+Injury,Mortality,71,41.030681,2.341689,4.678671,overrepresented
+Clinical finding,Mental Health Outcomes,698,590.067210,5.963773,4.443270,overrepresented
+Disorder of body system,Quality of Life/PRO,185,134.172216,13.868066,4.388033,overrepresented
+Situation with explicit context,Mental Health Outcomes,1590,1429.087931,5.609257,4.256564,overrepresented
+Disorder of body system,Hospitalization/Healthcare Use,58,34.796034,4.347826,3.933665,overrepresented
+Infection,Biomarkers/Lab Values,7986,7653.957291,14.695545,3.795342,overrepresented
+Procedure,Mortality,196,150.130073,1.766721,3.743641,overrepresented
+Disorder of ear,Microbiological/Virological,45,26.150361,1.641737,3.686075,overrepresented
+Disorder of haemostatic system,Hospitalization/Healthcare Use,269,217.488256,3.226193,3.492918,overrepresented
+Disorder of haemostatic system,Other Clinical Endpoints,114,84.046762,1.367234,3.267257,overrepresented
+Disorder of body system,Biomarkers/Lab Values,228,187.887658,17.091454,2.926368,overrepresented
+Cardiovascular disease,Functional Status,1849,1739.170902,5.196594,2.633579,overrepresented
+Blood disease,Pharmacokinetics,973,898.136832,8.168234,2.498026,overrepresented
+Respiratory disease,Treatment Adherence,881,821.857983,2.989075,2.062993,overrepresented
+Neoplastic disease,Mortality,1393,1323.212413,1.424627,1.918507,not_large
+Injury,Symptoms/Pain,238,211.869482,7.849604,1.795204,not_large
+Procedure,Functional Status,579,542.265872,5.219037,1.577479,not_large
+Clinical finding,Adverse Events/Safety,1739,1675.316557,14.858168,1.555887,not_large
+Disorder of body system,Treatment Adherence,46,37.197481,3.448276,1.443279,not_large
+Injury,Adverse Events/Safety,463,434.002033,15.270449,1.391944,not_large
+Disorder of haemostatic system,Disease Control,185,167.737205,2.218757,1.332896,not_large
+Infection,Remission/Cure,347,324.349745,0.638537,1.257669,not_large
+Procedure,Dose-Finding,49,41.009215,0.441680,1.247811,not_large
+Musculoskeletal disorder,Immunogenicity,698,667.230290,2.984436,1.191202,not_large
+Procedure,Microbiological/Virological,116,105.841701,1.045610,0.987399,not_large
+Sleep disorder,Functional Status,310,294.497195,5.145228,0.903378,not_large
+Blood disease,Remission/Cure,78,71.097550,0.654802,0.818608,not_large
+Disorder of body system,Mortality,21,18.052417,1.574213,0.693743,not_large
+Disorder of endocrine system,Other Clinical Endpoints,463,448.336757,1.040964,0.692513,not_large
+Disorder of labour / delivery,Treatment Adherence,77,71.578661,2.999610,0.640789,not_large
+Disorder of body system,Imaging Outcomes,46,42.218903,3.448276,0.581921,not_large
+Disorder of the genitourinary system,Adverse Events/Safety,3015,2989.919022,14.434125,0.458685,not_large
+Disorder of body system,Other Clinical Endpoints,15,13.446676,1.124438,0.423599,not_large
+Procedure,Imaging Outcomes,359,351.106831,3.235983,0.421242,not_large
+Disorder of eye,Other Clinical Endpoints,161,156.047964,1.039984,0.396419,not_large
+Disorder of immune function,Dose-Finding,95,91.429774,0.384087,0.373381,not_large
+Disorder of digestive system,Pharmacokinetics,1780,1775.539309,7.558707,0.105861,not_large
+Disorder of immune function,Adverse Events/Safety,3546,3540.437432,14.336541,0.093486,not_large
+Disorder of the genitourinary system,Dose-Finding,77,77.212951,0.368633,-0.024234,not_large
+Situation with explicit context,Hospitalization/Healthcare Use,738,739.376602,2.603542,-0.050626,not_large
+Congenital disease,Vital Signs/Physical Measures,117,117.846290,5.340027,-0.077958,not_large
+Disorder of endocrine system,Dose-Finding,163,164.413904,0.366473,-0.110268,not_large
+Disorder of ear,Hospitalization/Healthcare Use,69,71.496199,2.517329,-0.295215,not_large
+Disorder of labour / delivery,Microbiological/Virological,23,24.490323,0.895988,-0.301150,not_large
+Disorder of ear,Remission/Cure,15,16.359838,0.547246,-0.336200,not_large
+Procedure,Quality of Life/PRO,1102,1115.822011,9.933297,-0.413784,not_large
+Procedure,Treatment Adherence,302,309.346966,2.722192,-0.417720,not_large
+Congenital disease,Immunogenicity,59,62.506480,2.692834,-0.443516,not_large
+Sleep disorder,Other Clinical Endpoints,57,60.731799,0.946058,-0.478862,not_large
+Disorder of ear,Disease Control,50,55.141242,1.824152,-0.692357,not_large
+Disorder of immune function,Mortality,322,334.714009,1.301852,-0.694937,not_large
+Disorder of endocrine system,Treatment Adherence,1207,1240.232048,2.713701,-0.943638,not_large
+Clinical finding,Dose-Finding,37,43.264093,0.316131,-0.952345,not_large
+Disorder of digestive system,Response Rates,1392,1428.222285,5.911079,-0.958469,not_large
+Clinical finding,Vital Signs/Physical Measures,605,629.517561,5.169173,-0.977177,not_large
+Musculoskeletal disorder,Hospitalization/Healthcare Use,583,610.052211,2.492731,-1.095265,not_large
+Disorder of labour / delivery,Survival/Time-to-Event,123,136.739924,4.791586,-1.174997,not_large
+Disorder of haemostatic system,Dose-Finding,24,30.821600,0.287839,-1.228736,not_large
+Disorder of body system,Dose-Finding,2,4.931160,0.149925,-1.319973,not_large
+Clinical finding,Treatment Adherence,301,326.356308,2.571770,-1.403589,not_large
+Congenital disease,Dose-Finding,4,8.099080,0.182565,-1.440352,not_large
+Blood disease,Disease Control,217,239.636074,1.821692,-1.462261,not_large
+Disorder of immune function,Immunogenicity,666,705.629981,2.692650,-1.491885,not_large
+Situation with explicit context,Vital Signs/Physical Measures,1466,1524.633013,5.171806,-1.501618,not_large
+Disorder of labour / delivery,Disease Control,40,51.640850,1.558239,-1.619899,not_large
+Disorder of body system,Symptoms/Pain,77,93.216982,5.772114,-1.679664,not_large
+Infection,Other Clinical Endpoints,508,547.775629,0.934803,-1.699479,not_large
+Disorder of body system,Remission/Cure,3,7.962066,0.224888,-1.758529,not_large
+Disorder of immune function,Imaging Outcomes,733,782.790368,2.963532,-1.779601,not_large
+Disorder of haemostatic system,Remission/Cure,37,49.765898,0.443751,-1.809612,not_large
+Respiratory disease,Biomarkers/Lab Values,4033,4151.274997,13.683246,-1.835702,not_large
+Disorder of immune function,Quality of Life/PRO,2396,2487.717832,9.687070,-1.838879,not_large
+Disorder of skin,Remission/Cure,90,109.564954,0.490276,-1.869145,not_large
+Disorder of digestive system,Other Clinical Endpoints,208,237.373135,0.883265,-1.906490,not_large
+Disorder of digestive system,Microbiological/Virological,196,224.667949,0.832307,-1.912608,not_large
+Disorder of body system,Disease Activity Scores,23,34.791284,1.724138,-1.999060,underrepresented
+Sleep disorder,Disease Activity Scores,131,157.134546,2.174274,-2.084871,underrepresented
+Clinical finding,Functional Status,522,572.082185,4.460014,-2.093891,underrepresented
+Disorder of labour / delivery,Dose-Finding,3,9.488972,0.116868,-2.106524,underrepresented
+Disorder of immune function,Disease Control,450,497.578799,1.819358,-2.132959,underrepresented
+Congenital disease,Mortality,18,29.649810,0.821543,-2.139478,underrepresented
+Disorder of body system,Microbiological/Virological,5,12.726954,0.374813,-2.165938,underrepresented
+Musculoskeletal disorder,Remission/Cure,114,139.592806,0.487429,-2.166139,underrepresented
+Disorder of the genitourinary system,Imaging Outcomes,605,661.070802,2.896400,-2.180785,underrepresented
+Clinical finding,Other Clinical Endpoints,93,117.975930,0.794600,-2.299455,underrepresented
+Injury,Remission/Cure,8,18.096690,0.263852,-2.373447,underrepresented
+Disorder of the genitourinary system,Vital Signs/Physical Measures,1041,1123.493064,4.983723,-2.461117,underrepresented
+Disorder of the genitourinary system,Mortality,241,282.667835,1.153773,-2.478351,underrepresented
+Disorder of ear,Dose-Finding,2,10.132167,0.072966,-2.554789,underrepresented
+Disorder of haemostatic system,Microbiological/Virological,56,79.548234,0.671624,-2.640238,underrepresented
+Disorder of body system,Disease Control,13,26.836343,0.974513,-2.670913,underrepresented
+Situation with explicit context,Microbiological/Virological,225,270.433465,0.793763,-2.762776,underrepresented
+Blood disease,Hospitalization/Healthcare Use,261,310.712414,2.191068,-2.820237,underrepresented
+Disorder of ear,Mental Health Outcomes,105,138.189869,3.830719,-2.823368,underrepresented
+Cardiovascular disease,Treatment Adherence,902,992.146600,2.535061,-2.861946,underrepresented
+Disorder of haemostatic system,Biomarkers/Lab Values,1075,1174.368288,12.892780,-2.899650,underrepresented
+Disorder of ear,Adverse Events/Safety,334,392.348144,12.185334,-2.945719,underrepresented
+Clinical finding,Immunogenicity,280,333.900433,2.392344,-2.949740,underrepresented
+Disorder of ear,Treatment Adherence,50,76.430506,1.824152,-3.023236,underrepresented
+Congenital disease,Disease Control,24,44.076783,1.095390,-3.024051,underrepresented
+Injury,Dose-Finding,1,11.207855,0.032982,-3.049111,underrepresented
+Respiratory disease,Pharmacokinetics,2076,2222.270398,7.043496,-3.102830,underrepresented
+Disorder of immune function,Functional Status,1098,1208.978193,4.439233,-3.191747,underrepresented
+Sleep disorder,Dose-Finding,7,22.271545,0.116183,-3.235995,underrepresented
+Congenital disease,Remission/Cure,1,13.077127,0.045641,-3.339700,underrepresented
+Injury,Disease Control,34,60.995347,1.121372,-3.456532,underrepresented
+Disorder of labour / delivery,Symptoms/Pain,131,179.376306,5.103233,-3.612020,underrepresented
+Situation with explicit context,Functional Status,1251,1385.529872,4.413321,-3.614188,underrepresented
+Disorder of labour / delivery,Imaging Outcomes,48,81.241323,1.869887,-3.687991,underrepresented
+Injury,Microbiological/Virological,9,28.926630,0.296834,-3.704972,underrepresented
+Blood disease,Other Clinical Endpoints,79,120.072563,0.663197,-3.748262,underrepresented
+Disorder of the genitourinary system,Pharmacokinetics,1425,1574.906157,6.822099,-3.777393,underrepresented
+Disorder of labour / delivery,Functional Status,83,125.472913,3.233346,-3.791727,underrepresented
+Congenital disease,Adverse Events/Safety,246,313.620863,11.227750,-3.818372,underrepresented
+Congenital disease,Other Clinical Endpoints,4,22.085207,0.182565,-3.848334,underrepresented
+Disorder of haemostatic system,Imaging Outcomes,201,263.883969,2.410650,-3.871092,underrepresented
+Disorder of labour / delivery,Remission/Cure,0,15.321307,0.000000,-3.914244,underrepresented
+Infection,Response Rates,3070,3295.846261,5.649302,-3.933955,underrepresented
+Disorder of the genitourinary system,Remission/Cure,80,124.671392,0.382995,-4.000793,underrepresented
+Disorder of haemostatic system,Treatment Adherence,171,232.498197,2.050852,-4.033226,underrepresented
+Congenital disease,Hospitalization/Healthcare Use,26,57.150008,1.186673,-4.120501,underrepresented
+Congenital disease,Microbiological/Virological,2,20.903116,0.091283,-4.134547,underrepresented
+Injury,Vital Signs/Physical Measures,110,163.080763,3.627968,-4.156577,underrepresented
+Disorder of digestive system,Imaging Outcomes,631,745.287070,2.679519,-4.186348,underrepresented
+Infection,Disease Control,951,1093.228944,1.749995,-4.301624,underrepresented
+Disorder of skin,Microbiological/Virological,118,175.133956,0.642807,-4.317269,underrepresented
+Sleep disorder,Remission/Cure,10,35.960606,0.165975,-4.329137,underrepresented
+Neoplastic disease,Remission/Cure,476,583.606317,0.486807,-4.454283,underrepresented
+Respiratory disease,Microbiological/Virological,205,281.195088,0.695528,-4.543841,underrepresented
+Disorder of immune function,Treatment Adherence,570,689.687024,2.304520,-4.557441,underrepresented
+Disorder of eye,Treatment Adherence,334,431.674813,2.157483,-4.701151,underrepresented
+Disorder of ear,Vital Signs/Physical Measures,89,147.428882,3.246990,-4.812118,underrepresented
+Congenital disease,Disease Activity Scores,20,57.142206,0.912825,-4.913480,underrepresented
+Sleep disorder,Hospitalization/Healthcare Use,95,157.156002,1.576763,-4.958126,underrepresented
+Musculoskeletal disorder,Response Rates,1231,1418.457802,5.263383,-4.977317,underrepresented
+Disorder of digestive system,Dose-Finding,40,87.049396,0.169859,-5.042793,underrepresented
+Disorder of immune function,Other Clinical Endpoints,169,249.317896,0.683270,-5.086694,underrepresented
+Musculoskeletal disorder,Dose-Finding,39,86.454256,0.166752,-5.103663,underrepresented
+Disorder of ear,Mortality,6,37.092710,0.218898,-5.105218,underrepresented
+Disorder of the genitourinary system,Treatment Adherence,459,582.444512,2.197434,-5.114987,underrepresented
+Disorder of labour / delivery,Quality of Life/PRO,174,258.185966,6.778340,-5.239301,underrepresented
+Disorder of labour / delivery,Disease Activity Scores,24,66.948445,0.934944,-5.249008,underrepresented
+Congenital disease,Survival/Time-to-Event,59,116.711014,2.692834,-5.341986,underrepresented
+Sleep disorder,Disease Control,62,121.206124,1.029046,-5.377796,underrepresented
+Mental illness,Functional Status,1826,2071.207324,4.309246,-5.387926,underrepresented
+Procedure,Remission/Cure,22,66.215264,0.198305,-5.433669,underrepresented
+Disorder of ear,Imaging Outcomes,36,86.748136,1.313389,-5.448664,underrepresented
+Clinical finding,Microbiological/Virological,54,111.661373,0.461381,-5.456743,underrepresented
+Respiratory disease,Dose-Finding,51,108.951288,0.173034,-5.551967,underrepresented
+Disorder of body system,Survival/Time-to-Event,24,71.060015,1.799100,-5.582637,underrepresented
+Disorder of digestive system,Mortality,218,318.677941,0.925729,-5.639730,underrepresented
+Musculoskeletal disorder,Treatment Adherence,505,652.154933,2.159227,-5.762347,underrepresented
+Musculoskeletal disorder,Other Clinical Endpoints,147,235.750260,0.628527,-5.780209,underrepresented
+Neurological disorder,Treatment Adherence,970,1168.290893,2.315146,-5.801326,underrepresented
+Respiratory disease,Other Clinical Endpoints,197,297.096938,0.668386,-5.807266,underrepresented
+Neurological disorder,Dose-Finding,82,154.876877,0.195713,-5.855938,underrepresented
+Respiratory disease,Adverse Events/Safety,3835,4218.923461,13.011468,-5.910767,underrepresented
+Disorder of digestive system,Quality of Life/PRO,2078,2368.531868,8.824154,-5.969723,underrepresented
+Disorder of body system,Immunogenicity,1,38.057346,0.074963,-6.006964,underrepresented
+Sleep disorder,Mortality,27,81.533594,0.448133,-6.039428,underrepresented
+Disorder of eye,Dose-Finding,11,57.225856,0.071055,-6.110670,underrepresented
+Disorder of eye,Remission/Cure,32,92.399360,0.206705,-6.283446,underrepresented
+Disorder of ear,Disease Activity Scores,18,71.486438,0.656695,-6.326039,underrepresented
+Disorder of body system,Response Rates,23,80.905708,1.724138,-6.437716,underrepresented
+Disorder of the genitourinary system,Disease Control,288,420.208052,1.378782,-6.449495,underrepresented
+Disorder of body system,Adverse Events/Safety,101,190.949443,7.571214,-6.509375,underrepresented
+Disorder of immune function,Microbiological/Virological,133,235.973376,0.537721,-6.703374,underrepresented
+Disorder of labour / delivery,Mental Health Outcomes,53,129.417509,2.064667,-6.717325,underrepresented
+Procedure,Mental Health Outcomes,400,559.313537,3.605553,-6.736356,underrepresented
+Disorder of labour / delivery,Biomarkers/Lab Values,233,361.549940,9.076743,-6.760639,underrepresented
+Congenital disease,Treatment Adherence,8,61.094213,0.365130,-6.792774,underrepresented
+Disorder of digestive system,Immunogenicity,495,671.823418,2.102000,-6.822008,underrepresented
+Disorder of digestive system,Adverse Events/Safety,2971,3370.815925,12.616247,-6.886405,underrepresented
+Disorder of eye,Microbiological/Virological,64,147.695635,0.413410,-6.886824,underrepresented
+Congenital disease,Mental Health Outcomes,38,110.461146,1.734368,-6.894463,underrepresented
+Respiratory disease,Quality of Life/PRO,2589,2964.461688,8.784013,-6.895928,underrepresented
+Disorder of skin,Dose-Finding,11,67.857054,0.059923,-6.902189,underrepresented
+Procedure,Disease Control,120,223.180205,1.081666,-6.906668,underrepresented
+Disorder of labour / delivery,Immunogenicity,14,73.233289,0.545384,-6.921681,underrepresented
+Neurological disorder,Mortality,401,566.986640,0.957086,-6.970866,underrepresented
+Cardiovascular disease,Dose-Finding,51,131.525948,0.143335,-7.021504,underrepresented
+Sleep disorder,Microbiological/Virological,4,57.481184,0.066390,-7.054044,underrepresented
+Clinical finding,Remission/Cure,10,69.856088,0.085441,-7.161536,underrepresented
+Neurological disorder,Other Clinical Endpoints,273,422.330443,0.651582,-7.266448,underrepresented
+Injury,Disease Activity Scores,14,79.075841,0.461741,-7.318092,underrepresented
+Congenital disease,Quality of Life/PRO,111,220.368310,5.066180,-7.367445,underrepresented
+Sleep disorder,Imaging Outcomes,88,190.681328,1.460581,-7.435966,underrepresented
+Congenital disease,Response Rates,47,132.881864,2.145139,-7.450212,underrepresented
+Congenital disease,Symptoms/Pain,58,153.102254,2.647193,-7.685994,underrepresented
+Disorder of endocrine system,Imaging Outcomes,1115,1407.655454,2.506857,-7.800249,underrepresented
+Disorder of body system,Pharmacokinetics,22,100.580468,1.649175,-7.835339,underrepresented
+Procedure,Survival/Time-to-Event,396,590.959376,3.569497,-8.019833,underrepresented
+Procedure,Pharmacokinetics,603,836.461552,5.435370,-8.072209,underrepresented
+Mental illness,Vital Signs/Physical Measures,1893,2279.150473,4.467362,-8.088539,underrepresented
+Disorder of the genitourinary system,Microbiological/Virological,85,199.280823,0.406932,-8.095443,underrepresented
+Disorder of haemostatic system,Disease Activity Scores,98,217.458563,1.175342,-8.100821,underrepresented
+Situation with explicit context,Adverse Events/Safety,3540,4057.460963,12.488535,-8.123635,underrepresented
+Blood disease,Microbiological/Virological,26,113.645786,0.218267,-8.221563,underrepresented
+Disorder of endocrine system,Quality of Life/PRO,3923,4473.547091,8.820091,-8.231301,underrepresented
+Blood disease,Treatment Adherence,179,332.156215,1.502686,-8.403563,underrepresented
+Disorder of digestive system,Treatment Adherence,435,656.644285,1.847212,-8.649509,underrepresented
+Disorder of digestive system,Vital Signs/Physical Measures,958,1266.619023,4.068113,-8.671609,underrepresented
+Injury,Immunogenicity,4,86.499155,0.131926,-8.870407,underrepresented
+Disorder of ear,Response Rates,51,166.238791,1.860635,-8.937839,underrepresented
+Situation with explicit context,Dose-Finding,13,104.781611,0.045862,-8.966297,underrepresented
+Disorder of skin,Other Clinical Endpoints,63,185.037948,0.343193,-8.971488,underrepresented
+Disorder of immune function,Pharmacokinetics,1475,1864.885527,5.963451,-9.028405,underrepresented
+Disorder of immune function,Survival/Time-to-Event,986,1317.540039,3.986415,-9.133854,underrepresented
+Injury,Survival/Time-to-Event,44,161.509719,1.451187,-9.246438,underrepresented
+Disorder of the genitourinary system,Response Rates,932,1266.835410,4.461892,-9.407436,underrepresented
+Disorder of labour / delivery,Response Rates,38,155.685872,1.480327,-9.431912,underrepresented
+Clinical finding,Disease Control,89,235.451697,0.760424,-9.544287,underrepresented
+Disorder of skin,Adverse Events/Safety,2136,2627.630385,11.635888,-9.590839,underrepresented
+Respiratory disease,Imaging Outcomes,634,932.803563,2.151048,-9.783419,underrepresented
+Mental illness,Dose-Finding,32,156.636421,0.075518,-9.958607,underrepresented
+Neurological disorder,Hospitalization/Healthcare Use,762,1092.866749,1.818703,-10.008512,underrepresented
+Disorder of the genitourinary system,Functional Status,701,1020.988780,3.355994,-10.014385,underrepresented
+Disorder of haemostatic system,Vital Signs/Physical Measures,235,448.472097,2.818422,-10.080299,underrepresented
+Clinical finding,Mortality,31,158.384926,0.264867,-10.121878,underrepresented
+Disorder of haemostatic system,Functional Status,203,407.554790,2.434637,-10.132501,underrepresented
+Disorder of ear,Survival/Time-to-Event,23,146.008622,0.839110,-10.179965,underrepresented
+Disorder of immune function,Hospitalization/Healthcare Use,386,645.161253,1.560605,-10.203189,underrepresented
+Neoplastic disease,Other Clinical Endpoints,664,985.619141,0.679075,-10.244419,underrepresented
+Injury,Response Rates,44,183.887637,1.451187,-10.315804,underrepresented
+Neurological disorder,Vital Signs/Physical Measures,1755,2253.548084,4.188744,-10.502039,underrepresented
+Disorder of skin,Imaging Outcomes,327,580.968820,1.781337,-10.536685,underrepresented
+Injury,Pharmacokinetics,69,228.605681,2.275726,-10.556133,underrepresented
+Disorder of ear,Pharmacokinetics,54,206.664964,1.970084,-10.619546,underrepresented
+Disorder of endocrine system,Mortality,340,601.900611,0.764423,-10.675153,underrepresented
+Musculoskeletal disorder,Disease Control,235,470.501050,1.004789,-10.857068,underrepresented
+Blood disease,Vital Signs/Physical Measures,364,640.705160,3.055742,-10.931711,underrepresented
+Mental illness,Hospitalization/Healthcare Use,738,1105.282725,1.741634,-11.047495,underrepresented
+Respiratory disease,Immunogenicity,518,840.856233,1.757481,-11.133925,underrepresented
+Disorder of eye,Mortality,48,209.497355,0.310057,-11.157738,underrepresented
+Disorder of endocrine system,Hospitalization/Healthcare Use,780,1160.163427,1.753676,-11.161196,underrepresented
+Disorder of labour / delivery,Pharmacokinetics,36,193.545773,1.402415,-11.324392,underrepresented
+Procedure,Disease Activity Scores,95,289.336207,0.856319,-11.424898,underrepresented
+Respiratory disease,Remission/Cure,23,175.917494,0.078035,-11.529293,underrepresented
+Disorder of eye,Adverse Events/Safety,1670,2215.958272,10.787417,-11.597881,underrepresented
+Disorder of digestive system,Functional Status,757,1151.056338,3.214574,-11.614754,underrepresented
+Disorder of haemostatic system,Quality of Life/PRO,500,838.626639,5.996642,-11.693292,underrepresented
+Blood disease,Disease Activity Scores,102,310.669993,0.856279,-11.838873,underrepresented
+Injury,Biomarkers/Lab Values,181,427.043014,5.969657,-11.906256,underrepresented
+Infection,Dose-Finding,31,200.880093,0.057045,-11.985994,underrepresented
+Neurological disorder,Remission/Cure,60,250.070950,0.143205,-12.019437,underrepresented
+Clinical finding,Disease Activity Scores,94,305.245265,0.803144,-12.091008,underrepresented
+Blood disease,Quality of Life/PRO,779,1198.095529,6.539624,-12.107858,underrepresented
+Sleep disorder,Immunogenicity,13,171.885689,0.215768,-12.118948,underrepresented
+Blood disease,Immunogenicity,116,339.834411,0.973808,-12.142082,underrepresented
+Disorder of haemostatic system,Response Rates,231,505.691002,2.770449,-12.215235,underrepresented
+Situation with explicit context,Remission/Cure,8,169.184953,0.028223,-12.392063,underrepresented
+Blood disease,Imaging Outcomes,134,376.995183,1.124916,-12.514969,underrepresented
+Disorder of skin,Treatment Adherence,228,511.869682,1.242033,-12.546983,underrepresented
+Blood disease,Functional Status,278,582.249059,2.333781,-12.608832,underrepresented
+Disorder of eye,Hospitalization/Healthcare Use,147,403.806152,0.949551,-12.779650,underrepresented
+Procedure,Biomarkers/Lab Values,1055,1562.537994,9.509645,-12.839652,underrepresented
+Situation with explicit context,Mortality,131,383.593568,0.462146,-12.896939,underrepresented
+Clinical finding,Imaging Outcomes,121,370.412326,1.033835,-12.959111,underrepresented
+Cardiovascular disease,Remission/Cure,22,212.367523,0.061831,-13.063177,underrepresented
+Disorder of haemostatic system,Survival/Time-to-Event,167,444.151728,2.002878,-13.150792,underrepresented
+Disorder of ear,Biomarkers/Lab Values,127,386.057025,4.633345,-13.184682,underrepresented
+Musculoskeletal disorder,Microbiological/Virological,25,223.131937,0.106892,-13.263973,underrepresented
+Musculoskeletal disorder,Mortality,80,316.499201,0.342056,-13.293623,underrepresented
+Disorder of endocrine system,Remission/Cure,47,265.469848,0.105670,-13.408615,underrepresented
+Disorder of eye,Response Rates,523,938.906501,3.378335,-13.573271,underrepresented
+Disorder of skin,Vital Signs/Physical Measures,559,987.359353,3.045160,-13.632347,underrepresented
+Neoplastic disease,Imaging Outcomes,2331,3094.575977,2.383923,-13.726243,underrepresented
+Disorder of skin,Hospitalization/Healthcare Use,178,478.823689,0.969657,-13.747516,underrepresented
+Disorder of the genitourinary system,Survival/Time-to-Event,648,1112.669861,3.102260,-13.930328,underrepresented
+Sleep disorder,Response Rates,96,365.409965,1.593361,-14.093649,underrepresented
+Disorder of immune function,Symptoms/Pain,1136,1728.357444,4.592868,-14.248432,underrepresented
+Disorder of endocrine system,Disease Control,461,894.772776,1.036467,-14.501266,underrepresented
+Disorder of skin,Immunogenicity,189,523.702174,1.029580,-14.625689,underrepresented
+Situation with explicit context,Imaging Outcomes,456,897.104220,1.608693,-14.727186,underrepresented
+Disorder of skin,Mortality,16,248.416959,0.087160,-14.746101,underrepresented
+Musculoskeletal disorder,Biomarkers/Lab Values,2430,3294.090372,10.389944,-15.055369,underrepresented
+Sleep disorder,Biomarkers/Lab Values,401,848.593060,6.655602,-15.365037,underrepresented
+Sleep disorder,Pharmacokinetics,125,454.270854,2.074689,-15.448839,underrepresented
+Disorder of skin,Pharmacokinetics,801,1384.074700,4.363458,-15.672722,underrepresented
+Procedure,Immunogenicity,34,316.497898,0.306472,-15.879243,underrepresented
+Neurological disorder,Disease Control,380,842.870403,0.906965,-15.943329,underrepresented
+Musculoskeletal disorder,Adverse Events/Safety,2424,3347.770303,10.364289,-15.965634,underrepresented
+Neurological disorder,Immunogenicity,642,1195.297362,1.532293,-16.003708,underrepresented
+Blood disease,Mental Health Outcomes,198,600.553709,1.662189,-16.426608,underrepresented
+Disorder of endocrine system,Functional Status,1407,2174.049166,3.163362,-16.450857,underrepresented
+Sleep disorder,Survival/Time-to-Event,26,320.941972,0.431535,-16.463544,underrepresented
+Cardiovascular disease,Microbiological/Virological,35,339.458588,0.098367,-16.524747,underrepresented
+Disorder of the genitourinary system,Disease Activity Scores,156,544.767865,0.746840,-16.656533,underrepresented
+Neurological disorder,Adverse Events/Safety,4706,5997.301186,11.232040,-16.674377,underrepresented
+Mental illness,Imaging Outcomes,730,1341.067319,1.722755,-16.686443,underrepresented
+Situation with explicit context,Disease Control,171,570.242122,0.603260,-16.718862,underrepresented
+Sleep disorder,Adverse Events/Safety,368,862.421587,6.107884,-16.835950,underrepresented
+Clinical finding,Survival/Time-to-Event,203,623.453086,1.734450,-16.838975,underrepresented
+Clinical finding,Pharmacokinetics,377,882.454120,3.221121,-17.015146,underrepresented
+Neurological disorder,Microbiological/Virological,58,399.725581,0.138431,-17.092143,underrepresented
+Disorder of eye,Immunogenicity,80,441.653503,0.516762,-17.208849,underrepresented
+Disorder of endocrine system,Microbiological/Virological,68,424.339930,0.152885,-17.298464,underrepresented
+Disorder of haemostatic system,Symptoms/Pain,162,582.641076,1.942912,-17.426539,underrepresented
+Disorder of haemostatic system,Mental Health Outcomes,63,420.367430,0.755577,-17.430122,underrepresented
+Disorder of endocrine system,Pharmacokinetics,2336,3353.536770,5.252035,-17.571085,underrepresented
+Procedure,Response Rates,217,672.839527,1.956012,-17.573418,underrepresented
+Blood disease,Symptoms/Pain,323,832.384324,2.711551,-17.655647,underrepresented
+Mental illness,Disease Activity Scores,512,1105.131823,1.208288,-17.842027,underrepresented
+Musculoskeletal disorder,Mental Health Outcomes,565,1179.126104,2.415769,-17.884526,underrepresented
+Respiratory disease,Disease Activity Scores,270,768.694373,0.916062,-17.986954,underrepresented
+Mental illness,Microbiological/Virological,35,404.266833,0.082598,-18.365648,underrepresented
+Cardiovascular disease,Quality of Life/PRO,2441,3578.696862,6.860403,-19.017968,underrepresented
+Situation with explicit context,Biomarkers/Lab Values,2790,3992.401475,9.842659,-19.029720,underrepresented
+Disorder of immune function,Vital Signs/Physical Measures,633,1330.356063,2.559230,-19.119240,underrepresented
+Mental illness,Mortality,104,573.428132,0.245434,-19.603319,underrepresented
+Neoplastic disease,Immunogenicity,1750,2789.540695,1.789732,-19.682268,underrepresented
+Disorder of the genitourinary system,Immunogenicity,109,595.908427,0.521831,-19.946079,underrepresented
+Situation with explicit context,Symptoms/Pain,1084,1980.756049,3.824173,-20.149247,underrepresented
+Clinical finding,Biomarkers/Lab Values,829,1648.453639,7.083049,-20.183014,underrepresented
+Clinical finding,Response Rates,172,709.835391,1.469583,-20.186943,underrepresented
+Cardiovascular disease,Survival/Time-to-Event,990,1895.342126,2.782384,-20.795479,underrepresented
+Disorder of endocrine system,Mental Health Outcomes,1248,2242.396564,2.805882,-20.999232,underrepresented
+Disorder of the genitourinary system,Mental Health Outcomes,368,1053.086457,1.761777,-21.111222,underrepresented
+Respiratory disease,Survival/Time-to-Event,731,1570.032147,2.480152,-21.175044,underrepresented
+Disorder of skin,Biomarkers/Lab Values,1484,2585.497561,8.084110,-21.662645,underrepresented
+Cardiovascular disease,Disease Activity Scores,267,927.967513,0.750400,-21.697701,underrepresented
+Disorder of eye,Survival/Time-to-Event,196,824.647746,1.266068,-21.891379,underrepresented
+Situation with explicit context,Disease Activity Scores,142,739.275656,0.500953,-21.967044,underrepresented
+Musculoskeletal disorder,Vital Signs/Physical Measures,477,1257.959392,2.039507,-22.018876,underrepresented
+Disorder of digestive system,Mental Health Outcomes,420,1187.243057,1.783515,-22.267074,underrepresented
+Disorder of skin,Mental Health Outcomes,235,925.483919,1.280166,-22.697035,underrepresented
+Neoplastic disease,Treatment Adherence,1541,2726.513998,1.575987,-22.704023,underrepresented
+Disorder of skin,Functional Status,208,897.275519,1.133083,-23.010706,underrepresented
+Disorder of digestive system,Survival/Time-to-Event,420,1254.417013,1.783515,-23.559289,underrepresented
+Disorder of skin,Survival/Time-to-Event,240,977.847599,1.307403,-23.595603,underrepresented
+Disorder of endocrine system,Disease Activity Scores,343,1160.005032,0.771168,-23.988042,underrepresented
+Mental illness,Response Rates,1348,2569.938897,3.181196,-24.103943,underrepresented
+Disorder of endocrine system,Adverse Events/Safety,4441,6366.603708,9.984712,-24.133094,underrepresented
+Disorder of eye,Mental Health Outcomes,103,780.487909,0.665332,-24.250375,underrepresented
+Disorder of endocrine system,Symptoms/Pain,1736,3108.024679,3.903053,-24.610458,underrepresented
+Musculoskeletal disorder,Survival/Time-to-Event,364,1245.840804,1.556354,-24.983824,underrepresented
+Neurological disorder,Pharmacokinetics,1750,3159.010828,4.176810,-25.069102,underrepresented
+Neoplastic disease,Microbiological/Virological,153,932.864751,0.156474,-25.533476,underrepresented
+Mental illness,Disease Control,95,852.446189,0.224194,-25.942887,underrepresented
+Disorder of endocrine system,Response Rates,1342,2697.544302,3.017222,-26.099334,underrepresented
+Disorder of eye,Biomarkers/Lab Values,954,2180.426418,6.162393,-26.264599,underrepresented
+Disorder of eye,Pharmacokinetics,266,1167.231052,1.718235,-26.378964,underrepresented
+Disorder of immune function,Mental Health Outcomes,313,1246.985850,1.265465,-26.449017,underrepresented
+Cardiovascular disease,Mental Health Outcomes,669,1793.846669,1.880217,-26.558324,underrepresented
+Infection,Vital Signs/Physical Measures,1454,2922.921465,2.675598,-27.170023,underrepresented
+Infection,Disease Activity Scores,393,1417.288400,0.723184,-27.207782,underrepresented
+Neurological disorder,Response Rates,1147,2541.069994,2.737601,-27.655166,underrepresented
+Disorder of endocrine system,Immunogenicity,275,1268.901524,0.618283,-27.901619,underrepresented
+Musculoskeletal disorder,Pharmacokinetics,561,1763.400287,2.398666,-28.633446,underrepresented
+Neoplastic disease,Hospitalization/Healthcare Use,1064,2550.491926,1.088157,-29.434088,underrepresented
+Cardiovascular disease,Immunogenicity,65,1015.081279,0.182682,-29.820186,underrepresented
+Respiratory disease,Mental Health Outcomes,310,1485.957020,1.051774,-30.506215,underrepresented
+Infection,Survival/Time-to-Event,1246,2894.763417,2.292844,-30.644448,underrepresented
+Infection,Imaging Outcomes,408,1719.866459,0.750787,-31.633137,underrepresented
+Neurological disorder,Survival/Time-to-Event,710,2231.838464,1.694592,-32.213445,underrepresented
+Respiratory disease,Response Rates,421,1787.567354,1.428378,-32.322120,underrepresented
+Neurological disorder,Biomarkers/Lab Values,3391,5901.137268,8.093465,-32.676055,underrepresented
+Cardiovascular disease,Response Rates,640,2157.950533,1.798713,-32.676601,underrepresented
+Situation with explicit context,Survival/Time-to-Event,222,1509.945418,0.783179,-33.144909,underrepresented
+Cardiovascular disease,Pharmacokinetics,922,2682.723859,2.591271,-33.994078,underrepresented
+Mental illness,Immunogenicity,26,1208.877044,0.061358,-34.021115,underrepresented
+Mental illness,Pharmacokinetics,1205,3194.900110,2.843725,-35.204861,underrepresented
+Neoplastic disease,Quality of Life/PRO,6277,9834.602152,6.419513,-35.873932,underrepresented
+Situation with explicit context,Response Rates,219,1719.155330,0.772596,-36.180842,underrepresented
+Cardiovascular disease,Symptoms/Pain,675,2486.321914,1.897080,-36.325948,underrepresented
+Mental illness,Biomarkers/Lab Values,3158,5968.179641,7.452683,-36.375849,underrepresented
+Infection,Mental Health Outcomes,835,2739.749010,1.536536,-36.390026,underrepresented
+Disorder of endocrine system,Survival/Time-to-Event,530,2369.270877,1.191600,-37.786645,underrepresented
+Infection,Quality of Life/PRO,2469,5465.757668,4.543363,-40.534651,underrepresented
+Infection,Symptoms/Pain,1293,3797.369152,2.379331,-40.640303,underrepresented
+Mental illness,Survival/Time-to-Event,266,2257.194212,0.627743,-41.911109,underrepresented
+Neoplastic disease,Disease Activity Scores,386,2550.143712,0.394764,-42.855224,underrepresented
+Infection,Functional Status,393,2656.242498,0.723184,-43.913417,underrepresented
+Mental illness,Adverse Events/Safety,2193,6065.436070,5.175343,-49.722533,underrepresented
+Neoplastic disease,Biomarkers/Lab Values,7927,13771.855508,8.106975,-49.805528,underrepresented
+Neoplastic disease,Functional Status,1203,4779.408414,1.230313,-51.732091,underrepresented
+Neoplastic disease,Mental Health Outcomes,1195,4929.662666,1.222131,-53.191566,underrepresented
+Neoplastic disease,Vital Signs/Physical Measures,1385,5259.247021,1.416445,-53.422662,underrepresented
+Neoplastic disease,Symptoms/Pain,2269,6832.651044,2.320515,-55.210008,underrepresented

@@ -1,0 +1,275 @@
+disease_area,disease,trial_count
+Situation with explicit context,Healthy Volunteers,2042
+Neoplastic disease,Breast Cancer,1499
+Infection,HIV/AIDS,1396
+Disorder of endocrine system,Type 2 Diabetes,1369
+Mental illness,Major Depressive Disorder,1109
+Clinical finding,Acute Pain,1010
+Disorder of endocrine system,Gestational Diabetes,982
+Neoplastic disease,Non-Small Cell Lung Cancer,944
+Neoplastic disease,Prostate Cancer,906
+Respiratory disease,Chronic Obstructive Pulmonary Disease,849
+Musculoskeletal disorder,Osteoarthritis,845
+Disorder of endocrine system,Obesity,811
+Infection,COVID-19,793
+Mental illness,Smoking Cessation,741
+Respiratory disease,Asthma,737
+Disorder of immune function,Rheumatoid Arthritis,734
+Disorder of eye,Glaucoma,715
+Mental illness,Schizophrenia,692
+Cardiovascular disease,Heart Failure,687
+Cardiovascular disease,Coronary Artery Disease,662
+Infection,Hepatitis C,658
+Disorder of skin,Psoriasis,645
+Neurological disorder,Alzheimer's Disease,626
+Cardiovascular disease,Hypertension,614
+Infection,Influenza,610
+Neurological disorder,Stroke,607
+Disorder of endocrine system,Type 1 Diabetes,599
+Mental illness,Alcohol Use Disorder,574
+Neoplastic disease,Multiple Myeloma,573
+Neoplastic disease,Locally Advanced Cancer,572
+Neoplastic disease,Melanoma,560
+Neoplastic disease,Colorectal Cancer,556
+Neurological disorder,Parkinson's Disease,545
+Neoplastic disease,Pancreatic Cancer,515
+Neoplastic disease,Brain Tumors,505
+Neoplastic disease,Small Cell Lung Cancer,505
+Disorder of skin,Atopic Dermatitis,502
+Neurological disorder,Multiple Sclerosis,495
+Cardiovascular disease,Atrial Fibrillation,482
+Disorder of eye,Cataracts,475
+Mental illness,Post-Traumatic Stress Disorder,473
+Neurological disorder,Migraine,470
+Neoplastic disease,Hodgkin Lymphoma,469
+Neoplastic disease,Head and Neck Cancer,445
+Neoplastic disease,Recurrent Cancer,444
+Musculoskeletal disorder,Osteoporosis,441
+Neurological disorder,Epilepsy,416
+Disorder of skin,Rosacea,414
+Neoplastic disease,Chronic Myeloid Leukemia,399
+Neoplastic disease,Glioblastoma,386
+Mental illness,Attention Deficit Hyperactivity Disorder,385
+Procedure,Surgical Procedures,384
+Procedure,Anesthesia,379
+Disorder of digestive system,Ulcerative Colitis,376
+Neoplastic disease,Ovarian Cancer,373
+Mental illness,Substance Use Disorder,370
+Neoplastic disease,Acute Myeloid Leukemia,369
+Neoplastic disease,Metastatic Disease,366
+Neoplastic disease,Acute Lymphoblastic Leukemia,364
+Disorder of immune function,Organ Transplant Rejection,362
+Disorder of eye,Retinal Vein Occlusion,355
+Sleep disorder,Obstructive Sleep Apnea,354
+Neoplastic disease,Solid Tumors (Advanced),345
+Infection,Skin and Soft Tissue Infection,340
+Disorder of the genitourinary system,Chronic Kidney Disease,337
+Neoplastic disease,Renal Cell Carcinoma,337
+Disorder of eye,Dry Eye Disease,334
+Mental illness,Opioid Use Disorder,334
+Neoplastic disease,Bladder Cancer,334
+Cardiovascular disease,Peripheral Artery Disease,332
+Musculoskeletal disorder,Low Back Pain,330
+Mental illness,Bipolar Disorder,329
+Disorder of the genitourinary system,Urinary Incontinence,328
+Neurological disorder,Chronic Pain,322
+Cardiovascular disease,Aortic Stenosis,321
+Neoplastic disease,Hepatocellular Carcinoma,321
+Respiratory disease,Cystic Fibrosis,320
+Blood disease,Anemia,312
+Blood disease,Myelodysplastic Syndromes,297
+Neoplastic disease,Cancer Immunotherapy,295
+Neurological disorder,Spinal Cord Injury,294
+Disorder of endocrine system,Metabolic Syndrome,285
+Infection,Respiratory Syncytial Virus,284
+Disorder of digestive system,Chronic Pancreatitis,282
+Situation with explicit context,Post-Operative Care,282
+Mental illness,Social Anxiety Disorder,280
+Respiratory disease,Pulmonary Arterial Hypertension,280
+Situation with explicit context,Preventive Care,274
+Neoplastic disease,Cervical Cancer,269
+Infection,Hepatitis B,266
+Respiratory disease,Allergic Asthma,265
+Neoplastic disease,Neuroendocrine Tumors,260
+Cardiovascular disease,Familial Hypercholesterolemia,257
+Respiratory disease,Bronchiectasis,255
+Cardiovascular disease,Atherosclerosis,254
+Disorder of eye,Age-Related Macular Degeneration,253
+Neoplastic disease,Solid Tumors General,252
+Neurological disorder,Trigeminal Neuralgia,252
+Sleep disorder,Insomnia,252
+Disorder of skin,Acne,250
+Disorder of labour / delivery,Preterm Labor,249
+Musculoskeletal disorder,Fibromyalgia,246
+Neoplastic disease,Sarcoma,246
+Infection,Pneumonia,244
+Neoplastic disease,Endometrial Cancer,241
+Disorder of haemostatic system,Venous Thromboembolism,240
+Disorder of digestive system,Nonalcoholic Fatty Liver Disease,235
+Disorder of ear,Hearing Loss,235
+Mental illness,Autism Spectrum Disorder,235
+Disorder of digestive system,Short Bowel Syndrome,234
+Disorder of the genitourinary system,End-Stage Renal Disease,226
+Disorder of digestive system,Crohn's Disease,225
+Neoplastic disease,Diffuse Large B-Cell Lymphoma,221
+Injury,Trauma,219
+Cardiovascular disease,Hyperlipidemia,218
+Clinical finding,Fever,217
+Musculoskeletal disorder,Bone Fracture,217
+Infection,Malaria,213
+Disorder of digestive system,Eosinophilic Esophagitis,209
+Neoplastic disease,Follicular Lymphoma,209
+Neurological disorder,Traumatic Brain Injury,208
+Situation with explicit context,Contraception,208
+Cardiovascular disease,Myocardial Infarction,207
+Situation with explicit context,Drug-Drug Interaction,207
+Situation with explicit context,Geriatric Population,206
+Procedure,Blood Transfusion,204
+Infection,Fungal Infection,203
+Disorder of skin,Wound Healing,199
+Neurological disorder,Spinal Muscular Atrophy,199
+Neoplastic disease,Chronic Lymphocytic Leukemia,198
+Disorder of eye,Diabetic Macular Edema,192
+Procedure,Mechanical Ventilation,191
+Mental illness,Postpartum Depression,190
+Neoplastic disease,Gastric Cancer,190
+Respiratory disease,Allergic Rhinitis,190
+Disorder of eye,Conjunctivitis,189
+Infection,Cytomegalovirus,189
+Respiratory disease,Acute Respiratory Distress Syndrome,189
+Disorder of the genitourinary system,Endometriosis,186
+Disorder of immune function,Graft-versus-Host Disease,184
+Disorder of the genitourinary system,Pregnancy Study,181
+Disorder of the genitourinary system,Overactive Bladder,180
+Congenital disease,Lysosomal Storage Disorders,179
+Disorder of endocrine system,Hypoparathyroidism,179
+Blood disease,Sickle Cell Disease,177
+Musculoskeletal disorder,Ankylosing Spondylitis,175
+Disorder of eye,Inherited Retinal Diseases,171
+Respiratory disease,Neonatal Respiratory Distress,171
+Neurological disorder,Amyotrophic Lateral Sclerosis,170
+Neurological disorder,Essential Tremor,170
+Respiratory disease,Idiopathic Pulmonary Fibrosis,170
+Infection,Urinary Tract Infection,169
+Disorder of digestive system,Cirrhosis,167
+Disorder of haemostatic system,Hemophilia A,167
+Disorder of immune function,Sarcoidosis,164
+Infection,Sepsis,164
+Musculoskeletal disorder,Tendinopathy,164
+Infection,Osteomyelitis,162
+Disorder of the genitourinary system,Infertility,161
+Mental illness,Eating Disorders,161
+Neoplastic disease,Hematologic Malignancies General,160
+Cardiovascular disease,Ventricular Arrhythmias,159
+Neurological disorder,Duchenne Muscular Dystrophy,159
+Disorder of digestive system,Acute Pancreatitis,158
+Neoplastic disease,Esophageal Cancer,157
+Disorder of skin,Chronic Urticaria,156
+Disorder of immune function,Systemic Lupus Erythematosus,155
+Neurological disorder,Dementia,153
+Cardiovascular disease,Acute Coronary Syndrome,152
+Infection,Tuberculosis,151
+Musculoskeletal disorder,Psoriatic Arthritis,150
+Infection,Herpes Simplex Virus,148
+Disorder of immune function,Primary Immunodeficiency,147
+Disorder of digestive system,Gastroesophageal Reflux Disease,145
+Situation with explicit context,Pediatric Population,145
+Disorder of digestive system,Gastroparesis,143
+Disorder of the genitourinary system,Erectile Dysfunction,141
+Musculoskeletal disorder,Gout,140
+Disorder of digestive system,Constipation,137
+Disorder of skin,Hidradenitis Suppurativa,137
+Mental illness,Obsessive-Compulsive Disorder,137
+Disorder of skin,Vitiligo,136
+Neurological disorder,Myasthenia Gravis,135
+Disorder of endocrine system,Hyperparathyroidism,134
+Procedure,Medical Device Study,134
+Disorder of digestive system,Nausea and Vomiting,133
+Mental illness,Delirium,132
+Infection,Sexually Transmitted Infections,131
+Clinical finding,Edema,128
+Neoplastic disease,Thyroid Cancer,128
+Neoplastic disease,Cholangiocarcinoma,127
+Cardiovascular disease,Cardiomyopathy,126
+Disorder of endocrine system,Hypogonadism,126
+Disorder of endocrine system,Menopause Symptoms,125
+Disorder of endocrine system,Diabetic Neuropathy,124
+Disorder of eye,Diabetic Retinopathy,124
+Infection,Clostridium Difficile Infection,124
+Disorder of skin,Alopecia Areata,120
+Disorder of digestive system,Peptic Ulcer Disease,119
+Disorder of the genitourinary system,Benign Prostatic Hyperplasia,118
+Mental illness,Anorexia,117
+Neurological disorder,Neuropathic Pain,114
+Disorder of the genitourinary system,Acute Kidney Injury,110
+Neoplastic disease,Non-Hodgkin Lymphoma,108
+Disorder of digestive system,Irritable Bowel Syndrome,106
+Disorder of the genitourinary system,Nephrotic Syndrome,106
+Disorder of the genitourinary system,Uterine Fibroids,105
+Situation with explicit context,Vaccination,105
+Neoplastic disease,Myeloproliferative Neoplasms,104
+Disorder of haemostatic system,Disseminated Intravascular Coagulation,102
+Blood disease,Thrombotic Thrombocytopenic Purpura,101
+Disorder of digestive system,Inflammatory Bowel Disease,101
+Disorder of haemostatic system,Deep Vein Thrombosis,101
+Disorder of eye,Uveitis,100
+Neoplastic disease,Mantle Cell Lymphoma,100
+Disorder of ear,Meniere's Disease,98
+Disorder of ear,Otitis Media,97
+Cardiovascular disease,Mitral Regurgitation,94
+Infection,Herpes Zoster,92
+Disorder of immune function,Food Allergy,91
+Disorder of immune function,Lupus Nephritis,91
+Disorder of immune function,Systemic Sclerosis,88
+Neoplastic disease,Mesothelioma,87
+Injury,Burns,86
+Disorder of endocrine system,Polycystic Ovary Syndrome,85
+Musculoskeletal disorder,Juvenile Idiopathic Arthritis,85
+Clinical finding,Fatigue,83
+Disorder of the genitourinary system,Interstitial Cystitis,82
+Disorder of the genitourinary system,IgA Nephropathy,80
+Sleep disorder,Narcolepsy,79
+Neoplastic disease,Waldenstrom Macroglobulinemia,78
+Disorder of endocrine system,Growth Hormone Deficiency,77
+Disorder of digestive system,Malnutrition,76
+Disorder of haemostatic system,Hemophilia B,76
+Blood disease,Immune Thrombocytopenia,74
+Situation with explicit context,Critical Illness,74
+Cardiovascular disease,Shock,73
+Disorder of immune function,Sjögren's Syndrome,73
+Disorder of endocrine system,Acromegaly,72
+Congenital disease,Phenylketonuria,69
+Disorder of endocrine system,Diabetic Nephropathy,69
+Procedure,Screening,69
+Respiratory disease,Pulmonary Embolism,68
+Sleep disorder,Restless Legs Syndrome,67
+Disorder of endocrine system,Cushing's Syndrome,65
+Mental illness,Generalized Anxiety Disorder,63
+Disorder of the genitourinary system,Polycystic Kidney Disease,61
+Disorder of the genitourinary system,Preeclampsia,61
+Procedure,Radiation Oncology,61
+Disorder of digestive system,Celiac Disease,58
+Injury,Overdose,55
+Neurological disorder,Huntington's Disease,55
+Procedure,Bioequivalence Study,52
+Disorder of ear,Tinnitus,51
+Disorder of body system,Cachexia,50
+Disorder of body system,Multiple Organ Failure,50
+Disorder of skin,Pressure Ulcers,49
+Blood disease,Neutropenia,47
+Neoplastic disease,Cancer Supportive Care,45
+Infection,Helicobacter Pylori,44
+Neurological disorder,Chronic Inflammatory Demyelinating Polyneuropathy,44
+Disorder of immune function,Severe Combined Immunodeficiency,43
+Disorder of immune function,Vasculitis,43
+Neurological disorder,Guillain-Barré Syndrome,43
+Blood disease,Thalassemia,40
+Disorder of the genitourinary system,Focal Segmental Glomerulosclerosis,40
+Respiratory disease,Severe Asthma,35
+Disorder of immune function,Common Variable Immunodeficiency,33
+Disorder of endocrine system,Hypothyroidism,25
+Disorder of endocrine system,Addison's Disease,21
+Disorder of endocrine system,Hyperthyroidism,19
+Mental illness,Panic Disorder,19
+Disorder of haemostatic system,Von Willebrand Disease,17
+Blood disease,Hemoglobinopathies,12

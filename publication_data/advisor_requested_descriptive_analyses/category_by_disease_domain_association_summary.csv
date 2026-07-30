@@ -1,0 +1,2 @@
+analysis_unit,n_records,rows_disease_domains,columns_outcome_categories,chi_square,degrees_of_freedom,p_value,cramers_v,inference_caution
+unique NCT ID + raw outcome title + disease domain,561609,24,21,426367.331021,460,0,0.194831840508,"Descriptive: trials can contribute multiple outcomes/domains, so records are clustered and the chi-square p-value is not a cluster-robust inferential test."

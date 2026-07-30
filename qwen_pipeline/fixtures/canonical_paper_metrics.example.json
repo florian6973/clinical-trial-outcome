@@ -1,0 +1,14 @@
+{
+  "status": "supplied_canonical_not_recomputed",
+  "source_document": "JAMIA manuscript author-supplied numerical evidence",
+  "artifact_version": "example-contract-v1",
+  "metrics": {
+    "analytic_trials": {"value": 73427, "unit": "trials", "numerator": null, "denominator": null, "provenance": "manuscript", "note": "Canonical manuscript value."},
+    "mapped_outcome_records": {"value": 480273, "unit": "records", "numerator": null, "denominator": null, "provenance": "manuscript", "note": "Not recomputed by this pipeline."},
+    "condition_strings": {"value": 26682, "unit": "strings", "numerator": null, "denominator": null, "provenance": "manuscript", "note": "Canonical manuscript value."},
+    "outcome_exact_match": {"value": 0.88, "unit": "proportion", "numerator": 44, "denominator": 50, "provenance": "manuscript", "note": "Supplied held-out result."},
+    "condition_accuracy": {"value": "approximately 0.92", "unit": "proportion", "numerator": null, "denominator": null, "provenance": "manuscript", "note": "Exact benchmark numerator and denominator are not asserted here."},
+    "distinct_condition_concepts": {"value": 238, "unit": "concepts", "numerator": null, "denominator": null, "provenance": "manuscript", "note": "Terminology QA must precede public release."},
+    "disease_areas": {"value": 24, "unit": "areas", "numerator": null, "denominator": null, "provenance": "manuscript", "note": "Crosswalk artifact must be author-verified."}
+  }
+}

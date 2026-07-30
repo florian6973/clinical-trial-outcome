@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "canonical_paper_metrics.schema.json",
+  "title": "Supplied canonical manuscript metrics",
+  "type": "object",
+  "required": ["status", "source_document", "metrics"],
+  "additionalProperties": false,
+  "properties": {
+    "status": {"const": "supplied_canonical_not_recomputed"},
+    "source_document": {"type": "string", "minLength": 1},
+    "artifact_version": {"type": "string"},
+    "metrics": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object",
+        "required": ["value", "unit", "provenance"],
+        "additionalProperties": false,
+        "properties": {
+          "value": {"type": ["number", "integer", "string"]},
+          "unit": {"type": "string", "minLength": 1},
+          "numerator": {"type": ["integer", "null"]},
+          "denominator": {"type": ["integer", "null"]},
+          "provenance": {"enum": ["manuscript", "author_supplied_table", "verified_release_artifact"]},
+          "note": {"type": "string"}
+        }
+      }
+    }
+  }
+}
