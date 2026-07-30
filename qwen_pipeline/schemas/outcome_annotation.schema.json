@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "outcome_annotation.schema.json",
+  "title": "Outcome normalization annotation",
+  "type": "object",
+  "required": ["record_id", "split", "source_object", "candidate_terms", "candidate_groups", "gold_group"],
+  "additionalProperties": false,
+  "properties": {
+    "record_id": {"type": "string", "minLength": 1},
+    "split": {"enum": ["train", "validation", "test"]},
+    "source_object": {"type": "string", "minLength": 1},
+    "context": {"type": "string"},
+    "candidate_terms": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/termCandidate"}
+    },
+    "candidate_groups": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/groupCandidate"}
+    },
+    "gold_group": {"type": "string", "minLength": 1},
+    "adjudication_note": {"type": "string"}
+  },
+  "$defs": {
+    "termCandidate": {
+      "type": "object",
+      "required": ["term", "similarity"],
+      "additionalProperties": false,
+      "properties": {
+        "term": {"type": "string", "minLength": 1},
+        "group": {"type": "string", "minLength": 1},
+        "similarity": {"type": "number", "minimum": -1, "maximum": 1}
+      }
+    },
+    "groupCandidate": {
+      "type": "object",
+      "required": ["group", "similarity"],
+      "additionalProperties": false,
+      "properties": {
+        "group": {"type": "string", "minLength": 1},
+        "similarity": {"type": "number", "minimum": -1, "maximum": 1}
+      }
+    }
+  }
+}

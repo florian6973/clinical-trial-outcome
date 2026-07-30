@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "outcome_prediction.schema.json",
+  "title": "Outcome selector audit record",
+  "type": "object",
+  "required": ["record_id", "source_object", "candidate_terms", "candidate_groups", "raw_model_text", "selected_group", "proposed_group", "eligible_for_aggregation", "status", "error_detail", "run_id"],
+  "properties": {
+    "record_id": {"type": "string", "minLength": 1},
+    "source_object": {"type": "string", "minLength": 1},
+    "candidate_terms": {"type": "array"},
+    "candidate_groups": {"type": "array"},
+    "raw_model_text": {"type": ["string", "null"]},
+    "explanation": {"type": ["string", "null"]},
+    "selected_group": {"type": ["string", "null"]},
+    "proposed_group": {"type": ["string", "null"]},
+    "eligible_for_aggregation": {"type": "boolean"},
+    "status": {"enum": ["ok", "abstain", "proposed_new_group", "retrieval_error", "format_error", "selector_error"]},
+    "error_detail": {"type": ["string", "null"]},
+    "run_id": {"type": "string"}
+  }
+}

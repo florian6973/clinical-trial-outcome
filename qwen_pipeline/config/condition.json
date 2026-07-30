@@ -1,0 +1,11 @@
+{
+  "task": "condition",
+  "source_field": "raw_condition",
+  "candidate_concepts_k": 10,
+  "prediction_field": "selected_candidate_id",
+  "allow_abstain": true,
+  "abstain_label": "NO_MATCH",
+  "selector_may_invent_concept_id": false,
+  "crosswalk_required": true,
+  "terminology_release_metadata_required": true
+}

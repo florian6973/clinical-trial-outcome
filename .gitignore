@@ -1,20 +1,26 @@
-# Ignore all .txt files
-*.txt
-
-# Ignore all .csv files
-*.csv
-
-# Ignore all .parquet files
-*.parquet
-
-# Ignore all .svg and .png files
-*.svg
-*.png
-
-# Ignore the /checkpoints directory
-/checkpoints/
-
-# Ignore the /cache directory
-/cache/
-
 .DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local credentials and environment settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Model and runtime outputs
+checkpoints/
+cache/
+qwen_pipeline/outputs/*
+!qwen_pipeline/outputs/README.md
+
+# Large or licensed local inputs
+local_data/
+licensed_terminology/
+*.parquet

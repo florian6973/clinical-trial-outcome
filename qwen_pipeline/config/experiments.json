@@ -1,0 +1,26 @@
+{
+  "status": "design matrix only; no experiments were run by this implementation",
+  "metric": "exact_match_accuracy",
+  "heldout_split": "author_verified_fixed_50_item_outcome_split",
+  "model_comparison": [
+    {"label": "Qwen2.5-7B", "model_id": "Qwen/Qwen2.5-7B-Instruct"},
+    {"label": "Qwen2.5-14B", "model_id": "Qwen/Qwen2.5-14B-Instruct"},
+    {"label": "Qwen2.5-32B", "model_id": "Qwen/Qwen2.5-32B-Instruct"},
+    {"label": "Llama3-8B", "model_id": null},
+    {"label": "Llama3-15B", "model_id": null},
+    {"label": "Llama3-34B", "model_id": null}
+  ],
+  "learning_curve_training_sizes": [0, 50, 100, 150, 200],
+  "required_before_execution": [
+    "author-verified model identifiers for every comparison cell",
+    "immutable training-order artifact",
+    "fixed held-out item identifiers and gold labels",
+    "hardware and software environment manifest",
+    "output directory with run-level provenance"
+  ],
+  "reported_conclusions_only": {
+    "selected_model_label": "Qwen2.5-32B",
+    "plateau_description": "less than 0.04 absolute improvement from 150 to 200 examples",
+    "cell_level_scores_available": false
+  }
+}

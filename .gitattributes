@@ -1,0 +1,4 @@
+# Preserve recovered author annotations byte-for-byte, including original
+# line endings and trailing spaces recorded by their SHA256 manifest.
+publication_data/recovered_study_artifacts/*.csv -whitespace
+publication_data/recovered_study_artifacts/*.yaml -whitespace

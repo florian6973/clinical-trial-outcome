@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "disease_area_crosswalk.schema.json",
+  "title": "Author-verified disease-area crosswalk row",
+  "type": "object",
+  "required": ["concept_id", "preferred_term", "disease_area", "crosswalk_version"],
+  "additionalProperties": false,
+  "properties": {
+    "concept_id": {"type": "string", "minLength": 1},
+    "preferred_term": {"type": "string", "minLength": 1},
+    "disease_area": {"type": "string", "minLength": 1},
+    "crosswalk_version": {"type": "string", "minLength": 1},
+    "terminology_edition": {"type": ["string", "null"]},
+    "qa_status": {"enum": ["verified", "pending", "excluded"]}
+  }
+}

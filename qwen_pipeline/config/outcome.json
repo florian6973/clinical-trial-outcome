@@ -1,0 +1,20 @@
+{
+  "task": "outcome",
+  "source_field": "source_object",
+  "candidate_terms_k": 5,
+  "candidate_groups_k": 5,
+  "prediction_field": "selected_group",
+  "allow_abstain": true,
+  "abstain_label": "UNMAPPED_OUTCOME",
+  "allow_proposed_new_group": true,
+  "proposed_new_group_label": "PROPOSED_NEW_GROUP",
+  "proposal_requires_adjudication": true,
+  "training_examples_reported": 200,
+  "heldout_examples_reported": 50,
+  "split_artifact_required": true,
+  "parser": {
+    "required_prefix": "GROUP:",
+    "exactly_one_group": true,
+    "require_in_vocabulary_or_review_state": true
+  }
+}

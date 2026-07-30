@@ -1,0 +1,42 @@
+{
+  "analysis_unit": "one unique NCT ID plus raw outcome title",
+  "asset": {
+    "bytes": 52822741,
+    "columns": [
+      "nct_id",
+      "aact_outcome_title",
+      "aact_outcome_description",
+      "outcome_normalized",
+      "outcome_category",
+      "outcome_coa_type",
+      "n_description_variants",
+      "n_normalized_variants",
+      "n_category_variants",
+      "n_coa_variants"
+    ],
+    "file": "linked_outcome_records.csv.gz",
+    "format": "UTF-8 CSV compressed with deterministic gzip",
+    "rows_excluding_header": 467903,
+    "sha256": "7d9bead2570d94fe7c4ecb3485c2434be7cfead35a3198c62e06bcaa8a10c16e"
+  },
+  "observed_counts": {
+    "distinct_raw_title_strings": 390228,
+    "linked_outcome_records": 467903,
+    "records_with_multiple_categories": 124,
+    "records_with_multiple_normalizations": 947,
+    "source_normalized_strings": 243916
+  },
+  "paper_denominator_reconciliation": {
+    "explanation": "The paper count refers to row-level AACT outcome records. The recovered mapping lacks an AACT outcome-row identifier, so the public extract uses the reproducible NCT ID plus raw title key and must not replace the paper denominator.",
+    "paper_mapped_outcome_records": 480273,
+    "released_unique_trial_title_records": 467903
+  },
+  "release_format_version": "1.0",
+  "release_status": "shareable_outcome_only_extract_from_recovered_locked_mapping",
+  "source": {
+    "bytes": 423325898,
+    "project_relative_path": "data/output/research/outcome_and_condition_aact_mapping.csv",
+    "sha256": "1065422cb2479a667fa4017787f9090d7293e63c6e7c1dfe933ab95ebc6799b4"
+  },
+  "transformation": "Removed condition and terminology columns; deduplicated the condition-expanded source by NCT ID and raw outcome title; selected modal field values with alphabetical tie-breaks; retained per-field variant counts."
+}

@@ -1,0 +1,12 @@
+# Equivalent runtime requirements for environments that do not install pyproject.toml.
+accelerate>=0.33
+datasets>=2.20
+faiss-cpu>=1.8
+jsonschema>=4.22
+numpy>=1.26
+peft>=0.12
+sentence-transformers>=3.0
+torch>=2.2
+transformers>=4.44
+# Linux/CUDA only; install manually on supported hosts:
+# bitsandbytes>=0.43
