@@ -1,8 +1,8 @@
-# Clinical trial outcome normalization and surveillance
+# Clinical outcome measure characterization and trends
 
-This repository supports the manuscript **Large-Scale Characterization and
-Trend Analysis of ClinicalTrials.gov Outcome Measures Using
-Retrieval-Augmented Normalization, 2000-2025**.
+This repository supports the manuscript **A Large-Scale Characterization and
+Trend Analysis of Clinical Outcome Measures in ClinicalTrials.gov
+(2000-2025)**.
 
 The current workflow uses NV-Embed-v2 and FAISS to retrieve candidate concepts,
 then uses task-specific Qwen2.5 LoRA selectors to normalize free-text outcome
