@@ -23,12 +23,12 @@ The files use four deliberately different units:
 1. The manuscript's 480,273 mapped outcome records are row-level AACT outcome
    entries carried through normalization and remain the paper's headline count.
 2. Overall mapping-file summaries use 467,903 unique `(NCT ID, raw outcome
-   title)` records because the recovered locked file lacks an AACT outcome-row ID.
+   title)` records because the source file lacks an AACT outcome-row ID.
 3. Lexical complexity uses 390,228 distinct raw outcome-title strings.
 4. The category-by-disease crosswalk uses 561,609 unique `(NCT ID, raw outcome
    title, disease domain)` links.
 
-The latter three counts characterize the recovered mapping file and must not be
+The latter three counts characterize the mapping file and must not be
 substituted for the manuscript's 480,273-record denominator.
 
 ## Contents
@@ -40,7 +40,7 @@ substituted for the manuscript's 480,273-record denominator.
   and residual-category cases. This is descriptive triage, not a formal model
   error-rate estimate.
 - `all_21_outcome_categories_ranked.csv`: complete category ranking from the
-  recovered linked cohort.
+  linked cohort.
 - `category_by_disease_domain_*`: the complete 24-by-21 crosswalk, within-domain
   percentages, standardized residuals, and descriptive association summary.
 - `figures/`: publication-ready complexity and disease-domain figures.

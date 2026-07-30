@@ -27,12 +27,12 @@
     "source_normalized_strings": 243916
   },
   "paper_denominator_reconciliation": {
-    "explanation": "The paper count refers to row-level AACT outcome records. The recovered mapping lacks an AACT outcome-row identifier, so the public extract uses the reproducible NCT ID plus raw title key and must not replace the paper denominator.",
+    "explanation": "The paper count refers to row-level AACT outcome records. The source mapping lacks an AACT outcome-row identifier, so the public extract uses the reproducible NCT ID plus raw title key and must not replace the paper denominator.",
     "paper_mapped_outcome_records": 480273,
     "released_unique_trial_title_records": 467903
   },
   "release_format_version": "1.0",
-  "release_status": "shareable_outcome_only_extract_from_recovered_locked_mapping",
+  "release_status": "shareable_outcome_only_extract",
   "source": {
     "bytes": 423325898,
     "project_relative_path": "data/output/research/outcome_and_condition_aact_mapping.csv",

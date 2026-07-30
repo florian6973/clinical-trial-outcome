@@ -6,7 +6,8 @@ They contain condition, disease-area, normalized-outcome, phase, year, and
 completion-period summaries derived from the paper's locked study files.
 
 The package does not contain SNOMED CT identifiers or terminology content. It
-does not train Qwen, call a hosted model, or rerun the manuscript analysis.
+reads the checked publication files and generates detail-page summaries
+deterministically.
 `manifest.json` records every included data file, byte size, and SHA-256 hash.
 
 To refresh a local dashboard checkout from this repository:

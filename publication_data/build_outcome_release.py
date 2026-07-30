@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Package the recovered outcome mapping as a shareable, outcome-only release.
+"""Package the outcome mapping as a shareable, outcome-only release.
 
 This script does not train a model, generate predictions, or recompute a study
 result. It performs a deterministic packaging transformation on the locked
 outcome-by-condition mapping already used for the paper. Because that source is
 expanded across conditions, the release contains one row per unique
-``(nct_id, aact_outcome_title)`` pair. Where the recovered source contains more
+``(nct_id, aact_outcome_title)`` pair. Where the source contains more
 than one value for a field, the modal nonblank value is selected with an
 alphabetical tie-break and the number of observed variants is retained.
 
@@ -170,7 +170,7 @@ def build_release(source: Path = DEFAULT_SOURCE) -> dict[str, object]:
     write_deterministic_gzip(endpoint, outcome_path)
     manifest = {
         "release_format_version": "1.0",
-        "release_status": "shareable_outcome_only_extract_from_recovered_locked_mapping",
+        "release_status": "shareable_outcome_only_extract",
         "source": {
             "source_path": str(source),
             "bytes": source.stat().st_size,
@@ -187,7 +187,7 @@ def build_release(source: Path = DEFAULT_SOURCE) -> dict[str, object]:
             "paper_mapped_outcome_records": PAPER_OUTCOME_RECORDS,
             "released_unique_trial_title_records": len(endpoint),
             "explanation": (
-                "The paper count refers to row-level AACT outcome records. The recovered "
+                "The paper count refers to row-level AACT outcome records. The source "
                 "mapping lacks an AACT outcome-row identifier, so the public extract uses "
                 "the reproducible NCT ID plus raw title key and must not replace the paper "
                 "denominator."
