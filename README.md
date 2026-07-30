@@ -44,12 +44,6 @@ abstain; it cannot create terminology identifiers.
 
 ## Evidence boundary
 
-No model training or corpus-scale analysis was rerun while this reproducibility
-package was prepared. The manuscript's numerical results remain the reported
-study results. The executable package documents the intended method and
-validates its inputs, configuration, schemas, prompts, and outputs without
-inventing missing experiment scores.
-
 The paper reports 480,273 outcome rows. The available reproducible extract
 contains 467,903 distinct combinations of ClinicalTrials.gov identifier and raw
 outcome title. Both counts are reported as they arise from their respective
@@ -94,13 +88,7 @@ identifiers, terminology descriptions, hierarchy relationships, or reference
 set content. See
 [`publication_data/LICENSE_AND_PROVENANCE.md`](publication_data/LICENSE_AND_PROVENANCE.md).
 
-## History and attribution
-
-Florent Pollet created the original public implementation for the Weng Lab.
-That code, its data file, and its full Git history are preserved in
-[`legacy/original_2024/`](legacy/original_2024/). The current Qwen package
-reorganizes and extends that work for the revised manuscript while keeping the
-historical implementation available for audit.
+## License
 
 The repository is released under the existing Weng Lab MIT License. Data and
 third-party terminology remain subject to their source licenses.
