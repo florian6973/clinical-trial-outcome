@@ -58,8 +58,8 @@ the advisor's requests.
 
 [`dashboard/`](dashboard/) contains the checksum-covered condition and outcome
 summary tables used by the interactive companion. Keeping these aggregates in
-the paper repository lets the public dashboard refresh without access to the
-private TrialBook workspace or licensed terminology.
+the paper repository lets the public dashboard refresh without access to
+licensed terminology.
 
 ## Outcome-denominator reconciliation
 
