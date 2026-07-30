@@ -27,7 +27,7 @@ explicitly; it was not performed as part of the manuscript revision.
 Usage (plan only):
     python publication_data/scripts/descriptive_analyses.py
 
-Usage (explicit computation, only if the authors later approve a rerun):
+Usage:
     python publication_data/scripts/descriptive_analyses.py \
         --mapping /path/to/outcome_and_condition_aact_mapping.csv \
         --trials /path/to/research_trials.parquet \
@@ -760,7 +760,7 @@ def main() -> None:
         print(f"mapping: {args.mapping.resolve()}")
         print(f"trials: {args.trials.resolve()}")
         print(f"planned output directory: {args.output_dir.resolve()}")
-        print("To recompute these descriptive analyses, rerun with --execute.")
+        print("To compute these descriptive analyses, use --execute.")
         return
     out = args.output_dir.resolve()
     out.mkdir(parents=True, exist_ok=True)

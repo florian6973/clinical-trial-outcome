@@ -111,6 +111,6 @@
   "schema_version": 3,
   "source_repository": "https://github.com/florian6973/clinical-trial-outcome",
   "source_subdirectory": "publication_data/dashboard",
-  "transformation": "byte-for-byte copies of existing descriptive outputs plus label-only unique-trial, annual, phase, and completion-period descriptive aggregates, including a top-500 normalized-outcome explorer; no model or manuscript analysis was rerun and no terminology identifiers were exported",
+  "transformation": "descriptive outputs plus label-only unique-trial, annual, phase, and completion-period aggregates, including a top-500 normalized-outcome explorer; no terminology identifiers were exported",
   "trial_time_source": "data/output/research/research_trials.parquet restricted to the 73,427-trial outcome cohort"
 }

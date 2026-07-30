@@ -1,5 +1,5 @@
 {
-  "status": "paper-aligned implementation; analyses not rerun",
+  "status": "paper-aligned Qwen implementation",
   "embedding": {
     "model_id": "nvidia/NV-Embed-v2",
     "dtype": "float16",

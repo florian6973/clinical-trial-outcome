@@ -2,9 +2,8 @@
 
 This directory contains the public, identifier-free data package for the JAMIA
 manuscript. The release includes the reproducible outcome-only extract,
-label-only disease aggregates used by the dashboard, recovered study
-annotations, and the advisor-requested descriptive characterization. Packaging
-does not retrain a model or change a manuscript result.
+label-only disease aggregates used by the dashboard, study annotations, and the
+advisor-requested descriptive characterization.
 
 ## Public release contents
 
@@ -47,7 +46,7 @@ See [LICENSE_AND_PROVENANCE.md](LICENSE_AND_PROVENANCE.md) and
 
 ## Other reproducibility materials
 
-[`recovered_study_artifacts/`](recovered_study_artifacts/) contains recovered
+[`recovered_study_artifacts/`](recovered_study_artifacts/) contains
 outcome-structuring and term-grouping annotations and the figures embedded in
 the original supplement.
 

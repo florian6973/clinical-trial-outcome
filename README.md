@@ -13,14 +13,12 @@ category, disease area, trial phase, and calendar period.
 
 - [`qwen_pipeline/`](qwen_pipeline/) contains the paper-aligned Qwen training,
   retrieval, inference, evaluation, experiment, prompt, schema, and audit code.
-- [`publication_data/`](publication_data/) contains recovered study
+- [`publication_data/`](publication_data/) contains study
   annotations, descriptive analyses, public aggregate data, and the
   reproducible outcome-only extract.
-- [`docs/REPRODUCIBILITY_STATUS.md`](docs/REPRODUCIBILITY_STATUS.md) states
-  which claims are verified by current artifacts, which values come from the
-  manuscript, and which analyses were not rerun.
-- [`legacy/`](legacy/) preserves the original implementation and repository
-  history for provenance. It is not the current reproduction path.
+- [`docs/REPRODUCIBILITY_STATUS.md`](docs/REPRODUCIBILITY_STATUS.md) summarizes
+  the included code, data, and validation materials.
+- [`legacy/`](legacy/) contains the earlier implementation.
 - The interactive companion is maintained in the
   [Clinical Trial Outcome Atlas](https://github.com/jamesbbaker/ClinicalTrialOutcomeTrends)
   repository.
@@ -42,7 +40,7 @@ proposal cannot enter the approved vocabulary or downstream analysis without
 human adjudication. The condition selector can choose a retrieved candidate or
 abstain; it cannot create terminology identifiers.
 
-## Evidence boundary
+## Data summary
 
 The paper reports 480,273 outcome rows. The available reproducible extract
 contains 467,903 distinct combinations of ClinicalTrials.gov identifier and raw
@@ -51,7 +49,7 @@ sources; no records were changed to force agreement.
 
 ## Validate the checked-in artifacts
 
-These commands do not download a model, train an adapter, or rerun the study:
+Use these commands to validate the checked-in artifacts:
 
 ```bash
 PYTHONDONTWRITEBYTECODE=1 \
