@@ -1,7 +1,6 @@
 # Legacy implementation
 
-`original_2024/` preserves the repository's earlier code, data, history, and
-Weng Lab attribution.
+`original_2024/` preserves the repository's earlier code, data, and history.
 
 The archived implementation includes:
 

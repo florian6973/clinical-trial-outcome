@@ -66,5 +66,5 @@ licensing requirements.
 The publication release contains study identifiers, raw outcome titles,
 project disease labels, analysis categories, and aggregate counts. See
 [`publication_data/LICENSE_AND_PROVENANCE.md`](publication_data/LICENSE_AND_PROVENANCE.md).
-Code is available under the Weng Lab MIT License. Data and third-party
+Code is available under the MIT License. Data and third-party
 terminology remain subject to their source licenses.
