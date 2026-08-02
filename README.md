@@ -4,10 +4,9 @@ This repository supports the manuscript **A Large-Scale Characterization and
 Trend Analysis of Clinical Outcome Measures in ClinicalTrials.gov
 (2000-2025)**.
 
-The workflow combines ontology retrieval with task-specific Qwen2.5 LoRA
-models to normalize free-text outcome titles and condition names. Conditions
-are mapped to SNOMED CT concepts and study disease areas. Outcomes are mapped
-to a curated set of normalized groups and analysis categories.
+The pipeline uses task-specific Qwen2.5 LoRA models to normalize AACT outcome
+titles and condition names. It maps conditions to SNOMED CT concepts and study
+disease areas, and outcomes to approved groups and analysis categories.
 
 ## Start here
 
@@ -21,25 +20,20 @@ to a curated set of normalized groups and analysis categories.
   [Clinical Trial Outcome Atlas](https://github.com/jamesbbaker/ClinicalTrialOutcomeTrends)
   repository.
 
-## Current workflow
+## Workflow
 
 1. Structure each free-text outcome title into its main object and modifiers.
-2. Retrieve the closest existing labels with NV-Embed-v2 and FAISS.
-3. Work category by category through the unlabeled values. The condition model
-   selects a SNOMED CT concept. The outcome model selects a previously approved
-   outcome group or proposes a new group when no existing label fits.
-4. Review new groups and uncertain matches, then add approved groups to the
-   reference vocabulary for subsequent passes.
-5. Assign normalized outcomes to one of the 21 selected outcome categories,
-   group conditions into study disease areas, and join the labels to trial
-   dates and phases.
-
-This iterative process keeps recurring concepts consistent while allowing the
-outcome vocabulary to expand when a genuinely new measure is encountered.
+2. Retrieve approved outcome groups or SNOMED CT concepts with NV-Embed-v2 and
+   FAISS.
+3. Process each category in turn. Qwen selects a match or proposes a new outcome
+   group when no approved group fits.
+4. Review proposed groups before adding them to later passes. Then map outcomes
+   to 21 categories, group conditions into disease areas, and join the labels to
+   trial dates and phases.
 
 ## Validate the checked-in artifacts
 
-Use these commands to validate the checked-in artifacts:
+Run these checks from the repository root:
 
 ```bash
 PYTHONDONTWRITEBYTECODE=1 \
@@ -63,18 +57,14 @@ PYTHONDONTWRITEBYTECODE=1 \
 python3 -m unittest discover -s publication_data/tests -v
 ```
 
-GPU- or write-intensive Qwen commands require an explicit `--execute` flag.
-See [`qwen_pipeline/README.md`](qwen_pipeline/README.md) for reviewed-input and
-licensed-terminology requirements.
+Qwen commands that use a GPU or write files require `--execute`. See
+[`qwen_pipeline/README.md`](qwen_pipeline/README.md) for source preparation and
+licensing requirements.
 
-## Public data
+## Data and license
 
 The publication release contains study identifiers, raw outcome titles,
-project disease labels, analysis categories, and aggregate counts. Licensing
-details are documented in
+project disease labels, analysis categories, and aggregate counts. See
 [`publication_data/LICENSE_AND_PROVENANCE.md`](publication_data/LICENSE_AND_PROVENANCE.md).
-
-## License
-
-The repository is released under the existing Weng Lab MIT License. Data and
-third-party terminology remain subject to their source licenses.
+Code is available under the Weng Lab MIT License. Data and third-party
+terminology remain subject to their source licenses.

@@ -35,6 +35,9 @@ def _minimal_validate(instance: Any, schema_name: str) -> None:
         "condition_annotation.schema.json": {"record_id", "split", "raw_condition", "candidates", "gold"},
         "canonical_paper_metrics.schema.json": {"status", "source_document", "metrics"},
         "vocabulary.schema.json": {"vocabulary_id"},
+        "raw_outcome.schema.json": {"record_id", "nct_id", "outcome_id", "title", "description", "outcome_type", "time_frame"},
+        "raw_condition.schema.json": {"record_id", "nct_id", "raw_condition"},
+        "source_manifest.schema.json": {"manifest_version", "status", "aact", "snomed_ct", "filters", "outputs"},
     }
     missing = required_by_schema.get(schema_name, set()) - set(instance)
     if missing:

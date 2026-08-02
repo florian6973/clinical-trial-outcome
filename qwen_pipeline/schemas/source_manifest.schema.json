@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "source_manifest.schema.json",
+  "title": "AACT and SNOMED CT source-preparation manifest",
+  "type": "object",
+  "required": ["manifest_version", "status", "aact", "snomed_ct", "filters", "outputs"],
+  "additionalProperties": false,
+  "properties": {
+    "manifest_version": {"const": "1.0"},
+    "status": {"const": "prepared_source_inputs"},
+    "aact": {"$ref": "#/$defs/aact"},
+    "snomed_ct": {"$ref": "#/$defs/snomed"},
+    "filters": {
+      "type": "object",
+      "required": ["aact_outcome_unit", "snomed_root_concept_id", "snomed_relationship_type_id", "active_rows_only", "english_descriptions_only"],
+      "additionalProperties": false,
+      "properties": {
+        "aact_outcome_unit": {"type": "string"},
+        "snomed_root_concept_id": {"type": "string"},
+        "snomed_relationship_type_id": {"type": "string"},
+        "active_rows_only": {"type": "boolean"},
+        "english_descriptions_only": {"type": "boolean"}
+      }
+    },
+    "outputs": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {"$ref": "#/$defs/fileAsset"}
+    }
+  },
+  "$defs": {
+    "fileAsset": {
+      "type": "object",
+      "required": ["file", "bytes", "sha256"],
+      "additionalProperties": false,
+      "properties": {
+        "file": {"type": "string", "minLength": 1},
+        "records": {"type": "integer", "minimum": 0},
+        "bytes": {"type": "integer", "minimum": 0},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "path": {"type": "string", "minLength": 1}
+      }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": {"type": "integer", "minimum": 0}
+    },
+    "aact": {
+      "type": "object",
+      "required": ["snapshot_id", "snapshot_date", "files", "counts"],
+      "additionalProperties": false,
+      "properties": {
+        "snapshot_id": {"type": "string", "minLength": 1},
+        "snapshot_date": {"type": ["string", "null"], "pattern": "^20[0-9]{2}-[0-9]{2}-[0-9]{2}$"},
+        "files": {"type": "array", "minItems": 3, "items": {"$ref": "#/$defs/fileAsset"}},
+        "counts": {"$ref": "#/$defs/counts"}
+      }
+    },
+    "snomed": {
+      "type": "object",
+      "required": ["edition_identifier", "version_date", "files", "module_ids", "effective_times", "counts"],
+      "additionalProperties": false,
+      "properties": {
+        "edition_identifier": {"type": "string", "minLength": 1},
+        "version_date": {"type": ["string", "null"], "pattern": "^20[0-9]{2}-[0-9]{2}-[0-9]{2}$"},
+        "files": {"type": "array", "minItems": 4, "items": {"$ref": "#/$defs/fileAsset"}},
+        "module_ids": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+        "effective_times": {"type": "array", "items": {"type": "string", "pattern": "^[0-9]{8}$"}, "uniqueItems": true},
+        "counts": {"$ref": "#/$defs/counts"}
+      }
+    }
+  }
+}

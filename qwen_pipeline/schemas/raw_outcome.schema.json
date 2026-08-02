@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "raw_outcome.schema.json",
+  "title": "AACT result outcome prepared for structuring",
+  "type": "object",
+  "required": ["record_id", "nct_id", "outcome_id", "title", "description", "outcome_type", "time_frame"],
+  "additionalProperties": false,
+  "properties": {
+    "record_id": {"type": "string", "minLength": 1},
+    "nct_id": {"type": "string", "minLength": 1},
+    "outcome_id": {"type": "string", "minLength": 1},
+    "title": {"type": "string"},
+    "description": {"type": "string"},
+    "outcome_type": {"type": "string"},
+    "time_frame": {"type": "string"}
+  }
+}
