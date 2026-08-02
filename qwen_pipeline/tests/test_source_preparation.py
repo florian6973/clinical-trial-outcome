@@ -185,6 +185,13 @@ class SourcePreparationTests(unittest.TestCase):
                 {"100001", "100002"},
             )
 
+    def test_infers_snomed_edition_from_snapshot_parent(self) -> None:
+        prepared = prepare_sources(AACT, SNOMED / "Snapshot")
+        self.assertEqual(
+            prepared.manifest_base["snomed_ct"]["edition_identifier"],
+            "snomed_international_20250701",
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

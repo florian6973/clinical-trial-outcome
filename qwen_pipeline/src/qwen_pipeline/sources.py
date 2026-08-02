@@ -388,7 +388,12 @@ def prepare_sources(
     vocabulary, snomed_metadata = _prepare_snomed(snomed_root)
     inferred_snapshot = aact_snapshot_id or aact_root.name
     inferred_date = _date_from_text(inferred_snapshot) or _date_from_text(aact_root.name)
-    edition = snomed_edition or snomed_root.name
+    inferred_edition = (
+        snomed_root.parent.name
+        if snomed_root.name.casefold() == "snapshot"
+        else snomed_root.name
+    )
+    edition = snomed_edition or inferred_edition
     version_date = (
         _date_from_text(sorted(snomed_metadata["effective_times"])[-1])
         if snomed_metadata["effective_times"]
