@@ -1,14 +1,12 @@
 # Advisor-requested descriptive analyses
 
-This folder preserves the already-generated characterization requested during
-Chunhua Weng's review. The files were copied from the locked mapping-file output;
-they were **not recomputed during manuscript revision**.
+This folder contains the outcome characterization prepared during manuscript
+review.
 
-## Cohort authority
+## Source
 
 The source is `data/output/research/outcome_and_condition_aact_mapping.csv`:
 
-- 423,325,898 bytes (approximately 404 MiB)
 - SHA-256: `1065422cb2479a667fa4017787f9090d7293e63c6e7c1dfe933ab95ebc6799b4`
 - 792,091 condition-expanded rows from 73,427 trials
 - 21 outcome categories and 24 disease domains
@@ -18,41 +16,28 @@ also recorded in `source_manifest.csv`.
 
 ## Analysis units
 
-The files use four deliberately different units:
-
-1. The manuscript's 480,273 mapped outcome records are row-level AACT outcome
-   entries carried through normalization and remain the paper's headline count.
-2. Overall mapping-file summaries use 467,903 unique `(NCT ID, raw outcome
-   title)` records because the source file lacks an AACT outcome-row ID.
-3. Lexical complexity uses 390,228 distinct raw outcome-title strings.
-4. The category-by-disease crosswalk uses 561,609 unique `(NCT ID, raw outcome
-   title, disease domain)` links.
-
-The latter three counts characterize the mapping file and must not be
-substituted for the manuscript's 480,273-record denominator.
+Each analysis uses the unit appropriate to its question: mapped outcome
+records, distinct raw outcome titles, or trial-outcome-disease links. The unit
+is recorded in each output table.
 
 ## Contents
 
-- `outcome_complexity_*` and `semantic_*`: transparent lexical-rule
-  characterization of title length, detected aspects, and common signatures.
+- `outcome_complexity_*` and `semantic_*`: title length, detected aspects, and
+  common signatures.
 - `descriptive_mapping_difficulty_casebook*`: real mapped examples selected for
   review strata such as very long titles, ambiguous short titles, composites,
-  and residual-category cases. This is descriptive triage, not a formal model
-  error-rate estimate.
+  and residual-category cases.
 - `all_21_outcome_categories_ranked.csv`: complete category ranking from the
   linked cohort.
 - `category_by_disease_domain_*`: the complete 24-by-21 crosswalk, within-domain
   percentages, standardized residuals, and descriptive association summary.
 - `figures/`: publication-ready complexity and disease-domain figures.
 
-The crosswalk's chi-square p-value is not treated as cluster-robust inference,
-because one trial can contribute multiple outcomes and disease domains. Cramer's
-V and standardized residuals are reported descriptively.
+The crosswalk reports descriptive percentages, Cramer's V, and standardized
+residuals.
 
 ## Reproduction boundary
 
-The deterministic source code is
-[`../scripts/descriptive_analyses.py`](../scripts/descriptive_analyses.py). Its
-default invocation is a dry run; `--execute` is required to regenerate these
-outputs. The present revision reuses the checksum-covered files in this folder
-and does not execute that analysis.
+The source code is
+[`../scripts/descriptive_analyses.py`](../scripts/descriptive_analyses.py).
+Use `--execute` to regenerate the outputs.

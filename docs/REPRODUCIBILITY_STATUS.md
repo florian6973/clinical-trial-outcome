@@ -8,7 +8,7 @@ implementation.
 | Component | Included material |
 |---|---|
 | Study cohort | Release manifests and validation code for 73,427 trials with posted results |
-| Outcome data | A 467,903-row outcome-only extract and denominator documentation |
+| Outcome data | A 467,903-row outcome extract with release manifests and validation code |
 | Disease mapping | Public disease labels, 24 disease areas, aggregate counts, and terminology licensing notes |
 | Outcome structuring | Prompts, schemas, code, and 250 primary annotations |
 | Term grouping | Two independently completed 100-row annotation files |
@@ -36,7 +36,5 @@ PYTHONPATH=qwen_pipeline/src \
 python3 -m qwen_pipeline.cli experiments
 ```
 
-Full Qwen execution requires reviewed task data, model access, the appropriate
-vocabularies, and licensed terminology where applicable. Store each run with
-its input hashes, model and adapter identifiers, configuration, predictions,
-and metrics.
+Full Qwen execution requires the reviewed task data, reference vocabularies,
+model access, and licensed terminology where applicable.
