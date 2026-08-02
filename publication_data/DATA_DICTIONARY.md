@@ -41,12 +41,10 @@ The table contains 467,865 dated outcome records. A trial can contribute to
 multiple outcome categories, so `trial_count` must not be summed across
 categories.
 
-## Count cautions
+## Notes
 
 - The strict `>100` rule is a descriptive display threshold, not an inferential
   cutoff.
 - Recent start years are affected by the lag between trial initiation and
   posted results in the analytic cohort.
 - Disease areas are analytic groupings, not a published terminology hierarchy.
-- The outcome-only extract uses the reproducible NCT ID plus raw-title key and
-  therefore does not replace the manuscript's 480,273 row-level denominator.

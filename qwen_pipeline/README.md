@@ -1,30 +1,28 @@
 # Paper-aligned Qwen normalization pipeline
 
-This directory is the reproducible implementation contract for the methodology
-described in the JAMIA manuscript. It implements the two retrieve-then-select
-tasks in one coherent package:
+This directory implements the normalization workflow described in the JAMIA
+manuscript:
 
 1. outcome object to normalized outcome group; and
 2. free-text condition to a candidate SNOMED CT disorder concept, followed by a
    separately supplied disease-area crosswalk.
 
-The implementation uses NV-Embed-v2 embeddings, cosine retrieval in a FAISS
-index, and task-specific Qwen2.5 LoRA selectors. It replaces the operational
-role of the earlier hosted-model scripts without deleting them. See
-[`../legacy/README.md`](../legacy/README.md) for the legacy inventory.
+The workflow uses NV-Embed-v2 embeddings, FAISS retrieval, and task-specific
+Qwen2.5 LoRA selectors. It proceeds category by category through the unlabeled
+values. Condition names are matched to retrieved SNOMED CT concepts. Outcome
+objects are matched to previously approved outcome groups; when no group fits,
+a new group is proposed for review and, once approved, becomes available in
+later passes. The normalized groups are then assigned to one of the 21 selected
+outcome categories.
+
+See [`../legacy/README.md`](../legacy/README.md) for the earlier implementation.
 
 ## Study configuration
 
-The package implements the paper's Qwen workflow and provides small illustrative
-fixtures for schema, prompt, and command-line tests.
-
 The manuscript reports a 200-example outcome adapter, a separate 50-example
 held-out set, and a model-size/learning-curve comparison. The experiment matrix
-in `config/experiments.json` records those intended cells. It deliberately does
-not contain invented cell-level scores or unavailable checkpoint identifiers.
-The fixed seed in `config/pipeline.json` is an explicit reproducibility default.
-The original GPU script did not name LoRA target modules, so the maintained
-runner retains PEFT's model-specific defaults instead of inventing a list.
+in `config/experiments.json` records those cells. Small fixtures support schema,
+prompt, and command-line tests.
 
 ## Directory map
 
@@ -130,9 +128,7 @@ Study annotations are available under
 They include 250 outcome-title structuring annotations and two independently
 completed 100-row term-grouping files.
 
-Place reviewed artifacts outside source control or in the separately documented
-publication-data release, then pass their paths to the CLI. Never substitute the
-fixtures for real study data.
+Pass reviewed artifacts to the CLI using the paths shown above.
 
 ## Reproducibility and safety rules
 
