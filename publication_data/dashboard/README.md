@@ -1,14 +1,12 @@
 # Dashboard data package
 
-These checksum-covered CSV files are the exact deterministic inputs used by the
+These checksum-covered CSV files power the
 [Clinical Trial Outcome Atlas](https://github.com/jamesbbaker/ClinicalTrialOutcomeTrends).
-They contain condition, disease-area, normalized-outcome, phase, year, and
-completion-period summaries derived from the paper's locked study files.
+They summarize conditions, disease areas, normalized outcomes, phases, years,
+and completion periods from the study files.
 
-The package does not contain SNOMED CT identifiers or terminology content. It
-reads the checked publication files and generates detail-page summaries
-deterministically.
-`manifest.json` records every included data file, byte size, and SHA-256 hash.
+The package contains no SNOMED CT identifiers or terminology. `manifest.json`
+lists each file, size, and SHA-256 hash.
 
 To refresh a local dashboard checkout from this repository:
 

@@ -1,0 +1,3 @@
+id|nct_id|outcome_type|title|description|time_frame
+O1|NCT00000001|Primary|Shared endpoint|First endpoint description|Day 28
+O2|NCT00000001|Secondary|Shared endpoint|Second endpoint description|Week 12

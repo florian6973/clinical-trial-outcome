@@ -1,10 +1,9 @@
 # Publication data release
 
-This directory contains the public data package for the JAMIA manuscript,
-including the outcome extract, disease aggregates, study annotations, and
-descriptive analyses.
+This directory contains the outcome extract, disease aggregates, annotations,
+and descriptive analyses for the JAMIA manuscript.
 
-## Public release contents
+## Release files
 
 The generated files in [`release/`](release/) are:
 
@@ -18,24 +17,21 @@ The generated files in [`release/`](release/) are:
 | `outcome_release_manifest.json` | - | Outcome-release schema and transformation record |
 
 The 24 disease areas and 274 disease names are project analysis labels. See the
-[data dictionary](DATA_DICTIONARY.md) for table definitions and counts.
-
-Licensing and source details are documented in
-[LICENSE_AND_PROVENANCE.md](LICENSE_AND_PROVENANCE.md).
+[data dictionary](DATA_DICTIONARY.md) for definitions and counts, and
+[license and provenance](LICENSE_AND_PROVENANCE.md) for source and licensing
+details.
 
 ## Other reproducibility materials
 
-- [`recovered_study_artifacts/`](recovered_study_artifacts/) contains the study
-  annotations and supplement figures.
-- [`advisor_requested_descriptive_analyses/`](advisor_requested_descriptive_analyses/)
-  contains the outcome characterization, examples, category ranking, and
-  disease-area analysis.
-- [`dashboard/`](dashboard/) contains the aggregate tables used by the
-  interactive companion.
+- [`recovered_study_artifacts/`](recovered_study_artifacts/): annotations and
+  supplement figures.
+- [`advisor_requested_descriptive_analyses/`](advisor_requested_descriptive_analyses/):
+  outcome examples, category rankings, and disease-area analyses.
+- [`dashboard/`](dashboard/): aggregate tables for the interactive companion.
 
-## Rebuild and validation
+## Build and validate
 
-From the repository root, using an environment with pandas and parquet support:
+Run from the repository root in an environment with pandas and Parquet support:
 
 ```bash
 python publication_data/build_outcome_release.py \
@@ -48,5 +44,5 @@ python publication_data/validate_publication_data.py --deep
 python -m unittest discover -s publication_data/tests -v
 ```
 
-The builders use stable ordering and deterministic gzip metadata. Validation
-checks the release schemas, counts, and file hashes.
+The builders use stable ordering. Validation checks schemas, counts, and file
+hashes.

@@ -14,6 +14,7 @@ from .io import read_jsonl, write_jsonl
 from .paper_outputs import ingest_metrics, ingest_to_file
 from .preparation import prepare_records, summarize_splits
 from .retrieval import build_index, inspect_vocabulary
+from .sources import prepare_sources, write_prepared_sources
 from .training import inspect_training_file, train_lora
 
 
@@ -28,6 +29,14 @@ def parser() -> argparse.ArgumentParser:
     )
     commands = root.add_subparsers(dest="command", required=True)
     commands.add_parser("validate-config")
+
+    sources = commands.add_parser("prepare-sources")
+    sources.add_argument("--aact-dir", required=True)
+    sources.add_argument("--snomed-rf2-dir", required=True)
+    sources.add_argument("--aact-snapshot-id")
+    sources.add_argument("--snomed-edition")
+    sources.add_argument("--output-dir", required=True)
+    sources.add_argument("--execute", action="store_true")
 
     prepare = commands.add_parser("prepare")
     prepare.add_argument("--task", choices=["outcome", "condition"], required=True)
@@ -84,6 +93,26 @@ def main(argv: Sequence[str] | None = None) -> int:
         errors = validate_configs(configs)
         _print({"status": "valid" if not errors else "invalid", "errors": errors, "configuration_sha256": config_digest(configs)})
         return 0 if not errors else 2
+
+    if args.command == "prepare-sources":
+        prepared = prepare_sources(
+            args.aact_dir,
+            args.snomed_rf2_dir,
+            aact_snapshot_id=args.aact_snapshot_id,
+            snomed_edition=args.snomed_edition,
+        )
+        summary = prepared.summary()
+        summary.update(
+            {
+                "status": "written" if args.execute else "dry_run_not_written",
+                "output_dir": str(args.output_dir),
+            }
+        )
+        if args.execute:
+            manifest = write_prepared_sources(prepared, args.output_dir)
+            summary["outputs"] = manifest["outputs"]
+        _print(summary)
+        return 0
 
     if args.command == "prepare":
         source = list(read_jsonl(args.annotations))

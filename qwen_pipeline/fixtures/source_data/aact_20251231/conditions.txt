@@ -1,0 +1,4 @@
+nct_id|name
+NCT00000001|Example disorder A
+NCT00000001|Example disorder A
+NCT00000001|Example disorder B

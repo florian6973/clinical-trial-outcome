@@ -1,0 +1,4 @@
+nct_id|outcome_id|ctgov_group_code|classification|title
+NCT00000001|O1|BG000|Mean|Measurement class A
+NCT00000001|O1|BG001|Mean|Measurement class B
+NCT00000001|O2|BG000|Count|Measurement class C
